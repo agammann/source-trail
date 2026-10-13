@@ -12,7 +12,7 @@ Checked October 12, 2026. This is a local prototype for AMD AI League Match 4, I
 | Browser | Prior desktop/mobile interaction checks passed. Final-source example filling, live query, quotes, navigation, JSON download and console checks passed. |
 | Python packaging | Final wheel build and isolated installed metadata/CLI/HTML/HTTP/health smoke passed. |
 | Windows launcher | Interpreter discovery, explicit and relative paths, start from another directory, and health request passed. |
-| GitHub | Public repository created; source push and remote CI pending. |
+| GitHub | Source published. All four Ubuntu/Windows and Python 3.11/3.12 CI jobs passed; see evidence/github-ci.json. |
 | Docker | Not run: local daemon unavailable. Dockerfile.prototype packages only the coordinator. |
 | AMD notebook | Approved sign-in completed; dashboard reported the account email was not registered for this hackathon. No GPU session launched. |
 | Official evaluator | Not available or run; no submission made. |

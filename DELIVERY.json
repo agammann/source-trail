@@ -92,7 +92,7 @@
       ],
       "design_comparison": "Concept and latest desktop/mobile renders inspected; heading font mismatch fixed; no material mismatch remaining.",
       "evidence": "evidence/preview.png",
-      "final_source_recheck": "passed: example filling, live answer, quote rendering, navigation disclosure, JSON download, no console errors"
+      "final_source_recheck": "passed"
     },
     "docker": {
       "state": "not run",
@@ -127,9 +127,12 @@
       "evidence": "evidence/recorded-response-revalidation.json"
     },
     "github_ci": {
-      "state": "pending",
+      "state": "passed",
       "matrix": "Ubuntu and Windows, Python 3.11 and 3.12",
-      "live_model_calls": false
+      "live_model_calls": false,
+      "source_revision": "5c7e76374605286f965f2c567f5a9700cb504420",
+      "url": "https://github.com/agammann/source-trail/actions/runs/38353115022",
+      "evidence": "evidence/github-ci.json"
     }
   },
   "evidence_limits": [
@@ -142,7 +145,7 @@
     "Version markers are heuristic; source identity does not establish authority or factual truth."
   ],
   "publication": {
-    "repository_published": false,
+    "repository_published": true,
     "demo_published": false,
     "submitted": false,
     "repository_url": "https://github.com/agammann/source-trail"
