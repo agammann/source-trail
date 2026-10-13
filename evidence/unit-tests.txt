@@ -93,6 +93,6 @@ test_mixed_public_and_private_dns_records_are_rejected (test_web.WebReaderScopeT
 test_schemes_credentials_ports_and_subdomains_are_rejected_before_network (test_web.WebReaderScopeTests.test_schemes_credentials_ports_and_subdomains_are_rejected_before_network) ... ok
 
 ----------------------------------------------------------------------
-Ran 93 tests in 3.437s
+Ran 93 tests in 3.387s
 
 OK

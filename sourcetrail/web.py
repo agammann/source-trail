@@ -381,6 +381,9 @@ class WebReader:
                     chunks.append(chunk)
                     received += len(chunk)
                 data = b"".join(chunks)
+                # On some platforms watchdog shutdown makes read1 return EOF
+                # rather than raise. Report the expired deadline before EOF.
+                deadline.remaining()
                 if declared_size is not None and received < min(declared_size, self.max_bytes):
                     raise WebReadError("The response ended before its declared content length.")
                 truncated = len(data) == self.max_bytes and (declared_size is None or declared_size > self.max_bytes)
