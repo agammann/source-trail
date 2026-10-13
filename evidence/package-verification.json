@@ -1,12 +1,12 @@
 {
   "unit_tests": {
-    "passed": 93,
-    "total": 93
+    "passed": 98,
+    "total": 98
   },
   "wheel_build": "passed",
   "isolated_install": "passed",
   "installed_metadata_cli_static_http_health": "passed",
-  "wheel_sha256": "50ceff93d5125c167c951dec87cb4360df1696ba5c6ef15c69971ca1ba68a7e8",
+  "wheel_sha256": "89757c08084698602addf6f5f49141b7358fbe6cdee64e806e07f36ecd93abc1",
   "official_container": "not tested",
   "official_evaluator": "not available"
 }

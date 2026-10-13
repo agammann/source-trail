@@ -10,9 +10,9 @@ Checked October 12, 2026. This is a local prototype for AMD AI League Match 4, I
 | Completed-response replay | Final validator accepted 46 saved completed responses; no new inference in this replay. |
 | Public websites | Three latest queries answered: Python TaskGroup, organizer GPU quota, FastAPI settings. Quotes match retrieved blocks. |
 | Browser | Prior desktop/mobile interaction checks passed. Final-source example filling, live query, quotes, navigation, JSON download and console checks passed. |
-| Python packaging | Earlier wheel/install checks passed; latest audit rebuild pending. |
+| Python packaging | Final audit wheel build and isolated installed metadata/CLI/HTML/HTTP/health smoke passed. |
 | Windows launcher | Interpreter discovery, explicit and relative paths, start from another directory, and health request passed. |
-| GitHub | Source published. Earlier four-job CI passed; latest audit fixes await remote CI. |
+| GitHub | Source published. All four Ubuntu/Windows and Python 3.11/3.12 jobs passed for the audit fixes; see evidence/github-ci.json. |
 | Docker | Not run: local daemon unavailable. Dockerfile.prototype packages only the coordinator. |
 | AMD notebook | Approved sign-in completed; dashboard reported the account email was not registered for this hackathon. No GPU session launched. |
 | Official evaluator | Not available or run; no submission made. |

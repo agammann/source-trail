@@ -103,7 +103,7 @@
       "reason": "Detailed interface and evaluator not yet available from public detail link"
     },
     "package": {
-      "state": "pending latest audit rebuild",
+      "state": "passed",
       "evidence": "evidence/package-verification.json",
       "checks": [
         "wheel build",
@@ -127,11 +127,11 @@
       "evidence": "evidence/recorded-response-revalidation.json"
     },
     "github_ci": {
-      "state": "pending latest audit fixes",
+      "state": "passed",
       "matrix": "Ubuntu and Windows, Python 3.11 and 3.12",
       "live_model_calls": false,
-      "source_revision": "5c7e76374605286f965f2c567f5a9700cb504420",
-      "url": "https://github.com/agammann/source-trail/actions/runs/38353115022",
+      "source_revision": "31d3a3ada852ef5bdc55ecf1a7390f73bbdf7f61",
+      "url": "https://github.com/agammann/source-trail/actions/runs/38358097557",
       "evidence": "evidence/github-ci.json"
     },
     "evidence_selection_recheck": {
