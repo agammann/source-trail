@@ -1,0 +1,105 @@
+{
+  "question": "What is the per-workspace SableBuffer storage allowance in version 4?",
+  "requested_version": "4",
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/index.html",
+      "title": "SableBuffer storage-guide directory",
+      "version": "40"
+    },
+    {
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v40.html",
+      "title": "SableBuffer v40 storage allowance",
+      "version": "40"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "source_version": "4",
+      "section": "SableBuffer v4 storage allowance",
+      "text": "The per-workspace storage allowance in version 4 is 96 MiB."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "source_version": "4",
+      "section": "SableBuffer v4 storage allowance",
+      "text": "SableBuffer v4 storage allowance"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "source_version": "4",
+      "section": "SableBuffer v4 storage allowance",
+      "text": "Documentation version: 4."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "source_version": "4",
+      "section": "SableBuffer v4 storage allowance",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/index.html",
+      "title": "SableBuffer storage-guide directory",
+      "blocks": 4,
+      "elapsed_ms": 16,
+      "sha256": "52f3b2a96e723b505eb08d5738e13a7ca52ba69b9d9c65f088c1d1a6ceea1c0d",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "blocks": 4,
+      "elapsed_ms": 0,
+      "sha256": "2310ebadf5610629d9ef2ad24a1066ca7e1b8216a3bf7f55bea4e25f52bf4d85",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v40.html",
+      "title": "SableBuffer v40 storage allowance",
+      "blocks": 4,
+      "elapsed_ms": 15,
+      "sha256": "c225b24acbe19ac258da7e5706691bff5d14dbcd423aeff585f05e835f2eeb1f",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 646,
+    "output_tokens": 45,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 3984
+  },
+  "status": "answered",
+  "answer": "96 MiB",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:65243/h02-numeric-version-suffix/v4.html",
+      "quote": "The per-workspace storage allowance in version 4 is 96 MiB.",
+      "block_id": "P2B4",
+      "source_version": "4"
+    }
+  ]
+}

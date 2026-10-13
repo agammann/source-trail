@@ -1,0 +1,154 @@
+{
+  "question": "What is the telephone number for Cloudberry Theatre ticket refunds?",
+  "requested_version": null,
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/index.html",
+      "title": "Cloudberry Theatre ticket help",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/refunds.html",
+      "title": "Cloudberry Theatre refunds",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/access.html",
+      "title": "Cloudberry Theatre venue access",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/index.html",
+      "title": "Cloudberry Theatre ticket help",
+      "source_version": null,
+      "section": "Cloudberry Theatre ticket help",
+      "text": "Cloudberry Theatre ticket help"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/refunds.html",
+      "title": "Cloudberry Theatre refunds",
+      "source_version": null,
+      "section": "Cloudberry Theatre refunds",
+      "text": "Cloudberry Theatre refunds"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/refunds.html",
+      "title": "Cloudberry Theatre refunds",
+      "source_version": null,
+      "section": "Cloudberry Theatre refunds",
+      "text": "All ticket sales are final unless the theatre cancels the performance."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/refunds.html",
+      "title": "Cloudberry Theatre refunds",
+      "source_version": null,
+      "section": "Cloudberry Theatre refunds",
+      "text": "This fixture does not publish a telephone number."
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/access.html",
+      "title": "Cloudberry Theatre venue access",
+      "source_version": null,
+      "section": "Cloudberry Theatre venue access",
+      "text": "Cloudberry Theatre venue access"
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/index.html",
+      "title": "Cloudberry Theatre ticket help",
+      "source_version": null,
+      "section": "Cloudberry Theatre ticket help",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/index.html",
+      "title": "Cloudberry Theatre ticket help",
+      "source_version": null,
+      "section": "Cloudberry Theatre ticket help",
+      "text": "Refund conditions"
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/index.html",
+      "title": "Cloudberry Theatre ticket help",
+      "source_version": null,
+      "section": "Cloudberry Theatre ticket help",
+      "text": "Venue access"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/refunds.html",
+      "title": "Cloudberry Theatre refunds",
+      "source_version": null,
+      "section": "Cloudberry Theatre refunds",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/access.html",
+      "title": "Cloudberry Theatre venue access",
+      "source_version": null,
+      "section": "Cloudberry Theatre venue access",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/access.html",
+      "title": "Cloudberry Theatre venue access",
+      "source_version": null,
+      "section": "Cloudberry Theatre venue access",
+      "text": "The venue entrance opens 30 minutes before each performance."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/index.html",
+      "title": "Cloudberry Theatre ticket help",
+      "blocks": 4,
+      "elapsed_ms": 16,
+      "sha256": "f94b7794ee2ed067181e425c38322568438a56af5e0cc2f1357c13e73cfb7749",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/refunds.html",
+      "title": "Cloudberry Theatre refunds",
+      "blocks": 4,
+      "elapsed_ms": 0,
+      "sha256": "6c9172531257b407dfb979af9ac4ec88e0ffb0f640a35eef0c12eec7edf72c43",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/11-web-missing-answer/access.html",
+      "title": "Cloudberry Theatre venue access",
+      "blocks": 3,
+      "elapsed_ms": 15,
+      "sha256": "5fc56628da21abd4fe9c4c082a71ed416b1e32615b6c1e50c7167fddee5a87af",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1234,
+    "output_tokens": 14,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 4453
+  },
+  "status": "abstained",
+  "answer": "",
+  "citations": []
+}

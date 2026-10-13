@@ -1,0 +1,98 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test-and-package:
+    name: Python ${{ matrix.python }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.12']
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run unit and loopback integration tests
+        run: python -m unittest discover -s tests -v
+      - name: Check the Windows launcher
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./run.ps1 -PythonPath (Get-Command python).Source -Check
+      - name: Install packaging tools
+        run: python -m pip install --upgrade pip build
+      - name: Build wheel
+        run: python -m build --wheel
+      - name: Verify isolated installed package and inspector
+        shell: python
+        run: |
+          import pathlib
+          import subprocess
+          import sys
+          import tempfile
+          import venv
+
+          wheels = list(pathlib.Path('dist').glob('*.whl'))
+          assert len(wheels) == 1, f'Expected one wheel, got {wheels}'
+          wheel = wheels[0].resolve()
+          with tempfile.TemporaryDirectory() as temporary:
+              root = pathlib.Path(temporary)
+              environment = root / 'environment'
+              venv.EnvBuilder(with_pip=True).create(environment)
+              python = environment / ('Scripts/python.exe' if sys.platform == 'win32' else 'bin/python')
+              subprocess.run([str(python), '-m', 'pip', 'install', '--no-deps', str(wheel)], check=True)
+              smoke = r'''
+          import importlib.metadata
+          import importlib.resources
+          import json
+          import pathlib
+          import subprocess
+          import sys
+          import threading
+          import urllib.request
+          from http.server import ThreadingHTTPServer
+          import sourcetrail
+          from sourcetrail.server import make_handler
+
+          assert pathlib.Path(sourcetrail.__file__).resolve().is_relative_to(pathlib.Path(sys.prefix).resolve())
+          metadata = importlib.metadata.metadata('source-trail')
+          assert metadata['License-Expression'] == 'MIT'
+          assert not metadata.get_all('Requires-Dist'), 'Runtime dependencies unexpectedly added'
+          html = importlib.resources.files('sourcetrail').joinpath('static/index.html').read_text(encoding='utf-8')
+          assert 'Source Trail' in html and '<form' in html
+          help_result = subprocess.run([sys.executable, '-I', '-m', 'sourcetrail', '--help'], check=True, capture_output=True, text=True)
+          assert 'query' in help_result.stdout and 'serve' in help_result.stdout
+          server = ThreadingHTTPServer(('127.0.0.1', 0), make_handler())
+          worker = threading.Thread(target=server.serve_forever, daemon=True)
+          worker.start()
+          try:
+              origin = f'http://127.0.0.1:{server.server_port}'
+              with urllib.request.urlopen(origin + '/', timeout=5) as response:
+                  assert response.status == 200 and 'Source Trail' in response.read().decode('utf-8')
+              with urllib.request.urlopen(origin + '/api/health', timeout=5) as response:
+                  assert json.load(response)['status'] == 'ok'
+          finally:
+              server.shutdown()
+              server.server_close()
+              worker.join(timeout=5)
+          print('Installed wheel, metadata, CLI, static inspector, and health endpoint passed.')
+          '''
+              subprocess.run([str(python), '-I', '-c', smoke], cwd=root, check=True)

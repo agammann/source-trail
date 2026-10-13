@@ -1,0 +1,161 @@
+{
+  "question": "When does the first Wren Island ferry leave North Dock on a weekday?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/index.html",
+      "title": "Wren Island ferry timetable",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/north.html",
+      "title": "Wren Island North Dock ferry",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/south.html",
+      "title": "Wren Island South Dock ferry",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/north.html",
+      "title": "Wren Island North Dock ferry",
+      "source_version": null,
+      "section": "Wren Island North Dock ferry",
+      "text": "Wren Island North Dock ferry"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/north.html",
+      "title": "Wren Island North Dock ferry",
+      "source_version": null,
+      "section": "Wren Island North Dock ferry",
+      "text": "The first North Dock weekday ferry departs at 06:20."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/north.html",
+      "title": "Wren Island North Dock ferry",
+      "source_version": null,
+      "section": "Wren Island North Dock ferry",
+      "text": "The first North Dock weekend ferry departs at 08:40."
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/south.html",
+      "title": "Wren Island South Dock ferry",
+      "source_version": null,
+      "section": "Wren Island South Dock ferry",
+      "text": "Wren Island South Dock ferry"
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/south.html",
+      "title": "Wren Island South Dock ferry",
+      "source_version": null,
+      "section": "Wren Island South Dock ferry",
+      "text": "The first South Dock weekday ferry departs at 07:10."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/index.html",
+      "title": "Wren Island ferry timetable",
+      "source_version": null,
+      "section": "Wren Island ferry timetable",
+      "text": "Wren Island ferry timetable"
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/index.html",
+      "title": "Wren Island ferry timetable",
+      "source_version": null,
+      "section": "Wren Island ferry timetable",
+      "text": "North Dock departures"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/index.html",
+      "title": "Wren Island ferry timetable",
+      "source_version": null,
+      "section": "Wren Island ferry timetable",
+      "text": "South Dock departures"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/north.html",
+      "title": "Wren Island North Dock ferry",
+      "source_version": null,
+      "section": "Wren Island North Dock ferry",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/south.html",
+      "title": "Wren Island South Dock ferry",
+      "source_version": null,
+      "section": "Wren Island South Dock ferry",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/index.html",
+      "title": "Wren Island ferry timetable",
+      "source_version": null,
+      "section": "Wren Island ferry timetable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/index.html",
+      "title": "Wren Island ferry timetable",
+      "blocks": 4,
+      "elapsed_ms": 0,
+      "sha256": "44211a73b6953c19827993c5c6c8a7c0c6f86be0bac51241e9da7bd7019a5a8c",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/north.html",
+      "title": "Wren Island North Dock ferry",
+      "blocks": 4,
+      "elapsed_ms": 16,
+      "sha256": "c1c229270c8d513bde7537d50c70f99920ec9e49d2e2b2f55d832584b8cad9d4",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/south.html",
+      "title": "Wren Island South Dock ferry",
+      "blocks": 3,
+      "elapsed_ms": 0,
+      "sha256": "c443ac4e4c8f3e7c5e25fa672f96b5cd6381d3c8b2d889327975136d49de9604",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1230,
+    "output_tokens": 45,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 3422
+  },
+  "status": "answered",
+  "answer": "06:20",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:56521/14-web-conditional-route/north.html",
+      "quote": "The first North Dock weekday ferry departs at 06:20.",
+      "block_id": "P2B3",
+      "source_version": null
+    }
+  ]
+}

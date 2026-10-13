@@ -1,0 +1,12 @@
+{
+  "check": "Final citation validator applied to saved completed responses",
+  "completed_responses_checked": 46,
+  "passed": 46,
+  "fresh_inference": false,
+  "fastapi_repeated_citation_replay": {
+    "raw_count": 12,
+    "distinct_count": 2,
+    "status": "answered"
+  },
+  "limit": "Replaying a saved answer is not a new acquisition or model run and does not prove semantic entailment."
+}

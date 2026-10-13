@@ -1,0 +1,105 @@
+{
+  "question": "What is the default request timeout in BirchClient stable version 4?",
+  "requested_version": "4",
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/index.html",
+      "title": "BirchClient release guides",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v4.html",
+      "title": "BirchClient v4 timeouts — current stable",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v5-beta.html",
+      "title": "BirchClient v5 beta timeouts — prerelease",
+      "version": "5-beta.html"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v4.html",
+      "title": "BirchClient v4 timeouts — current stable",
+      "source_version": "4",
+      "section": "BirchClient v4 timeouts — current stable",
+      "text": "The default request timeout in version 4 is 8 seconds."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v4.html",
+      "title": "BirchClient v4 timeouts — current stable",
+      "source_version": "4",
+      "section": "BirchClient v4 timeouts — current stable",
+      "text": "BirchClient v4 timeouts — current stable"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v4.html",
+      "title": "BirchClient v4 timeouts — current stable",
+      "source_version": "4",
+      "section": "BirchClient v4 timeouts — current stable",
+      "text": "Documentation version: 4."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v4.html",
+      "title": "BirchClient v4 timeouts — current stable",
+      "source_version": "4",
+      "section": "BirchClient v4 timeouts — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/index.html",
+      "title": "BirchClient release guides",
+      "blocks": 5,
+      "elapsed_ms": 15,
+      "sha256": "adfa7247d22f159d23debbd6ba276bee8b46e1e4c066a0a9856842d69aa87d11",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v4.html",
+      "title": "BirchClient v4 timeouts — current stable",
+      "blocks": 4,
+      "elapsed_ms": 0,
+      "sha256": "91d9bdc59c924dfb86d2982ac2ba64d8ee0af75904bca1b5bf0023ed3375ef31",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v5-beta.html",
+      "title": "BirchClient v5 beta timeouts — prerelease",
+      "blocks": 5,
+      "elapsed_ms": 0,
+      "sha256": "4174f8d0ea4556209f766f41c9aff930d1f20eb9d5d9a3f43c751507233f86e0",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 668,
+    "output_tokens": 39,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 4562
+  },
+  "status": "answered",
+  "answer": "8 seconds",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:56521/08-doc-prerelease-distractor/v4.html",
+      "quote": "The default request timeout in version 4 is 8 seconds.",
+      "block_id": "P2B4",
+      "source_version": "4"
+    }
+  ]
+}

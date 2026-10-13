@@ -1,0 +1,81 @@
+{
+  "answer": "lru_cache",
+  "citations": [
+    {
+      "block_id": "P1B300",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/advanced/settings/"
+    },
+    {
+      "block_id": "P1B305",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/advanced/settings/"
+    },
+    {
+      "block_id": "P1B311",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/advanced/settings/"
+    },
+    {
+      "block_id": "P1B316",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/advanced/settings/"
+    },
+    {
+      "block_id": "P1B362",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/advanced/settings/"
+    },
+    {
+      "block_id": "P1B367",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/advanced/settings/"
+    },
+    {
+      "block_id": "P6B305",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/de/advanced/settings/"
+    },
+    {
+      "block_id": "P6B310",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/de/advanced/settings/"
+    },
+    {
+      "block_id": "P6B316",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/de/advanced/settings/"
+    },
+    {
+      "block_id": "P6B321",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/de/advanced/settings/"
+    },
+    {
+      "block_id": "P6B367",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/de/advanced/settings/"
+    },
+    {
+      "block_id": "P6B372",
+      "quote_length": 31,
+      "exact_quote": true,
+      "source_url": "https://fastapi.tiangolo.com/de/advanced/settings/"
+    }
+  ],
+  "distinct_source_quote_pairs": 2,
+  "distinct_source_urls": 2,
+  "distinct_block_ids": 12,
+  "all_quotes_exact": true
+}

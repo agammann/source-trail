@@ -1,0 +1,156 @@
+{
+  "project": "Source Trail",
+  "version": "0.1.0",
+  "creator": "agammann",
+  "updated_date": "2026-10-12",
+  "stage": "pre-brief local prototype",
+  "challenge": {
+    "name": "AMD AI League Match 4: Intelligent Web Information Retrieval",
+    "source": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
+    "checked_date": "2026-10-12",
+    "scheduled_dates": [
+      "2026-10-13",
+      "2026-10-27"
+    ],
+    "detailed_contract": "unavailable through public detail link; it returned the overview",
+    "official_evaluator_run": false,
+    "submitted": false
+  },
+  "runtime": {
+    "python_minimum": "3.11",
+    "python_runtime_dependencies": [],
+    "provider": "local Ollama connector",
+    "default_model": "qwen3.5:4b-q4_K_M",
+    "default_model_endpoint": "http://127.0.0.1:11434",
+    "default_inspector": "http://127.0.0.1:8765",
+    "amd_gpu_verified": false,
+    "amd_notebook_access": "Authenticated; dashboard reported account email not registered for hackathon. No GPU session launched."
+  },
+  "validation": {
+    "unit_tests": {
+      "state": "passed",
+      "passed": 93,
+      "total": 93,
+      "evidence": "evidence/unit-tests.txt"
+    },
+    "local_model": {
+      "state": "real local inference completed",
+      "model": "qwen3.5:4b-q4_K_M",
+      "amd_gpu_verified": false,
+      "current_synthetic_model_calls": 43,
+      "live_query_attempts": 5,
+      "successful_latest_live_queries": 3
+    },
+    "synthetic_benchmark": {
+      "state": "completed",
+      "fixture_cases": 16,
+      "synthetic": true,
+      "held_out": false,
+      "verified_passed": 14,
+      "baseline_passed": 12,
+      "page_cap": 6,
+      "evidence": "evidence/synthetic/summary.json",
+      "rubric_adjustments": "Two aliases added during earlier development; no changes in latest recheck.",
+      "latency_limit": "Recorded wall times include ordering and model warm-up; no comparative latency claim."
+    },
+    "public_website_queries": {
+      "state": "Three latest queries answered; quotes exact; semantic applicability requires source inspection.",
+      "count": 3,
+      "sources": [
+        "Python documentation",
+        "lablab organizer page",
+        "FastAPI documentation"
+      ],
+      "evidence": [
+        "evidence/live-python-taskgroup.json",
+        "evidence/live-amd-quota.json",
+        "evidence/live-fastapi-settings.json"
+      ]
+    },
+    "browser": {
+      "state": "passed",
+      "method": "browser interaction checks",
+      "desktop_viewport": [
+        1536,
+        1024
+      ],
+      "mobile_viewport": [
+        390,
+        844
+      ],
+      "checks": [
+        "page identity",
+        "nonblank",
+        "no framework error",
+        "no console errors",
+        "example fills",
+        "live query",
+        "exact quote rendering",
+        "JSON download",
+        "navigation disclosure",
+        "mobile overflow"
+      ],
+      "design_comparison": "Concept and latest desktop/mobile renders inspected; heading font mismatch fixed; no material mismatch remaining.",
+      "evidence": "evidence/preview.png",
+      "final_source_recheck": "passed: example filling, live answer, quote rendering, navigation disclosure, JSON download, no console errors"
+    },
+    "docker": {
+      "state": "not run",
+      "reason": "Docker daemon unavailable; Dockerfile.prototype is a coordinator packaging prototype"
+    },
+    "official_match4": {
+      "state": "not run",
+      "reason": "Detailed interface and evaluator not yet available from public detail link"
+    },
+    "package": {
+      "state": "passed",
+      "evidence": "evidence/package-verification.json",
+      "checks": [
+        "wheel build",
+        "isolated installed metadata and CLI",
+        "static inspector and real loopback HTTP/health"
+      ]
+    },
+    "stress_development": {
+      "state": "completed",
+      "synthetic": true,
+      "held_out": false,
+      "cases": 6,
+      "baseline_passed": 6,
+      "verified_passed": 6,
+      "evidence": "evidence/stress/summary.json"
+    },
+    "recorded_response_revalidation": {
+      "passed": 46,
+      "total": 46,
+      "fresh_inference": false,
+      "evidence": "evidence/recorded-response-revalidation.json"
+    },
+    "github_ci": {
+      "state": "pending",
+      "matrix": "Ubuntu and Windows, Python 3.11 and 3.12",
+      "live_model_calls": false
+    }
+  },
+  "evidence_limits": [
+    "Synthetic fixture results do not establish broad web performance or an official score.",
+    "The project baseline is not a reproduction of an existing product or published system.",
+    "Quote presence alone does not establish answer entailment.",
+    "No originality, prize, official compatibility, or AMD GPU performance claim is established.",
+    "Synthetic cases were used during development and are not a held-out benchmark.",
+    "Explicit target-version queries conservatively require identifiable matching version context.",
+    "Version markers are heuristic; source identity does not establish authority or factual truth."
+  ],
+  "publication": {
+    "repository_published": false,
+    "demo_published": false,
+    "submitted": false,
+    "repository_url": "https://github.com/agammann/source-trail"
+  },
+  "next_required": [
+    "Obtain and record the detailed Match 4 contract.",
+    "Adapt interfaces and permitted local inference to the official environment.",
+    "Validate on AMD infrastructure and the released evaluator.",
+    "Review complete submission materials before publication or submission."
+  ]
+}

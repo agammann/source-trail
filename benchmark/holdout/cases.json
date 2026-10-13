@@ -1,0 +1,109 @@
+[
+  {
+    "id": "h01-late-code-fact",
+    "synthetic": true,
+    "classification": "stress-development",
+    "question": "What is the configured digest_window in HemlockSync version 6?",
+    "start_path": "/h01-late-code-fact/index.html",
+    "expected_answer": "36 hours",
+    "answer_aliases": [],
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/h01-late-code-fact/v6.html"
+    ],
+    "required_evidence_quotes": [
+      "digest_window = \"36 hours\""
+    ],
+    "target_version": "6"
+  },
+  {
+    "id": "h02-numeric-version-suffix",
+    "synthetic": true,
+    "classification": "stress-development",
+    "question": "What is the per-workspace SableBuffer storage allowance in version 4?",
+    "start_path": "/h02-numeric-version-suffix/index.html",
+    "expected_answer": "96 MiB",
+    "answer_aliases": [
+      "96 mebibytes"
+    ],
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/h02-numeric-version-suffix/v4.html"
+    ],
+    "excluded_evidence_paths": [
+      "/h02-numeric-version-suffix/v40.html"
+    ],
+    "target_version": "4"
+  },
+  {
+    "id": "h03-unseparated-prerelease",
+    "synthetic": true,
+    "classification": "stress-development",
+    "question": "In JuncoMail version 4, what is the delivery acknowledgement timeout?",
+    "start_path": "/h03-unseparated-prerelease/index.html",
+    "expected_answer": "11 seconds",
+    "answer_aliases": [
+      "eleven seconds"
+    ],
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/h03-unseparated-prerelease/v4.html"
+    ],
+    "excluded_evidence_paths": [
+      "/h03-unseparated-prerelease/v4beta.html"
+    ],
+    "target_version": "4"
+  },
+  {
+    "id": "h04-same-page-conflict",
+    "synthetic": true,
+    "classification": "stress-development",
+    "question": "What is the current maximum concurrency for a standard MeadowTask workspace?",
+    "start_path": "/h04-same-page-conflict/index.html",
+    "expected_answer": "",
+    "answer_aliases": [],
+    "expected_status": "conflict",
+    "expected_source_paths": [
+      "/h04-same-page-conflict/index.html"
+    ],
+    "incompatible_quotes": [
+      "The maximum concurrency for a standard MeadowTask workspace is 14 jobs.",
+      "The maximum concurrency for a standard MeadowTask workspace is 21 jobs."
+    ]
+  },
+  {
+    "id": "h05-multiple-table-context",
+    "synthetic": true,
+    "classification": "stress-development",
+    "question": "What is the operator entry limit for Turnstone Hall’s Studio plan?",
+    "start_path": "/h05-multiple-table-context/index.html",
+    "expected_answer": "12 entries",
+    "answer_aliases": [
+      "12"
+    ],
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/h05-multiple-table-context/index.html"
+    ],
+    "table_quote": "Studio | 12 entries",
+    "required_table_section": "Operator entry limits",
+    "required_table_header": "Plan | Maximum entries"
+  },
+  {
+    "id": "h06-missing-query-qualifiers",
+    "synthetic": true,
+    "classification": "stress-development",
+    "question": "What monthly Docklight Museum membership price applies to Quail County resident students in 2027?",
+    "start_path": "/h06-missing-query-qualifiers/index.html",
+    "expected_answer": "",
+    "answer_aliases": [],
+    "expected_status": "abstained",
+    "expected_source_paths": [],
+    "missing_qualifiers": [
+      "Quail County",
+      "resident students",
+      "2027"
+    ],
+    "unqualified_quote": "The listed general monthly membership price is $22."
+  }
+]

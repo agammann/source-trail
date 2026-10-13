@@ -1,0 +1,248 @@
+[
+  {
+    "id": "01-doc-old-distractor",
+    "synthetic": true,
+    "category": "documentation",
+    "question": "What is the default retry policy in AsterQueue version 4?",
+    "start_path": "/01-doc-old-distractor/index.html",
+    "expected_answer": "adaptive",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/01-doc-old-distractor/v4.html"
+    ],
+    "answer_aliases": [
+      "adaptive retry policy"
+    ],
+    "target_version": "4"
+  },
+  {
+    "id": "02-doc-target-version-absent",
+    "synthetic": true,
+    "category": "documentation",
+    "question": "How many simultaneous client connections does PebbleStore version 5 permit?",
+    "start_path": "/02-doc-target-version-absent/index.html",
+    "expected_answer": "",
+    "expected_status": "abstained",
+    "expected_source_paths": [],
+    "answer_aliases": [],
+    "target_version": "5"
+  },
+  {
+    "id": "03-doc-renamed-configuration",
+    "synthetic": true,
+    "category": "documentation",
+    "question": "Which QuartzSite version 3 configuration option replaces route_cache?",
+    "start_path": "/03-doc-renamed-configuration/index.html",
+    "expected_answer": "page_cache",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/03-doc-renamed-configuration/migration-v3.html"
+    ],
+    "answer_aliases": [],
+    "target_version": "3"
+  },
+  {
+    "id": "04-doc-conditional-default",
+    "synthetic": true,
+    "category": "documentation",
+    "question": "In LumenServe version 3 production mode with cold starts enabled, is the result cache enabled or disabled by default?",
+    "start_path": "/04-doc-conditional-default/index.html",
+    "expected_answer": "disabled",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/04-doc-conditional-default/cache-v3.html"
+    ],
+    "answer_aliases": [],
+    "target_version": "3"
+  },
+  {
+    "id": "05-doc-current-stale-release",
+    "synthetic": true,
+    "category": "documentation",
+    "question": "What is the maximum number of workers in the current stable CopperFlow release?",
+    "start_path": "/05-doc-current-stale-release/index.html",
+    "expected_answer": "12 workers",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/05-doc-current-stale-release/v4.html"
+    ],
+    "answer_aliases": [
+      "12"
+    ]
+  },
+  {
+    "id": "06-doc-conflicting-current-pages",
+    "synthetic": true,
+    "category": "documentation",
+    "question": "What is the maximum automatic retry count in CedarRPC version 4?",
+    "start_path": "/06-doc-conflicting-current-pages/index.html",
+    "expected_answer": "",
+    "expected_status": "conflict",
+    "expected_source_paths": [
+      "/06-doc-conflicting-current-pages/reference-v4.html",
+      "/06-doc-conflicting-current-pages/guide-v4.html"
+    ],
+    "answer_aliases": [],
+    "target_version": "4"
+  },
+  {
+    "id": "07-doc-cross-version-comparison",
+    "synthetic": true,
+    "category": "documentation",
+    "question": "How did the FernAPI per-client request quota change from version 2 to version 3?",
+    "start_path": "/07-doc-cross-version-comparison/index.html",
+    "expected_answer": "from 40 to 80 requests per minute",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/07-doc-cross-version-comparison/v2.html",
+      "/07-doc-cross-version-comparison/v3.html"
+    ],
+    "answer_aliases": [
+      "40 requests per minute to 80 requests per minute",
+      "40 to 80",
+      "doubled from 40",
+      "The per-client request quota increased from 40 requests per minute in version 2 to 80 requests per minute in version 3."
+    ],
+    "target_version": "3"
+  },
+  {
+    "id": "08-doc-prerelease-distractor",
+    "synthetic": true,
+    "category": "documentation",
+    "question": "What is the default request timeout in BirchClient stable version 4?",
+    "start_path": "/08-doc-prerelease-distractor/index.html",
+    "expected_answer": "8 seconds",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/08-doc-prerelease-distractor/v4.html"
+    ],
+    "answer_aliases": [
+      "eight seconds"
+    ],
+    "target_version": "4"
+  },
+  {
+    "id": "09-web-table-cell",
+    "synthetic": true,
+    "category": "general",
+    "question": "On what day and during which hours does Amber Bay collect electronics?",
+    "start_path": "/09-web-table-cell/index.html",
+    "expected_answer": "First Saturday of each month, 09:00–12:00",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/09-web-table-cell/schedule.html"
+    ],
+    "answer_aliases": [
+      "first Saturday 09:00 to 12:00",
+      "first Saturday of each month from 09:00 to 12:00",
+      "first Saturday of each month from 9 am to noon"
+    ]
+  },
+  {
+    "id": "10-web-multi-hop-detail",
+    "synthetic": true,
+    "category": "general",
+    "question": "How much is the Mossbridge street-festival permit application fee?",
+    "start_path": "/10-web-multi-hop-detail/index.html",
+    "expected_answer": "$28",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/10-web-multi-hop-detail/festival-detail.html"
+    ],
+    "answer_aliases": [
+      "28 dollars",
+      "twenty eight dollars"
+    ]
+  },
+  {
+    "id": "11-web-missing-answer",
+    "synthetic": true,
+    "category": "general",
+    "question": "What is the telephone number for Cloudberry Theatre ticket refunds?",
+    "start_path": "/11-web-missing-answer/index.html",
+    "expected_answer": "",
+    "expected_status": "abstained",
+    "expected_source_paths": [],
+    "answer_aliases": []
+  },
+  {
+    "id": "12-web-conflicting-current-hours",
+    "synthetic": true,
+    "category": "general",
+    "question": "At what time does Silver Finch Museum close on Sundays in winter 2026?",
+    "start_path": "/12-web-conflicting-current-hours/index.html",
+    "expected_answer": "",
+    "expected_status": "conflict",
+    "expected_source_paths": [
+      "/12-web-conflicting-current-hours/hours.html",
+      "/12-web-conflicting-current-hours/winter-policy.html"
+    ],
+    "answer_aliases": []
+  },
+  {
+    "id": "13-web-inline-details",
+    "synthetic": true,
+    "category": "general",
+    "question": "Who can request a River Lantern Library digital card?",
+    "start_path": "/13-web-inline-details/index.html",
+    "expected_answer": "Residents aged 16 and over",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/13-web-inline-details/eligibility.html"
+    ],
+    "answer_aliases": [
+      "residents age 16 or older",
+      "residents aged 16 or older",
+      "residents aged 16 and above"
+    ]
+  },
+  {
+    "id": "14-web-conditional-route",
+    "synthetic": true,
+    "category": "general",
+    "question": "When does the first Wren Island ferry leave North Dock on a weekday?",
+    "start_path": "/14-web-conditional-route/index.html",
+    "expected_answer": "06:20",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/14-web-conditional-route/north.html"
+    ],
+    "answer_aliases": [
+      "6:20 am",
+      "6:20 in the morning"
+    ]
+  },
+  {
+    "id": "15-web-effective-date-policy",
+    "synthetic": true,
+    "category": "general",
+    "question": "Under Juniper Workshop’s current repair policy effective 2026-07-01, how long is the warranty for completed repairs?",
+    "start_path": "/15-web-effective-date-policy/index.html",
+    "expected_answer": "90-day",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/15-web-effective-date-policy/warranty-2026.html"
+    ],
+    "answer_aliases": [
+      "90 days",
+      "ninety days"
+    ]
+  },
+  {
+    "id": "16-web-two-source-mapping",
+    "synthetic": true,
+    "category": "general",
+    "question": "What is the Blue Lantern market daily permit fee for a book vendor?",
+    "start_path": "/16-web-two-source-mapping/index.html",
+    "expected_answer": "$18",
+    "expected_status": "answered",
+    "expected_source_paths": [
+      "/16-web-two-source-mapping/categories.html",
+      "/16-web-two-source-mapping/fees.html"
+    ],
+    "answer_aliases": [
+      "18 dollars",
+      "eighteen dollars"
+    ]
+  }
+]

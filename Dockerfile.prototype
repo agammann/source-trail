@@ -1,0 +1,15 @@
+# Portable Python coordinator prototype. This is not an official entry image.
+# Supply a model endpoint on the same machine or trusted local network.
+# Model weights, an inference runtime, and AMD GPU support are not included.
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+WORKDIR /app
+COPY --chown=65532:65532 sourcetrail /app/sourcetrail
+USER 65532:65532
+
+EXPOSE 8765
+ENTRYPOINT ["python", "-m", "sourcetrail"]
+CMD ["--help"]

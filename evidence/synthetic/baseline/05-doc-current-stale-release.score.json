@@ -1,0 +1,34 @@
+{
+  "case_id": "05-doc-current-stale-release",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": false,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/05-doc-current-stale-release/index.html",
+    "/05-doc-current-stale-release/v4.html"
+  ],
+  "expected_source_paths": [
+    "/05-doc-current-stale-release/v4.html"
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1574,
+    "output_tokens": 59,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 8453
+  },
+  "passed": false,
+  "errors": [
+    "source_set_mismatch: missing=[], extra=['/05-doc-current-stale-release/index.html']"
+  ],
+  "mode": "baseline",
+  "output_path": "05-doc-current-stale-release.json",
+  "wall_duration_ms": 8750
+}

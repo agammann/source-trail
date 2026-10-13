@@ -1,0 +1,269 @@
+{
+  "question": "Which decorator is used to cache get_settings in the FastAPI settings example?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "version": null
+    },
+    {
+      "url": "https://fastapi.tiangolo.com/tutorial/schema-extra-example/",
+      "title": "Declare Request Example Data - FastAPI",
+      "version": null
+    },
+    {
+      "url": "https://fastapi.tiangolo.com/newsletter/",
+      "title": "FastAPI and friends newsletter - FastAPI",
+      "version": null
+    },
+    {
+      "url": "https://fastapi.tiangolo.com/",
+      "title": "FastAPI - FastAPI",
+      "version": null
+    },
+    {
+      "url": "https://fastapi.tiangolo.com/de/",
+      "title": "FastAPI - FastAPI",
+      "version": null
+    },
+    {
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B320",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "Settings and testing¶",
+      "text": "from fastapi.testclient import TestClient from .config import Settings from .main import app, get_settings client = TestClient(app) def get_settings_override(): return Settings(admin_email=\"testing_admin@example.com\") app.dependency_overrides[get_settings] = get_settings_override def test_app(): response = client.get(\"/info\") data = response.json() assert data == { \"app_name\": \"Awesome API\", \"admin_email\": \"testing_admin@example.com\", \"items_per_user\": 50, }"
+    },
+    {
+      "block_id": "P1B325",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "Settings and testing¶",
+      "text": "from fastapi.testclient import TestClient from .config import Settings from .main import app, get_settings client = TestClient(app) def get_settings_override(): return Settings(admin_email=\"testing_admin@example.com\") app.dependency_overrides[get_settings] = get_settings_override def test_app(): response = client.get(\"/info\") data = response.json() assert data == { \"app_name\": \"Awesome API\", \"admin_email\": \"testing_admin@example.com\", \"items_per_user\": 50, }"
+    },
+    {
+      "block_id": "P6B325",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "source_version": null,
+      "section": "Einstellungen und Tests¶",
+      "text": "from fastapi.testclient import TestClient from .config import Settings from .main import app, get_settings client = TestClient(app) def get_settings_override(): return Settings(admin_email=\"testing_admin@example.com\") app.dependency_overrides[get_settings] = get_settings_override def test_app(): response = client.get(\"/info\") data = response.json() assert data == { \"app_name\": \"Awesome API\", \"admin_email\": \"testing_admin@example.com\", \"items_per_user\": 50, }"
+    },
+    {
+      "block_id": "P6B330",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "source_version": null,
+      "section": "Einstellungen und Tests¶",
+      "text": "from fastapi.testclient import TestClient from .config import Settings from .main import app, get_settings client = TestClient(app) def get_settings_override(): return Settings(admin_email=\"testing_admin@example.com\") app.dependency_overrides[get_settings] = get_settings_override def test_app(): response = client.get(\"/info\") data = response.json() assert data == { \"app_name\": \"Awesome API\", \"admin_email\": \"testing_admin@example.com\", \"items_per_user\": 50, }"
+    },
+    {
+      "block_id": "P1B300",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "The main app file¶",
+      "text": "from functools import lru_cache from typing import Annotated from fastapi import Depends, FastAPI from .config import Settings app = FastAPI() @lru_cache def get_settings(): return Settings() @app.get(\"/info\") async def info(settings: Annotated[Settings, Depends(get_settings)]): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P1B305",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "The main app file¶",
+      "text": "from functools import lru_cache from fastapi import Depends, FastAPI from .config import Settings app = FastAPI() @lru_cache def get_settings(): return Settings() @app.get(\"/info\") async def info(settings: Settings = Depends(get_settings)): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P1B311",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "The main app file¶",
+      "text": "from functools import lru_cache from typing import Annotated from fastapi import Depends, FastAPI from .config import Settings app = FastAPI() @lru_cache def get_settings(): return Settings() @app.get(\"/info\") async def info(settings: Annotated[Settings, Depends(get_settings)]): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P1B316",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "The main app file¶",
+      "text": "from functools import lru_cache from fastapi import Depends, FastAPI from .config import Settings app = FastAPI() @lru_cache def get_settings(): return Settings() @app.get(\"/info\") async def info(settings: Settings = Depends(get_settings)): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P1B362",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "Creating the Settings only once with lru_cache¶",
+      "text": "from functools import lru_cache from typing import Annotated from fastapi import Depends, FastAPI from . import config app = FastAPI() @lru_cache def get_settings(): return config.Settings() @app.get(\"/info\") async def info(settings: Annotated[config.Settings, Depends(get_settings)]): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P1B367",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "Creating the Settings only once with lru_cache¶",
+      "text": "from functools import lru_cache from fastapi import Depends, FastAPI from . import config app = FastAPI() @lru_cache def get_settings(): return config.Settings() @app.get(\"/info\") async def info(settings: config.Settings = Depends(get_settings)): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P2B343",
+      "url": "https://fastapi.tiangolo.com/tutorial/schema-extra-example/",
+      "title": "Declare Request Example Data - FastAPI",
+      "source_version": null,
+      "section": "Pydantic and FastAPI examples¶",
+      "text": "In versions of FastAPI before 0.99.0 (0.99.0 and above use the newer OpenAPI 3.1.0) when you used example or examples with any of the other utilities (Query(), Body(), etc.) those examples were not added to the JSON Schema that describes that data (not even to OpenAPI's own version of JSON Schema), they were added directly to the path operation declaration in OpenAPI (outside the parts of OpenAPI that use JSON Schema)."
+    },
+    {
+      "block_id": "P6B305",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "source_version": null,
+      "section": "Die Haupt-Anwendungsdatei¶",
+      "text": "from functools import lru_cache from typing import Annotated from fastapi import Depends, FastAPI from .config import Settings app = FastAPI() @lru_cache def get_settings(): return Settings() @app.get(\"/info\") async def info(settings: Annotated[Settings, Depends(get_settings)]): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P6B310",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "source_version": null,
+      "section": "Die Haupt-Anwendungsdatei¶",
+      "text": "from functools import lru_cache from fastapi import Depends, FastAPI from .config import Settings app = FastAPI() @lru_cache def get_settings(): return Settings() @app.get(\"/info\") async def info(settings: Settings = Depends(get_settings)): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P6B316",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "source_version": null,
+      "section": "Die Haupt-Anwendungsdatei¶",
+      "text": "from functools import lru_cache from typing import Annotated from fastapi import Depends, FastAPI from .config import Settings app = FastAPI() @lru_cache def get_settings(): return Settings() @app.get(\"/info\") async def info(settings: Annotated[Settings, Depends(get_settings)]): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P6B321",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "source_version": null,
+      "section": "Die Haupt-Anwendungsdatei¶",
+      "text": "from functools import lru_cache from fastapi import Depends, FastAPI from .config import Settings app = FastAPI() @lru_cache def get_settings(): return Settings() @app.get(\"/info\") async def info(settings: Settings = Depends(get_settings)): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P6B367",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "source_version": null,
+      "section": "Die Settings nur einmal mittels lru_cache erstellen¶",
+      "text": "from functools import lru_cache from typing import Annotated from fastapi import Depends, FastAPI from . import config app = FastAPI() @lru_cache def get_settings(): return config.Settings() @app.get(\"/info\") async def info(settings: Annotated[config.Settings, Depends(get_settings)]): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P6B372",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "source_version": null,
+      "section": "Die Settings nur einmal mittels lru_cache erstellen¶",
+      "text": "from functools import lru_cache from fastapi import Depends, FastAPI from . import config app = FastAPI() @lru_cache def get_settings(): return config.Settings() @app.get(\"/info\") async def info(settings: config.Settings = Depends(get_settings)): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P1B233",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "Settings and Environment Variables¶",
+      "text": "In many cases your application could need some external settings or configurations, for example secret keys, database credentials, credentials for email services, etc."
+    },
+    {
+      "block_id": "P1B255",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "source_version": null,
+      "section": "Create the Settings object¶",
+      "text": "from fastapi import FastAPI from pydantic_settings import BaseSettings class Settings(BaseSettings): app_name: str = \"Awesome API\" admin_email: str items_per_user: int = 50 settings = Settings() app = FastAPI() @app.get(\"/info\") async def info(): return { \"app_name\": settings.app_name, \"admin_email\": settings.admin_email, \"items_per_user\": settings.items_per_user, }"
+    },
+    {
+      "block_id": "P4B390",
+      "url": "https://fastapi.tiangolo.com/",
+      "title": "FastAPI - FastAPI",
+      "source_version": null,
+      "section": "Recap¶",
+      "text": "Coming back to the previous code example, FastAPI will:"
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "https://fastapi.tiangolo.com/advanced/settings/",
+      "title": "Settings and Environment Variables - FastAPI",
+      "blocks": 389,
+      "elapsed_ms": 313,
+      "sha256": "7a27df89ffb24c227fc767cdb03efce64db0522880c85356c5786912a0d60a6c",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://fastapi.tiangolo.com/tutorial/schema-extra-example/",
+      "title": "Declare Request Example Data - FastAPI",
+      "blocks": 356,
+      "elapsed_ms": 297,
+      "sha256": "edcdf7ff2df7d5dbefebfce86dd0a4f0a69318b86affbd3fe70b25ebbbc9239c",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://fastapi.tiangolo.com/newsletter/",
+      "title": "FastAPI and friends newsletter - FastAPI",
+      "blocks": 202,
+      "elapsed_ms": 515,
+      "sha256": "734d5d289910387a1b12c621492655e2378cb6886736320a36e78886303aa2dd",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://fastapi.tiangolo.com/",
+      "title": "FastAPI - FastAPI",
+      "blocks": 477,
+      "elapsed_ms": 282,
+      "sha256": "99271486ca26d5f953df2b82b9bfc748d17fe400b8bee16dd997597b2516f872",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://fastapi.tiangolo.com/de/",
+      "title": "FastAPI - FastAPI",
+      "blocks": 481,
+      "elapsed_ms": 297,
+      "sha256": "cb915b41f403e5afd55d4eeb898ded5856066a8951803736a5d5f7ee66fea22d",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://fastapi.tiangolo.com/de/advanced/settings/",
+      "title": "Einstellungen und Umgebungsvariablen - FastAPI",
+      "blocks": 394,
+      "elapsed_ms": 328,
+      "sha256": "2fd2f9e09cd042ef7eea1c5928cccdc52aea60b8b280ad00a161deab039b09cd",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 6,
+    "successful_pages": 6,
+    "model_calls": 1,
+    "input_tokens": 3254,
+    "output_tokens": 244,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 24266
+  },
+  "status": "failed",
+  "answer": "",
+  "citations": [],
+  "error": "Response answer or citations are invalid."
+}

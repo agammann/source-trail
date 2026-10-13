@@ -1,0 +1,23 @@
+{
+  "provider_calls": 1,
+  "raw_type": "dict",
+  "raw_status": "answered",
+  "answer_type": "str",
+  "answer_length": 9,
+  "citations_type": "list",
+  "citation_count": 12,
+  "query_status": "failed",
+  "query_error": "Response answer or citations are invalid.",
+  "metrics": {
+    "pages": 6,
+    "successful_pages": 6,
+    "model_calls": 1,
+    "input_tokens": 3254,
+    "output_tokens": 244,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 24266
+  },
+  "raw_path": "live-fastapi-provider-raw.json",
+  "query_path": "live-fastapi-recorded-query.json"
+}

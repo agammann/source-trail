@@ -1,0 +1,32 @@
+{
+  "case_id": "h05-multiple-table-context",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": true,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/h05-multiple-table-context/index.html"
+  ],
+  "expected_source_paths": [
+    "/h05-multiple-table-context/index.html"
+  ],
+  "metrics": {
+    "pages": 1,
+    "successful_pages": 1,
+    "model_calls": 1,
+    "input_tokens": 1245,
+    "output_tokens": 61,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 7047
+  },
+  "passed": true,
+  "errors": [],
+  "mode": "baseline",
+  "classification": "stress-development",
+  "output_path": "h05-multiple-table-context.json",
+  "wall_duration_ms": 7329
+}

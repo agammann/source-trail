@@ -1,0 +1,127 @@
+{
+  "question": "On what day and during which hours does Amber Bay collect electronics?",
+  "requested_version": null,
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "source_version": null,
+      "section": "Amber Bay collection services",
+      "text": "Amber Bay collection services"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Amber Bay collection timetable"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Material | Day | Time"
+    },
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Electronics | First Saturday of each month | 09:00–12:00",
+      "table_header": "Material | Day | Time"
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "source_version": null,
+      "section": "Amber Bay collection services",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "source_version": null,
+      "section": "Amber Bay collection services",
+      "text": "Collection schedule by material"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Glass | Every Tuesday | 08:00–10:00",
+      "table_header": "Material | Day | Time"
+    },
+    {
+      "block_id": "P2B6",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Cardboard | Every Friday | 13:00–15:00",
+      "table_header": "Material | Day | Time"
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "blocks": 3,
+      "elapsed_ms": 15,
+      "sha256": "3aed59450186d3ecd5fbec4f7fbc35549b5967bc176bcacd511644c59d10167a",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "blocks": 6,
+      "elapsed_ms": 0,
+      "sha256": "26cffc211e3f721d9232242c4fc1290e31ac975e9c8a84065b1fa3f425dde24a",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 1073,
+    "output_tokens": 14,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 3015
+  },
+  "status": "abstained",
+  "answer": "",
+  "citations": []
+}

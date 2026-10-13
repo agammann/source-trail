@@ -1,0 +1,108 @@
+{
+  "question": "What monthly Docklight Museum membership price applies to Quail County resident students in 2027?",
+  "requested_version": null,
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/index.html",
+      "title": "Docklight Museum membership directory",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/membership.html",
+      "title": "Docklight Museum general membership",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/index.html",
+      "title": "Docklight Museum membership directory",
+      "source_version": null,
+      "section": "Docklight Museum membership directory",
+      "text": "Docklight Museum membership directory"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/index.html",
+      "title": "Docklight Museum membership directory",
+      "source_version": null,
+      "section": "Docklight Museum membership directory",
+      "text": "Listed general monthly membership price"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/membership.html",
+      "title": "Docklight Museum general membership",
+      "source_version": null,
+      "section": "Docklight Museum general membership",
+      "text": "Docklight Museum general membership"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/membership.html",
+      "title": "Docklight Museum general membership",
+      "source_version": null,
+      "section": "Docklight Museum general membership",
+      "text": "The listed general monthly membership price is $22."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/index.html",
+      "title": "Docklight Museum membership directory",
+      "source_version": null,
+      "section": "Docklight Museum membership directory",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/membership.html",
+      "title": "Docklight Museum general membership",
+      "source_version": null,
+      "section": "Docklight Museum general membership",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/membership.html",
+      "title": "Docklight Museum general membership",
+      "source_version": null,
+      "section": "Docklight Museum general membership",
+      "text": "This page supplies no pricing eligibility rules and no effective date."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/index.html",
+      "title": "Docklight Museum membership directory",
+      "blocks": 3,
+      "elapsed_ms": 15,
+      "sha256": "6e52e3921933a57ffed098a17a56392fba77aa552e52dface64ca84136a27cc3",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:65243/h06-missing-query-qualifiers/membership.html",
+      "title": "Docklight Museum general membership",
+      "blocks": 4,
+      "elapsed_ms": 16,
+      "sha256": "bac927747a1b8e0944bb7e5a4bcd732fcb470191f4b09cdca29ba1707186ad0a",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 889,
+    "output_tokens": 14,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 2343
+  },
+  "status": "abstained",
+  "answer": "",
+  "citations": []
+}

@@ -1,0 +1,167 @@
+{
+  "question": "At what time does Silver Finch Museum close on Sundays in winter 2026?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/index.html",
+      "title": "Silver Finch Museum winter hours",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/winter-policy.html",
+      "title": "Silver Finch Museum winter policy — current",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/hours.html",
+      "title": "Silver Finch Museum visitor hours — current",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/winter-policy.html",
+      "title": "Silver Finch Museum winter policy — current",
+      "source_version": null,
+      "section": "Silver Finch Museum winter policy — current",
+      "text": "Silver Finch Museum winter policy — current"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/winter-policy.html",
+      "title": "Silver Finch Museum winter policy — current",
+      "source_version": null,
+      "section": "Silver Finch Museum winter policy — current",
+      "text": "Updated 2026-09-15. For winter 2026, the museum closes at 18:00 on Sundays."
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/hours.html",
+      "title": "Silver Finch Museum visitor hours — current",
+      "source_version": null,
+      "section": "Silver Finch Museum visitor hours — current",
+      "text": "Updated 2026-09-15. For winter 2026, the museum closes at 17:00 on Sundays."
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/hours.html",
+      "title": "Silver Finch Museum visitor hours — current",
+      "source_version": null,
+      "section": "Silver Finch Museum visitor hours — current",
+      "text": "Silver Finch Museum visitor hours — current"
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/index.html",
+      "title": "Silver Finch Museum winter hours",
+      "source_version": null,
+      "section": "Silver Finch Museum winter hours",
+      "text": "Silver Finch Museum winter hours"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/winter-policy.html",
+      "title": "Silver Finch Museum winter policy — current",
+      "source_version": null,
+      "section": "Silver Finch Museum winter policy — current",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/hours.html",
+      "title": "Silver Finch Museum visitor hours — current",
+      "source_version": null,
+      "section": "Silver Finch Museum visitor hours — current",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/index.html",
+      "title": "Silver Finch Museum winter hours",
+      "source_version": null,
+      "section": "Silver Finch Museum winter hours",
+      "text": "Both linked pages are current for winter 2026 and were updated on the same day. Neither states that the other is superseded."
+    },
+    {
+      "block_id": "P1B5",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/index.html",
+      "title": "Silver Finch Museum winter hours",
+      "source_version": null,
+      "section": "Silver Finch Museum winter hours",
+      "text": "Winter visitor policy"
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/index.html",
+      "title": "Silver Finch Museum winter hours",
+      "source_version": null,
+      "section": "Silver Finch Museum winter hours",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/index.html",
+      "title": "Silver Finch Museum winter hours",
+      "source_version": null,
+      "section": "Silver Finch Museum winter hours",
+      "text": "Visitor opening hours"
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/index.html",
+      "title": "Silver Finch Museum winter hours",
+      "blocks": 5,
+      "elapsed_ms": 16,
+      "sha256": "ff79c39f83a0e199c0e7ab324e15207169c64f0d8cafa4de821d2a0836889898",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/winter-policy.html",
+      "title": "Silver Finch Museum winter policy — current",
+      "blocks": 3,
+      "elapsed_ms": 0,
+      "sha256": "4cf80f58014d208972351f52af1b904e64aa3ec8c22c31894517a66ab9380de5",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/hours.html",
+      "title": "Silver Finch Museum visitor hours — current",
+      "blocks": 3,
+      "elapsed_ms": 0,
+      "sha256": "a578934113de495c33a378a01b1e73751def1cb88a548727f04b4f0b766c1ebb",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1305,
+    "output_tokens": 103,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 9047
+  },
+  "status": "conflict",
+  "answer": "",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/winter-policy.html",
+      "quote": "Updated 2026-09-15. For winter 2026, the museum closes at 18:00 on Sundays.",
+      "block_id": "P2B3",
+      "source_version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/12-web-conflicting-current-hours/hours.html",
+      "quote": "Updated 2026-09-15. For winter 2026, the museum closes at 17:00 on Sundays.",
+      "block_id": "P3B3",
+      "source_version": null
+    }
+  ]
+}

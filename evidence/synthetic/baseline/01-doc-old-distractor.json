@@ -1,0 +1,185 @@
+{
+  "question": "What is the default retry policy in AsterQueue version 4?",
+  "requested_version": "4",
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/index.html",
+      "title": "AsterQueue documentation",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v4.html",
+      "title": "AsterQueue v4 retry policy — current stable",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v2.html",
+      "title": "AsterQueue v2 retry policy — archived",
+      "version": "2"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v4.html",
+      "title": "AsterQueue v4 retry policy — current stable",
+      "source_version": "4",
+      "section": "AsterQueue v4 retry policy — current stable",
+      "text": "Version 4 uses the adaptive retry policy by default."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v2.html",
+      "title": "AsterQueue v2 retry policy — archived",
+      "source_version": "2",
+      "section": "AsterQueue v2 retry policy — archived",
+      "text": "Version 2 uses the fixed retry policy by default."
+    },
+    {
+      "block_id": "P1B5",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/index.html",
+      "title": "AsterQueue documentation",
+      "source_version": null,
+      "section": "AsterQueue documentation",
+      "text": "Version 4 retry policy (current stable)"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v4.html",
+      "title": "AsterQueue v4 retry policy — current stable",
+      "source_version": "4",
+      "section": "AsterQueue v4 retry policy — current stable",
+      "text": "AsterQueue v4 retry policy — current stable"
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v2.html",
+      "title": "AsterQueue v2 retry policy — archived",
+      "source_version": "2",
+      "section": "AsterQueue v2 retry policy — archived",
+      "text": "AsterQueue v2 retry policy — archived"
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/index.html",
+      "title": "AsterQueue documentation",
+      "source_version": null,
+      "section": "AsterQueue documentation",
+      "text": "Version 2 retry policy (archived)"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v4.html",
+      "title": "AsterQueue v4 retry policy — current stable",
+      "source_version": "4",
+      "section": "AsterQueue v4 retry policy — current stable",
+      "text": "Documentation version: 4."
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v2.html",
+      "title": "AsterQueue v2 retry policy — archived",
+      "source_version": "2",
+      "section": "AsterQueue v2 retry policy — archived",
+      "text": "Documentation version: 2."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/index.html",
+      "title": "AsterQueue documentation",
+      "source_version": null,
+      "section": "AsterQueue documentation",
+      "text": "AsterQueue documentation"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/index.html",
+      "title": "AsterQueue documentation",
+      "source_version": null,
+      "section": "AsterQueue documentation",
+      "text": "AsterQueue retry-policy guides:"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v4.html",
+      "title": "AsterQueue v4 retry policy — current stable",
+      "source_version": "4",
+      "section": "AsterQueue v4 retry policy — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v2.html",
+      "title": "AsterQueue v2 retry policy — archived",
+      "source_version": "2",
+      "section": "AsterQueue v2 retry policy — archived",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B5",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v2.html",
+      "title": "AsterQueue v2 retry policy — archived",
+      "source_version": "2",
+      "section": "AsterQueue v2 retry policy — archived",
+      "text": "This archived release is not the current stable release."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/index.html",
+      "title": "AsterQueue documentation",
+      "source_version": null,
+      "section": "AsterQueue documentation",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/index.html",
+      "title": "AsterQueue documentation",
+      "blocks": 5,
+      "elapsed_ms": 94,
+      "sha256": "c633ab5dc3e2c9f12656595a1f7328451eb463d976203be74ee3812001922ea0",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v4.html",
+      "title": "AsterQueue v4 retry policy — current stable",
+      "blocks": 4,
+      "elapsed_ms": 0,
+      "sha256": "5f17e0a76d53a3e7dffb85083ce84410cb694bdd3bdebed42399123757354c7f",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v2.html",
+      "title": "AsterQueue v2 retry policy — archived",
+      "blocks": 5,
+      "elapsed_ms": 16,
+      "sha256": "c134fb19aabd9325dda2c0cd3a1b0a844afb5ce7e615eb20993ca93e56b4c878",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1545,
+    "output_tokens": 38,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 5594
+  },
+  "status": "answered",
+  "answer": "adaptive retry policy",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:56521/01-doc-old-distractor/v4.html",
+      "quote": "Version 4 uses the adaptive retry policy by default.",
+      "block_id": "P2B4",
+      "source_version": "4"
+    }
+  ]
+}

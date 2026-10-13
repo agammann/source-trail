@@ -1,0 +1,163 @@
+{
+  "question": "How did the FernAPI per-client request quota change from version 2 to version 3?",
+  "requested_version": "3",
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "version": "2"
+    },
+    {
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "version": "3"
+    },
+    {
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "version": "2"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "source_version": "3",
+      "section": "FernAPI v3 request quota — current stable",
+      "text": "The per-client request quota in version 3 is 80 requests per minute."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "source_version": "2",
+      "section": "FernAPI v2 request quota — archived",
+      "text": "The per-client request quota in version 2 is 40 requests per minute."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "source_version": "3",
+      "section": "FernAPI v3 request quota — current stable",
+      "text": "FernAPI v3 request quota — current stable"
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "source_version": "2",
+      "section": "FernAPI v2 request quota — archived",
+      "text": "FernAPI v2 request quota — archived"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "source_version": "2",
+      "section": "FernAPI request quotas",
+      "text": "Version 2 quota (archived)"
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "source_version": "2",
+      "section": "FernAPI request quotas",
+      "text": "Version 3 quota (current stable)"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "source_version": "3",
+      "section": "FernAPI v3 request quota — current stable",
+      "text": "Documentation version: 3."
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "source_version": "2",
+      "section": "FernAPI v2 request quota — archived",
+      "text": "Documentation version: 2."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "source_version": "2",
+      "section": "FernAPI request quotas",
+      "text": "FernAPI request quotas"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "source_version": "3",
+      "section": "FernAPI v3 request quota — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "source_version": "2",
+      "section": "FernAPI v2 request quota — archived",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "source_version": "2",
+      "section": "FernAPI request quotas",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "blocks": 4,
+      "elapsed_ms": 16,
+      "sha256": "676747e62696c8cd20096c5d6f6c4bf2f0377e4054a87da44c4bfcc9ae25c9c6",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "blocks": 4,
+      "elapsed_ms": 31,
+      "sha256": "a5d7098365442245e47ac97177e1415279950adeb1f1104e8d74a9891c8f0f14",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "blocks": 4,
+      "elapsed_ms": 15,
+      "sha256": "6858cf6f05c5dd69f92b488a05c81503263b758d0ce6c83bf28e3d1321e6cf25",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1376,
+    "output_tokens": 97,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 10875
+  },
+  "status": "failed",
+  "answer": "",
+  "citations": [],
+  "error": "A cited passage is not an exact substring of the retrieved block."
+}

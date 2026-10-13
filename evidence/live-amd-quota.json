@@ -1,0 +1,124 @@
+{
+  "question": "How many hours per day can a GPU notebook session run in the AMD AI League?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
+      "title": "AMD AI League AI Hackathon | lablab.ai",
+      "version": null
+    },
+    {
+      "url": "https://lablab.ai/sso?callbackUrl=%2Fai-hackathons%2Famd-lablab-ai-academy-challenge%3Fenroll%3Dtrue",
+      "title": "LabLab - The #1 Ecosystem for AI Builders",
+      "version": null
+    },
+    {
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/live",
+      "title": "Live Dashboard",
+      "version": null
+    },
+    {
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/sahariar-dev/neuralroute-amd-smart-model-router-on-rocm-62",
+      "title": "AI app: NeuralRoute AMD: Smart Model Router on ROCm 6.2 for AMD AI League",
+      "version": null
+    },
+    {
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/blue-river-technology/blue-river-safr-governed-ai-agents-on-amd",
+      "title": "AI app: Blue River SAFR: Governed AI Agents on AMD for AMD AI League",
+      "version": null
+    },
+    {
+      "url": "https://lablab.ai/tech",
+      "title": "Technologies in LabLab",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B186",
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
+      "title": "AMD AI League AI Hackathon | lablab.ai",
+      "source_version": null,
+      "section": "Questions",
+      "text": "GPU sessions are capped at 3 hours of running time per day, and the quota refreshes every 24 hours. An idle session still consumes your quota because the timer measures how long the pod exists, not how long you are actively typing. When you stop working, press “Turn-off Session” so you do not use quota unnecessarily."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
+      "title": "AMD AI League AI Hackathon | lablab.ai",
+      "blocks": 240,
+      "elapsed_ms": 1171,
+      "sha256": "16d6690ae4e8c9c8479c1ab8f7bdcd3f1acba04c3fc60dcaf61ab6322457bcd1",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://lablab.ai/sso?callbackUrl=%2Fai-hackathons%2Famd-lablab-ai-academy-challenge%3Fenroll%3Dtrue",
+      "title": "LabLab - The #1 Ecosystem for AI Builders",
+      "blocks": 38,
+      "elapsed_ms": 547,
+      "sha256": "fe0fec4005125e2638c26c9630a41d878bd5f36fc554ba41a77dbf17284d2fba",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/live",
+      "title": "Live Dashboard",
+      "blocks": 307,
+      "elapsed_ms": 2312,
+      "sha256": "485288fef313d5dcd50749a0dd728f93ef9d0184609153c0f591d3f908caf2ae",
+      "truncated": true
+    },
+    {
+      "action": "read",
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/sahariar-dev/neuralroute-amd-smart-model-router-on-rocm-62",
+      "title": "AI app: NeuralRoute AMD: Smart Model Router on ROCm 6.2 for AMD AI League",
+      "blocks": 37,
+      "elapsed_ms": 813,
+      "sha256": "a2a42f3b81c93d5e1da84c5dff73e7ca80d725688da2589e3494c70e87b1a1b0",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/blue-river-technology/blue-river-safr-governed-ai-agents-on-amd",
+      "title": "AI app: Blue River SAFR: Governed AI Agents on AMD for AMD AI League",
+      "blocks": 37,
+      "elapsed_ms": 687,
+      "sha256": "2588c4601536e96c6d75ba4206b08ca9a49fc8d116e2f96a9fdcb971fc07a65e",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://lablab.ai/tech",
+      "title": "Technologies in LabLab",
+      "blocks": 560,
+      "elapsed_ms": 1343,
+      "sha256": "884b516564702e0ecdd79ce215c9742c00135c9ff38c9a497b249ecd1f6ba701",
+      "truncated": true
+    }
+  ],
+  "metrics": {
+    "pages": 6,
+    "successful_pages": 6,
+    "model_calls": 1,
+    "input_tokens": 2657,
+    "output_tokens": 40,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 16031
+  },
+  "status": "answered",
+  "answer": "3",
+  "citations": [
+    {
+      "url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
+      "quote": "GPU sessions are capped at 3 hours of running time per day",
+      "block_id": "P1B186",
+      "source_version": null
+    }
+  ],
+  "public_snapshot_scope": "Only cited blocks retained; complete local retrieval records kept separately."
+}

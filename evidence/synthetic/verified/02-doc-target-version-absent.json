@@ -1,0 +1,49 @@
+{
+  "question": "How many simultaneous client connections does PebbleStore version 5 permit?",
+  "requested_version": "5",
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "version": "3"
+    },
+    {
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "version": "3"
+    }
+  ],
+  "evidence": [],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "blocks": 5,
+      "elapsed_ms": 16,
+      "sha256": "e6435fbf5149527d576b2b27c062bdb6e623e3ccbfff52c92404cd136568bb23",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "blocks": 5,
+      "elapsed_ms": 16,
+      "sha256": "b3bc79b27dbaca3e7849e4227c4928e3ac00e35b7c7fbcbbb13dae3d1241a29a",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "duration_ms": 32
+  },
+  "status": "abstained",
+  "answer": "",
+  "citations": []
+}

@@ -1,0 +1,32 @@
+{
+  "case_id": "h01-late-code-fact",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": true,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/h01-late-code-fact/v6.html"
+  ],
+  "expected_source_paths": [
+    "/h01-late-code-fact/v6.html"
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 2861,
+    "output_tokens": 37,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 12468
+  },
+  "passed": true,
+  "errors": [],
+  "mode": "baseline",
+  "classification": "stress-development",
+  "output_path": "h01-late-code-fact.json",
+  "wall_duration_ms": 12812
+}

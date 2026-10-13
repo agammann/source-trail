@@ -1,0 +1,33 @@
+{
+  "case_id": "12-web-conflicting-current-hours",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": true,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/12-web-conflicting-current-hours/hours.html",
+    "/12-web-conflicting-current-hours/winter-policy.html"
+  ],
+  "expected_source_paths": [
+    "/12-web-conflicting-current-hours/hours.html",
+    "/12-web-conflicting-current-hours/winter-policy.html"
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1305,
+    "output_tokens": 103,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 9047
+  },
+  "passed": true,
+  "errors": [],
+  "mode": "verified",
+  "output_path": "12-web-conflicting-current-hours.json",
+  "wall_duration_ms": 9422
+}

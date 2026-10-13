@@ -1,0 +1,31 @@
+{
+  "case_id": "13-web-inline-details",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": true,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/13-web-inline-details/eligibility.html"
+  ],
+  "expected_source_paths": [
+    "/13-web-inline-details/eligibility.html"
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 1020,
+    "output_tokens": 44,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 2813
+  },
+  "passed": true,
+  "errors": [],
+  "mode": "verified",
+  "output_path": "13-web-inline-details.json",
+  "wall_duration_ms": 4031
+}

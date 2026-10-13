@@ -1,0 +1,27 @@
+{
+  "case_id": "02-doc-target-version-absent",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": true,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [],
+  "expected_source_paths": [],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 1161,
+    "output_tokens": 14,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 3172
+  },
+  "passed": true,
+  "errors": [],
+  "mode": "baseline",
+  "output_path": "02-doc-target-version-absent.json",
+  "wall_duration_ms": 3547
+}

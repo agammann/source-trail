@@ -1,0 +1,35 @@
+{
+  "case_id": "07-doc-cross-version-comparison",
+  "synthetic": true,
+  "status_match": false,
+  "answer_match": false,
+  "source_match": false,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [],
+  "expected_source_paths": [
+    "/07-doc-cross-version-comparison/v2.html",
+    "/07-doc-cross-version-comparison/v3.html"
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1376,
+    "output_tokens": 97,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 10875
+  },
+  "passed": false,
+  "errors": [
+    "status_mismatch: expected answered, got 'failed'",
+    "answer_alias_mismatch",
+    "source_set_mismatch: missing=['/07-doc-cross-version-comparison/v2.html', '/07-doc-cross-version-comparison/v3.html'], extra=[]",
+    "process_exit_code: 1"
+  ],
+  "mode": "baseline",
+  "output_path": "07-doc-cross-version-comparison.json",
+  "wall_duration_ms": 11218
+}

@@ -1,0 +1,423 @@
+{
+  "benchmark": "Source Trail synthetic stress-development",
+  "synthetic": true,
+  "scope": "Six new fictional stress cases used for development diagnosis; no held-out, broad-web, or official-challenge score claim.",
+  "answer_scoring": "Exact full normalized token sequence against explicit aliases; no semantic judge.",
+  "citation_scoring": "Exact necessary source path set and quote presence in visible fixture text. Block IDs are shape-checked only.",
+  "model": "qwen3.5:4b-q4_K_M",
+  "page_limit_per_query": 6,
+  "by_mode": {
+    "baseline": {
+      "cases": 6,
+      "passed": 6,
+      "status_correct": 6,
+      "answer_alias_correct": 6,
+      "exact_sources_correct": 6,
+      "quotes_valid": 6,
+      "within_page_budget": 6,
+      "totals": {
+        "pages": 12,
+        "model_calls": 6,
+        "input_tokens": 8851,
+        "output_tokens": 263,
+        "duration_ms": 39904
+      }
+    },
+    "verified": {
+      "cases": 6,
+      "passed": 6,
+      "status_correct": 6,
+      "answer_alias_correct": 6,
+      "exact_sources_correct": 6,
+      "quotes_valid": 6,
+      "within_page_budget": 6,
+      "totals": {
+        "pages": 12,
+        "model_calls": 6,
+        "input_tokens": 7278,
+        "output_tokens": 263,
+        "duration_ms": 22172
+      }
+    }
+  },
+  "failures": [],
+  "cases": [
+    {
+      "case_id": "h01-late-code-fact",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h01-late-code-fact/v6.html"
+      ],
+      "expected_source_paths": [
+        "/h01-late-code-fact/v6.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 2861,
+        "output_tokens": 37,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 12468
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "classification": "stress-development",
+      "output_path": "h01-late-code-fact.json",
+      "wall_duration_ms": 12812
+    },
+    {
+      "case_id": "h01-late-code-fact",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h01-late-code-fact/v6.html"
+      ],
+      "expected_source_paths": [
+        "/h01-late-code-fact/v6.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 2861,
+        "output_tokens": 37,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 2641
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "classification": "stress-development",
+      "output_path": "h01-late-code-fact.json",
+      "wall_duration_ms": 2985
+    },
+    {
+      "case_id": "h02-numeric-version-suffix",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h02-numeric-version-suffix/v4.html"
+      ],
+      "expected_source_paths": [
+        "/h02-numeric-version-suffix/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1378,
+        "output_tokens": 45,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 5921
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "classification": "stress-development",
+      "output_path": "h02-numeric-version-suffix.json",
+      "wall_duration_ms": 6234
+    },
+    {
+      "case_id": "h02-numeric-version-suffix",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h02-numeric-version-suffix/v4.html"
+      ],
+      "expected_source_paths": [
+        "/h02-numeric-version-suffix/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 646,
+        "output_tokens": 45,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 3984
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "classification": "stress-development",
+      "output_path": "h02-numeric-version-suffix.json",
+      "wall_duration_ms": 4297
+    },
+    {
+      "case_id": "h03-unseparated-prerelease",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h03-unseparated-prerelease/v4.html"
+      ],
+      "expected_source_paths": [
+        "/h03-unseparated-prerelease/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1576,
+        "output_tokens": 41,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 5906
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "classification": "stress-development",
+      "output_path": "h03-unseparated-prerelease.json",
+      "wall_duration_ms": 6219
+    },
+    {
+      "case_id": "h03-unseparated-prerelease",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h03-unseparated-prerelease/v4.html"
+      ],
+      "expected_source_paths": [
+        "/h03-unseparated-prerelease/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 735,
+        "output_tokens": 41,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 4594
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "classification": "stress-development",
+      "output_path": "h03-unseparated-prerelease.json",
+      "wall_duration_ms": 4968
+    },
+    {
+      "case_id": "h04-same-page-conflict",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h04-same-page-conflict/index.html"
+      ],
+      "expected_source_paths": [
+        "/h04-same-page-conflict/index.html"
+      ],
+      "metrics": {
+        "pages": 1,
+        "successful_pages": 1,
+        "model_calls": 1,
+        "input_tokens": 902,
+        "output_tokens": 65,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 6219
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "classification": "stress-development",
+      "output_path": "h04-same-page-conflict.json",
+      "wall_duration_ms": 6500
+    },
+    {
+      "case_id": "h04-same-page-conflict",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h04-same-page-conflict/index.html"
+      ],
+      "expected_source_paths": [
+        "/h04-same-page-conflict/index.html"
+      ],
+      "metrics": {
+        "pages": 1,
+        "successful_pages": 1,
+        "model_calls": 1,
+        "input_tokens": 902,
+        "output_tokens": 65,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 5375
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "classification": "stress-development",
+      "output_path": "h04-same-page-conflict.json",
+      "wall_duration_ms": 5687
+    },
+    {
+      "case_id": "h05-multiple-table-context",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h05-multiple-table-context/index.html"
+      ],
+      "expected_source_paths": [
+        "/h05-multiple-table-context/index.html"
+      ],
+      "metrics": {
+        "pages": 1,
+        "successful_pages": 1,
+        "model_calls": 1,
+        "input_tokens": 1245,
+        "output_tokens": 61,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 7047
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "classification": "stress-development",
+      "output_path": "h05-multiple-table-context.json",
+      "wall_duration_ms": 7329
+    },
+    {
+      "case_id": "h05-multiple-table-context",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/h05-multiple-table-context/index.html"
+      ],
+      "expected_source_paths": [
+        "/h05-multiple-table-context/index.html"
+      ],
+      "metrics": {
+        "pages": 1,
+        "successful_pages": 1,
+        "model_calls": 1,
+        "input_tokens": 1245,
+        "output_tokens": 61,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 4437
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "classification": "stress-development",
+      "output_path": "h05-multiple-table-context.json",
+      "wall_duration_ms": 4750
+    },
+    {
+      "case_id": "h06-missing-query-qualifiers",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 889,
+        "output_tokens": 14,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 2343
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "classification": "stress-development",
+      "output_path": "h06-missing-query-qualifiers.json",
+      "wall_duration_ms": 2625
+    },
+    {
+      "case_id": "h06-missing-query-qualifiers",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 889,
+        "output_tokens": 14,
+        "usage_recorded": true,
+        "model": "qwen3.5:4b-q4_K_M",
+        "duration_ms": 1141
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "classification": "stress-development",
+      "output_path": "h06-missing-query-qualifiers.json",
+      "wall_duration_ms": 1422
+    }
+  ],
+  "classification": "stress-development"
+}

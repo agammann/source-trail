@@ -1,0 +1,10 @@
+{
+  "classification": "stress-development",
+  "synthetic": true,
+  "separate_from_initial_16_case_corpus": true,
+  "unused_in_prior_model_runs_at_creation": true,
+  "inference_run_by_fixture_author": false,
+  "reason": "New deterministic stress probes exposed implementation boundaries and are intended to inform fixes before any subsequent model run.",
+  "claim_boundary": "This corpus is not a blind or statistically independent holdout and must not be reported as a held-out score.",
+  "tuning_policy": "Any implementation, prompt, or answer-rubric adaptation informed by these cases is development work; preserve that label in subsequent reports."
+}

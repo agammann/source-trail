@@ -1,0 +1,132 @@
+{
+  "question": "How many simultaneous client connections does PebbleStore version 5 permit?",
+  "requested_version": "5",
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "version": "3"
+    },
+    {
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "version": "3"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "source_version": "3",
+      "section": "PebbleStore v3 connections",
+      "text": "Version 3 permits 10 simultaneous client connections."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "source_version": "3",
+      "section": "PebbleStore v3 connections",
+      "text": "PebbleStore v3 connections"
+    },
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "source_version": "3",
+      "section": "PebbleStore v3 connections",
+      "text": "This page makes no statement about version 5."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "source_version": "3",
+      "section": "PebbleStore available documentation",
+      "text": "No version 5 documentation is available."
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "source_version": "3",
+      "section": "PebbleStore v3 connections",
+      "text": "Documentation version: 3."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "source_version": "3",
+      "section": "PebbleStore available documentation",
+      "text": "PebbleStore available documentation"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "source_version": "3",
+      "section": "PebbleStore available documentation",
+      "text": "Only version 3 documentation is published in this fixture."
+    },
+    {
+      "block_id": "P1B5",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "source_version": "3",
+      "section": "PebbleStore available documentation",
+      "text": "Version 3 connection limits"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "source_version": "3",
+      "section": "PebbleStore v3 connections",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "source_version": "3",
+      "section": "PebbleStore available documentation",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/index.html",
+      "title": "PebbleStore available documentation",
+      "blocks": 5,
+      "elapsed_ms": 16,
+      "sha256": "e6435fbf5149527d576b2b27c062bdb6e623e3ccbfff52c92404cd136568bb23",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/02-doc-target-version-absent/v3.html",
+      "title": "PebbleStore v3 connections",
+      "blocks": 5,
+      "elapsed_ms": 0,
+      "sha256": "b3bc79b27dbaca3e7849e4227c4928e3ac00e35b7c7fbcbbb13dae3d1241a29a",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 1161,
+    "output_tokens": 14,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 3172
+  },
+  "status": "abstained",
+  "answer": "",
+  "citations": []
+}

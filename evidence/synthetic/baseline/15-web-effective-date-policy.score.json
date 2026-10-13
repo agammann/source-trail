@@ -1,0 +1,34 @@
+{
+  "case_id": "15-web-effective-date-policy",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": false,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/15-web-effective-date-policy/index.html",
+    "/15-web-effective-date-policy/warranty-2026.html"
+  ],
+  "expected_source_paths": [
+    "/15-web-effective-date-policy/warranty-2026.html"
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1465,
+    "output_tokens": 64,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 6625
+  },
+  "passed": false,
+  "errors": [
+    "source_set_mismatch: missing=[], extra=['/15-web-effective-date-policy/index.html']"
+  ],
+  "mode": "baseline",
+  "output_path": "15-web-effective-date-policy.json",
+  "wall_duration_ms": 6922
+}

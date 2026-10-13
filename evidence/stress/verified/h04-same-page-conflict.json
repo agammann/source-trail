@@ -1,0 +1,107 @@
+{
+  "question": "What is the current maximum concurrency for a standard MeadowTask workspace?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B5",
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "source_version": null,
+      "section": "Reference limit",
+      "text": "The maximum concurrency for a standard MeadowTask workspace is 14 jobs."
+    },
+    {
+      "block_id": "P1B7",
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "source_version": null,
+      "section": "Setup limit",
+      "text": "The maximum concurrency for a standard MeadowTask workspace is 21 jobs."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "source_version": null,
+      "section": "MeadowTask current standard-workspace concurrency",
+      "text": "MeadowTask current standard-workspace concurrency"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "source_version": null,
+      "section": "MeadowTask current standard-workspace concurrency",
+      "text": "Both statements below apply to the same standard workspace and the same current service plan. Neither section supersedes the other."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "source_version": null,
+      "section": "MeadowTask current standard-workspace concurrency",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "source_version": null,
+      "section": "Reference limit",
+      "text": "Reference limit"
+    },
+    {
+      "block_id": "P1B6",
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "source_version": null,
+      "section": "Setup limit",
+      "text": "Setup limit"
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "title": "MeadowTask current standard-workspace concurrency",
+      "blocks": 7,
+      "elapsed_ms": 31,
+      "sha256": "3c90a2dab48ebec1ccb78547199ed8211ef2e233d6dc605d151de25ed774106e",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 1,
+    "successful_pages": 1,
+    "model_calls": 1,
+    "input_tokens": 902,
+    "output_tokens": 65,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 5375
+  },
+  "status": "conflict",
+  "answer": "",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "quote": "The maximum concurrency for a standard MeadowTask workspace is 14 jobs.",
+      "block_id": "P1B5",
+      "source_version": null
+    },
+    {
+      "url": "http://127.0.0.1:65243/h04-same-page-conflict/index.html",
+      "quote": "The maximum concurrency for a standard MeadowTask workspace is 21 jobs.",
+      "block_id": "P1B7",
+      "source_version": null
+    }
+  ]
+}

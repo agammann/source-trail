@@ -1,0 +1,175 @@
+{
+  "question": "Under Juniper Workshop’s current repair policy effective 2026-07-01, how long is the warranty for completed repairs?",
+  "requested_version": null,
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/index.html",
+      "title": "Juniper Workshop repair warranties",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2026.html",
+      "title": "Juniper Workshop current repair warranty",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2024.html",
+      "title": "Juniper Workshop 2024 repair warranty — archived",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2026.html",
+      "title": "Juniper Workshop current repair warranty",
+      "source_version": null,
+      "section": "Juniper Workshop current repair warranty",
+      "text": "Juniper Workshop current repair warranty"
+    },
+    {
+      "block_id": "P1B5",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/index.html",
+      "title": "Juniper Workshop repair warranties",
+      "source_version": null,
+      "section": "Juniper Workshop repair warranties",
+      "text": "Current repair warranty, effective 2026-07-01"
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2024.html",
+      "title": "Juniper Workshop 2024 repair warranty — archived",
+      "source_version": null,
+      "section": "Juniper Workshop 2024 repair warranty — archived",
+      "text": "Juniper Workshop 2024 repair warranty — archived"
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2024.html",
+      "title": "Juniper Workshop 2024 repair warranty — archived",
+      "source_version": null,
+      "section": "Juniper Workshop 2024 repair warranty — archived",
+      "text": "Effective 2024-01-01 through 2026-06-30. Completed repairs carry a 30-day warranty."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/index.html",
+      "title": "Juniper Workshop repair warranties",
+      "source_version": null,
+      "section": "Juniper Workshop repair warranties",
+      "text": "The policy effective 2026-07-01 is current; the 2024 policy is archived."
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2026.html",
+      "title": "Juniper Workshop current repair warranty",
+      "source_version": null,
+      "section": "Juniper Workshop current repair warranty",
+      "text": "Effective 2026-07-01. This policy supersedes the 2024 repair-warranty policy."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2026.html",
+      "title": "Juniper Workshop current repair warranty",
+      "source_version": null,
+      "section": "Juniper Workshop current repair warranty",
+      "text": "Completed repairs carry a 90-day warranty."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/index.html",
+      "title": "Juniper Workshop repair warranties",
+      "source_version": null,
+      "section": "Juniper Workshop repair warranties",
+      "text": "Juniper Workshop repair warranties"
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/index.html",
+      "title": "Juniper Workshop repair warranties",
+      "source_version": null,
+      "section": "Juniper Workshop repair warranties",
+      "text": "2024 repair warranty (archived)"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2026.html",
+      "title": "Juniper Workshop current repair warranty",
+      "source_version": null,
+      "section": "Juniper Workshop current repair warranty",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2024.html",
+      "title": "Juniper Workshop 2024 repair warranty — archived",
+      "source_version": null,
+      "section": "Juniper Workshop 2024 repair warranty — archived",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/index.html",
+      "title": "Juniper Workshop repair warranties",
+      "source_version": null,
+      "section": "Juniper Workshop repair warranties",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/index.html",
+      "title": "Juniper Workshop repair warranties",
+      "blocks": 5,
+      "elapsed_ms": 32,
+      "sha256": "b80620acb8224fe941dd7553a84eea9fc7342984b2dc9327eb24ea35c7030454",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2026.html",
+      "title": "Juniper Workshop current repair warranty",
+      "blocks": 4,
+      "elapsed_ms": 0,
+      "sha256": "db8a9f05cc41c37a9caf21e6f97b1a86f34c5dc126e01721a0561ab7d97eb7e5",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2024.html",
+      "title": "Juniper Workshop 2024 repair warranty — archived",
+      "blocks": 3,
+      "elapsed_ms": 31,
+      "sha256": "80ad1a6756ad92ec264d94cd02789221a023fc90a8d043df6916a4a952371d5f",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1465,
+    "output_tokens": 64,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 6625
+  },
+  "status": "answered",
+  "answer": "90 days",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/warranty-2026.html",
+      "quote": "Completed repairs carry a 90-day warranty.",
+      "block_id": "P2B4",
+      "source_version": null
+    },
+    {
+      "url": "http://127.0.0.1:56521/15-web-effective-date-policy/index.html",
+      "quote": "The policy effective 2026-07-01 is current",
+      "block_id": "P1B3",
+      "source_version": null
+    }
+  ]
+}

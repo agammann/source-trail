@@ -1,0 +1,33 @@
+{
+  "case_id": "09-web-table-cell",
+  "synthetic": true,
+  "status_match": false,
+  "answer_match": false,
+  "source_match": false,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [],
+  "expected_source_paths": [
+    "/09-web-table-cell/schedule.html"
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 1073,
+    "output_tokens": 14,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 1687
+  },
+  "passed": false,
+  "errors": [
+    "status_mismatch: expected answered, got 'abstained'",
+    "answer_alias_mismatch",
+    "source_set_mismatch: missing=['/09-web-table-cell/schedule.html'], extra=[]"
+  ],
+  "mode": "verified",
+  "output_path": "09-web-table-cell.json",
+  "wall_duration_ms": 1984
+}

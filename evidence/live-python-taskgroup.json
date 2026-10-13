@@ -1,0 +1,124 @@
+{
+  "question": "What happens to the other tasks in an asyncio.TaskGroup when one task fails?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "version": null
+    },
+    {
+      "url": "https://docs.python.org/3/library/asyncio.html",
+      "title": "asyncio — Asynchronous I/O — Python 3.15.0 documentation",
+      "version": null
+    },
+    {
+      "url": "https://docs.python.org/3/library/asyncio-exceptions.html",
+      "title": "Exceptions — Python 3.15.0 documentation",
+      "version": null
+    },
+    {
+      "url": "https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html",
+      "title": "A conceptual overview of asyncio — Python 3.15.0 documentation",
+      "version": null
+    },
+    {
+      "url": "https://docs.python.org/3/library/asyncio-threading.html",
+      "title": "asyncio and free-threaded Python — Python 3.15.0 documentation",
+      "version": null
+    },
+    {
+      "url": "https://docs.python.org/3/contents.html",
+      "title": "Python Documentation contents — Python 3.15.0 documentation",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B147",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "The first time any of the tasks belonging to the group fails with an exception other than asyncio.CancelledError, the remaining tasks in the group are cancelled. No further tasks can then be added to the group. At this point, if the body of the async with statement is still active (i.e., __aexit__() hasn’t been called yet), the task directly containing the async with statement is also cancelled. The resulting asyncio.CancelledError will interrupt an await, but it will not bubble out of the containing async with statement."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "blocks": 472,
+      "elapsed_ms": 344,
+      "sha256": "5f56ecd33a47be3eeba236bc75221793dcf89cee26e7a2a4afe53fe9b6c3553f",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/library/asyncio.html",
+      "title": "asyncio — Asynchronous I/O — Python 3.15.0 documentation",
+      "blocks": 103,
+      "elapsed_ms": 141,
+      "sha256": "520da1a9a3f702179aca2e99462cf0bc49c77853d304f3678904c3c0b5ae73a3",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/library/asyncio-exceptions.html",
+      "title": "Exceptions — Python 3.15.0 documentation",
+      "blocks": 76,
+      "elapsed_ms": 125,
+      "sha256": "45590157b167cd3c99e3cf3df36923f3bc64c848ad364b268f7d2b791c0588a8",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html",
+      "title": "A conceptual overview of asyncio — Python 3.15.0 documentation",
+      "blocks": 166,
+      "elapsed_ms": 156,
+      "sha256": "cd99034208d1310215ad313668c05b529b5a6cf530e32c90ae28f482bfaeb5b3",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/library/asyncio-threading.html",
+      "title": "asyncio and free-threaded Python — Python 3.15.0 documentation",
+      "blocks": 80,
+      "elapsed_ms": 94,
+      "sha256": "2ddb4539059f30c3cf871fdd7ee7b36581ecdaeeadae1534a249468911e324e9",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/contents.html",
+      "title": "Python Documentation contents — Python 3.15.0 documentation",
+      "blocks": 3858,
+      "elapsed_ms": 531,
+      "sha256": "213be5d97b1066a71cafa213cba351854eff38e8d17c8bb90c74897e7a3e6f61",
+      "truncated": true
+    }
+  ],
+  "metrics": {
+    "pages": 6,
+    "successful_pages": 6,
+    "model_calls": 1,
+    "input_tokens": 3261,
+    "output_tokens": 62,
+    "usage_recorded": true,
+    "model": "qwen3.5:4b-q4_K_M",
+    "duration_ms": 13079
+  },
+  "status": "answered",
+  "answer": "The remaining tasks are cancelled.",
+  "citations": [
+    {
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "quote": "The first time any of the tasks belonging to the group fails with an exception other than asyncio.CancelledError, the remaining tasks in the group are cancelled.",
+      "block_id": "P1B147",
+      "source_version": null
+    }
+  ],
+  "public_snapshot_scope": "Only cited blocks retained; complete local retrieval records kept separately."
+}
