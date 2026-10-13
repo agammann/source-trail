@@ -29,8 +29,8 @@
   "validation": {
     "unit_tests": {
       "state": "passed",
-      "passed": 93,
-      "total": 93,
+      "passed": 98,
+      "total": 98,
       "evidence": "evidence/unit-tests.txt"
     },
     "local_model": {
@@ -103,7 +103,7 @@
       "reason": "Detailed interface and evaluator not yet available from public detail link"
     },
     "package": {
-      "state": "passed",
+      "state": "pending latest audit rebuild",
       "evidence": "evidence/package-verification.json",
       "checks": [
         "wheel build",
@@ -127,12 +127,19 @@
       "evidence": "evidence/recorded-response-revalidation.json"
     },
     "github_ci": {
-      "state": "passed",
+      "state": "pending latest audit fixes",
       "matrix": "Ubuntu and Windows, Python 3.11 and 3.12",
       "live_model_calls": false,
       "source_revision": "5c7e76374605286f965f2c567f5a9700cb504420",
       "url": "https://github.com/agammann/source-trail/actions/runs/38353115022",
       "evidence": "evidence/github-ci.json"
+    },
+    "evidence_selection_recheck": {
+      "state": "passed",
+      "mode_inputs": 44,
+      "unchanged": 44,
+      "new_model_calls": 0,
+      "evidence": "evidence/evidence-selection-recheck.json"
     }
   },
   "evidence_limits": [

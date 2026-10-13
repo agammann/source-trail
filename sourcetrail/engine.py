@@ -10,18 +10,23 @@ from .web import WebReader, WebReadError
 
 
 STOP = set("a an and are as at be by did do does for from how in is it of on or the to what when which with".split())
+VERSION_MARKER = re.compile(r"(?:\bversion\s*:?\s*|\brelease\s*:?\s*|(?:^|[/\s_-])v)(\d+(?:\.\d+)*(?:[a-z][\w.+-]*|[-+][\w.+-]+)?)(?=$|[/\s,:;!?()\[\]])", re.I)
 
 
 def tokens(text):
     return set(re.findall(r"[\w-]+", text.casefold())) - STOP
 
 
+def versions_in(text):
+    return [match.group(1).casefold() for match in VERSION_MARKER.finditer(text)]
+
+
 def version_of(page):
     candidates = [urlsplit(page.url).path, page.title, " ".join(page.blocks[:3])]
     for candidate in candidates:
-        match = re.search(r"(?:\bversion\s*:?\s*|\brelease\s*:?\s*|(?:^|[/\s_-])v)(\d+(?:\.\d+)*(?:[a-z][\w.+-]*|[-+][\w.+-]+)?)(?=$|[/\s,:;!?()\[\]])", candidate, re.I)
-        if match:
-            return match.group(1)
+        markers = versions_in(candidate)
+        if markers:
+            return markers[0]
     return None
 
 
@@ -34,7 +39,7 @@ def same_version(actual, target):
 
 
 def is_version_comparison(question):
-    mentioned = set(re.findall(r"\b(?:version\s*|v)(\d+(?:\.\d+)*)", question, re.I))
+    mentioned = set(versions_in(question))
     comparison_words = bool(re.search(r"\b(change|changed|changes|compare|compared|comparison|difference|differences|between|from|upgrade|upgrading)\b", question, re.I))
     return comparison_words and (len(mentioned) > 1 or bool(re.search(r"(?:previous|older|old)\s+version", question, re.I)))
 
@@ -67,14 +72,17 @@ def select_evidence(pages, question, target_version=None, mode="verified", limit
         heading = page.title
         table_header = ""
         prior_was_row = False
+        prior_table = None
         for bi, block in enumerate(page.blocks, 1):
             tag = page.block_tags[bi - 1] if bi <= len(page.block_tags) else ""
             if re.fullmatch(r"h[1-6]", tag):
                 heading = block
             row = tag == "tr" or " | " in block or block.startswith("| ") or block.endswith(" |")
-            if row and not prior_was_row:
+            table_id = page.block_tables[bi - 1] if bi <= len(page.block_tables) else None
+            if row and (not prior_was_row or table_id != prior_table):
                 table_header = block
             prior_was_row = row
+            prior_table = table_id
             page_score = len(query & tokens(page.title))
             if mode == "verified":
                 page_score += 10 if matching else 0
@@ -212,7 +220,7 @@ def query(question, urls, target_version=None, mode="verified", max_pages=6, all
             raw, use = (model or Ollama()).answer(question, evidence, target_version)
             metrics.update(use)
             metrics["usage_recorded"] = use.get("usage_recorded", all(isinstance(use.get(key), int) and not isinstance(use[key], bool) for key in ("input_tokens", "output_tokens")))
-            versions = re.findall(r"\b(?:version\s*|v)(\d+(?:\.\d+)*)", question, re.I)
+            versions = versions_in(question)
             result.update(validate_answer(raw, evidence, target_version, comparison, mode, versions))
         except ModelError as exc:
             result.update({"status": "failed", "answer": "", "citations": [], "error": str(exc)})

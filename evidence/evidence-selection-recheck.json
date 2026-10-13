@@ -1,0 +1,751 @@
+{
+  "check": "Fresh loopback acquisition plus current evidence selection against 44 saved synthetic/stress mode inputs",
+  "new_model_calls": 0,
+  "normalization": "Only evidence URL scheme and netloc/port replaced; paths, query strings, fragments, strings, object field order, list order, block IDs, headers, sections, and source versions retained.",
+  "current_git_head": "d6559572c9b2a28a7fd1129ad848331f940efe85",
+  "core_hashes_before": {
+    "sourcetrail/engine.py": "a47374417ee41c442280c49b98caf52e03aeb745ecacd2e7890acf85a783b990",
+    "sourcetrail/web.py": "fe9a7f7549e817efa595821ac48a911d15e27d9fe41686db5f1e306077ddc011"
+  },
+  "core_hashes_after": {
+    "sourcetrail/engine.py": "a47374417ee41c442280c49b98caf52e03aeb745ecacd2e7890acf85a783b990",
+    "sourcetrail/web.py": "fe9a7f7549e817efa595821ac48a911d15e27d9fe41686db5f1e306077ddc011"
+  },
+  "core_stable_during_check": true,
+  "case_mode_inputs": 44,
+  "unchanged": 44,
+  "changed": 0,
+  "records": [
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "01-doc-old-distractor",
+      "source_count": 3,
+      "source_order": [
+        "/01-doc-old-distractor/index.html",
+        "/01-doc-old-distractor/v4.html",
+        "/01-doc-old-distractor/v2.html"
+      ],
+      "stored_evidence_count": 14,
+      "current_evidence_count": 14,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "d82dbafb18e5ae27a4174535bccf2ad702f0fef548f22877536d80a75d0beeeb",
+      "current_sha256": "d82dbafb18e5ae27a4174535bccf2ad702f0fef548f22877536d80a75d0beeeb",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "02-doc-target-version-absent",
+      "source_count": 2,
+      "source_order": [
+        "/02-doc-target-version-absent/index.html",
+        "/02-doc-target-version-absent/v3.html"
+      ],
+      "stored_evidence_count": 10,
+      "current_evidence_count": 10,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "eceb214014e6ef1d2479364e5ca68fcd129718db21bd2fb96d4d86ea668e14d6",
+      "current_sha256": "eceb214014e6ef1d2479364e5ca68fcd129718db21bd2fb96d4d86ea668e14d6",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "03-doc-renamed-configuration",
+      "source_count": 3,
+      "source_order": [
+        "/03-doc-renamed-configuration/index.html",
+        "/03-doc-renamed-configuration/migration-v3.html",
+        "/03-doc-renamed-configuration/v2.html"
+      ],
+      "stored_evidence_count": 13,
+      "current_evidence_count": 13,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "d18d9108c0cec20ce774e19f8faff7310c93b0f19465c9484f23dec4adaa2fab",
+      "current_sha256": "d18d9108c0cec20ce774e19f8faff7310c93b0f19465c9484f23dec4adaa2fab",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "04-doc-conditional-default",
+      "source_count": 2,
+      "source_order": [
+        "/04-doc-conditional-default/index.html",
+        "/04-doc-conditional-default/cache-v3.html"
+      ],
+      "stored_evidence_count": 9,
+      "current_evidence_count": 9,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "5c690a875314e3a0362b2f8901ff040c90dabe21eb998f1e9242a14c0b76d9b8",
+      "current_sha256": "5c690a875314e3a0362b2f8901ff040c90dabe21eb998f1e9242a14c0b76d9b8",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "05-doc-current-stale-release",
+      "source_count": 3,
+      "source_order": [
+        "/05-doc-current-stale-release/index.html",
+        "/05-doc-current-stale-release/v4.html",
+        "/05-doc-current-stale-release/v2.html"
+      ],
+      "stored_evidence_count": 14,
+      "current_evidence_count": 14,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "1fbefc9f988a78f98090ff0e8d4eb83e95982182a1207cbedc67032f143a8274",
+      "current_sha256": "1fbefc9f988a78f98090ff0e8d4eb83e95982182a1207cbedc67032f143a8274",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "06-doc-conflicting-current-pages",
+      "source_count": 3,
+      "source_order": [
+        "/06-doc-conflicting-current-pages/index.html",
+        "/06-doc-conflicting-current-pages/reference-v4.html",
+        "/06-doc-conflicting-current-pages/guide-v4.html"
+      ],
+      "stored_evidence_count": 15,
+      "current_evidence_count": 15,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "5297e43e1aa961cc647faaef3c76788f6c0afa9d42aa851bb2d533b6870a4de5",
+      "current_sha256": "5297e43e1aa961cc647faaef3c76788f6c0afa9d42aa851bb2d533b6870a4de5",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "07-doc-cross-version-comparison",
+      "source_count": 3,
+      "source_order": [
+        "/07-doc-cross-version-comparison/index.html",
+        "/07-doc-cross-version-comparison/v3.html",
+        "/07-doc-cross-version-comparison/v2.html"
+      ],
+      "stored_evidence_count": 12,
+      "current_evidence_count": 12,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "7bb94d306c4cee9e3c41eaea96d880dbf779c8e0b59f3a7df60cb2f00c5b4d72",
+      "current_sha256": "7bb94d306c4cee9e3c41eaea96d880dbf779c8e0b59f3a7df60cb2f00c5b4d72",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "08-doc-prerelease-distractor",
+      "source_count": 3,
+      "source_order": [
+        "/08-doc-prerelease-distractor/index.html",
+        "/08-doc-prerelease-distractor/v4.html",
+        "/08-doc-prerelease-distractor/v5-beta.html"
+      ],
+      "stored_evidence_count": 14,
+      "current_evidence_count": 14,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "0aead44af6db0e7d8c6a8366a81e2db79969ccd169a195a2b67a38f9e88a654c",
+      "current_sha256": "0aead44af6db0e7d8c6a8366a81e2db79969ccd169a195a2b67a38f9e88a654c",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "09-web-table-cell",
+      "source_count": 2,
+      "source_order": [
+        "/09-web-table-cell/index.html",
+        "/09-web-table-cell/schedule.html"
+      ],
+      "stored_evidence_count": 9,
+      "current_evidence_count": 9,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "3d76513fb6f32f642b0df6e8d98570770d8952a6593bc3b376f9c018d99437a0",
+      "current_sha256": "3d76513fb6f32f642b0df6e8d98570770d8952a6593bc3b376f9c018d99437a0",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "10-web-multi-hop-detail",
+      "source_count": 4,
+      "source_order": [
+        "/10-web-multi-hop-detail/index.html",
+        "/10-web-multi-hop-detail/parking.html",
+        "/10-web-multi-hop-detail/policies.html",
+        "/10-web-multi-hop-detail/festival-detail.html"
+      ],
+      "stored_evidence_count": 15,
+      "current_evidence_count": 15,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "0e30760f5ab12c7dbf90976f57ec1b03801bee8454e57cfff549c28e77fd91df",
+      "current_sha256": "0e30760f5ab12c7dbf90976f57ec1b03801bee8454e57cfff549c28e77fd91df",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "11-web-missing-answer",
+      "source_count": 3,
+      "source_order": [
+        "/11-web-missing-answer/index.html",
+        "/11-web-missing-answer/refunds.html",
+        "/11-web-missing-answer/access.html"
+      ],
+      "stored_evidence_count": 11,
+      "current_evidence_count": 11,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "9521190bf8c73515b76827fa3df4451c8a188ec450664b456786e7d4d1157547",
+      "current_sha256": "9521190bf8c73515b76827fa3df4451c8a188ec450664b456786e7d4d1157547",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "12-web-conflicting-current-hours",
+      "source_count": 3,
+      "source_order": [
+        "/12-web-conflicting-current-hours/index.html",
+        "/12-web-conflicting-current-hours/winter-policy.html",
+        "/12-web-conflicting-current-hours/hours.html"
+      ],
+      "stored_evidence_count": 11,
+      "current_evidence_count": 11,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "0bd32caffb8c2cbe2a219dd65c5964ea796a108deacd17c8141b6c9f32526c54",
+      "current_sha256": "0bd32caffb8c2cbe2a219dd65c5964ea796a108deacd17c8141b6c9f32526c54",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "13-web-inline-details",
+      "source_count": 2,
+      "source_order": [
+        "/13-web-inline-details/index.html",
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "stored_evidence_count": 9,
+      "current_evidence_count": 9,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "88efabe7849d016299d9ef8c051cac29c29530189de2686be60215241d08f6d6",
+      "current_sha256": "88efabe7849d016299d9ef8c051cac29c29530189de2686be60215241d08f6d6",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "14-web-conditional-route",
+      "source_count": 3,
+      "source_order": [
+        "/14-web-conditional-route/index.html",
+        "/14-web-conditional-route/north.html",
+        "/14-web-conditional-route/south.html"
+      ],
+      "stored_evidence_count": 11,
+      "current_evidence_count": 11,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "c7a71fe282a1418d1d9646078b7ce22b0e6ba02ffa824b84a79aebd231fe9c38",
+      "current_sha256": "c7a71fe282a1418d1d9646078b7ce22b0e6ba02ffa824b84a79aebd231fe9c38",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "15-web-effective-date-policy",
+      "source_count": 3,
+      "source_order": [
+        "/15-web-effective-date-policy/index.html",
+        "/15-web-effective-date-policy/warranty-2026.html",
+        "/15-web-effective-date-policy/warranty-2024.html"
+      ],
+      "stored_evidence_count": 12,
+      "current_evidence_count": 12,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "74f3751bf54fea61a37b1a3575c675f006ba90111f9402c7f6b64b055a18230c",
+      "current_sha256": "74f3751bf54fea61a37b1a3575c675f006ba90111f9402c7f6b64b055a18230c",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "baseline",
+      "case_id": "16-web-two-source-mapping",
+      "source_count": 3,
+      "source_order": [
+        "/16-web-two-source-mapping/index.html",
+        "/16-web-two-source-mapping/fees.html",
+        "/16-web-two-source-mapping/categories.html"
+      ],
+      "stored_evidence_count": 12,
+      "current_evidence_count": 12,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "6ba5aebd1c7d18f155a7ad80c50733fa9fbb2d46dcb79237ce7e8bb4f60e427b",
+      "current_sha256": "6ba5aebd1c7d18f155a7ad80c50733fa9fbb2d46dcb79237ce7e8bb4f60e427b",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "01-doc-old-distractor",
+      "source_count": 3,
+      "source_order": [
+        "/01-doc-old-distractor/index.html",
+        "/01-doc-old-distractor/v4.html",
+        "/01-doc-old-distractor/v2.html"
+      ],
+      "stored_evidence_count": 4,
+      "current_evidence_count": 4,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "3c42ae30ed9fb9bfb0b39c5c7bd058d1f7da74bb3d4a0aaa09e6d2d3ba9e5a69",
+      "current_sha256": "3c42ae30ed9fb9bfb0b39c5c7bd058d1f7da74bb3d4a0aaa09e6d2d3ba9e5a69",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "02-doc-target-version-absent",
+      "source_count": 2,
+      "source_order": [
+        "/02-doc-target-version-absent/index.html",
+        "/02-doc-target-version-absent/v3.html"
+      ],
+      "stored_evidence_count": 0,
+      "current_evidence_count": 0,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "current_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "03-doc-renamed-configuration",
+      "source_count": 3,
+      "source_order": [
+        "/03-doc-renamed-configuration/index.html",
+        "/03-doc-renamed-configuration/migration-v3.html",
+        "/03-doc-renamed-configuration/v2.html"
+      ],
+      "stored_evidence_count": 5,
+      "current_evidence_count": 5,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "c502ef14433ae9d0bfa695d0048ba47731ba6bc0c5a6db13a9ddb0847a094798",
+      "current_sha256": "c502ef14433ae9d0bfa695d0048ba47731ba6bc0c5a6db13a9ddb0847a094798",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "04-doc-conditional-default",
+      "source_count": 2,
+      "source_order": [
+        "/04-doc-conditional-default/index.html",
+        "/04-doc-conditional-default/cache-v3.html"
+      ],
+      "stored_evidence_count": 9,
+      "current_evidence_count": 9,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "b86fce4aec4dd0e5931d13cb842bceb228969661fd1ec231bd5202d511e7e27e",
+      "current_sha256": "b86fce4aec4dd0e5931d13cb842bceb228969661fd1ec231bd5202d511e7e27e",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "05-doc-current-stale-release",
+      "source_count": 3,
+      "source_order": [
+        "/05-doc-current-stale-release/index.html",
+        "/05-doc-current-stale-release/v4.html",
+        "/05-doc-current-stale-release/v2.html"
+      ],
+      "stored_evidence_count": 10,
+      "current_evidence_count": 10,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "46c6c216521a6e09c0a72b6e41b9f01b1f18815bdadae5ed9c82386fc1ef0627",
+      "current_sha256": "46c6c216521a6e09c0a72b6e41b9f01b1f18815bdadae5ed9c82386fc1ef0627",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "06-doc-conflicting-current-pages",
+      "source_count": 3,
+      "source_order": [
+        "/06-doc-conflicting-current-pages/index.html",
+        "/06-doc-conflicting-current-pages/reference-v4.html",
+        "/06-doc-conflicting-current-pages/guide-v4.html"
+      ],
+      "stored_evidence_count": 15,
+      "current_evidence_count": 15,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "52d539c1f8633358d1cd2839544ba252740a0e2377811c24051b60a258121526",
+      "current_sha256": "52d539c1f8633358d1cd2839544ba252740a0e2377811c24051b60a258121526",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "07-doc-cross-version-comparison",
+      "source_count": 3,
+      "source_order": [
+        "/07-doc-cross-version-comparison/index.html",
+        "/07-doc-cross-version-comparison/v3.html",
+        "/07-doc-cross-version-comparison/v2.html"
+      ],
+      "stored_evidence_count": 12,
+      "current_evidence_count": 12,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "af6ff0299d67dc1f3de6adc3ea4bb3878471e94595870cfb26c05d81c6a79e44",
+      "current_sha256": "af6ff0299d67dc1f3de6adc3ea4bb3878471e94595870cfb26c05d81c6a79e44",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "08-doc-prerelease-distractor",
+      "source_count": 3,
+      "source_order": [
+        "/08-doc-prerelease-distractor/index.html",
+        "/08-doc-prerelease-distractor/v4.html",
+        "/08-doc-prerelease-distractor/v5-beta.html"
+      ],
+      "stored_evidence_count": 4,
+      "current_evidence_count": 4,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "1d75a0a1984284d8a20c04b0746565c89fd15c8e98fb8e7f16da9e1831d28990",
+      "current_sha256": "1d75a0a1984284d8a20c04b0746565c89fd15c8e98fb8e7f16da9e1831d28990",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "09-web-table-cell",
+      "source_count": 2,
+      "source_order": [
+        "/09-web-table-cell/index.html",
+        "/09-web-table-cell/schedule.html"
+      ],
+      "stored_evidence_count": 9,
+      "current_evidence_count": 9,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "3d76513fb6f32f642b0df6e8d98570770d8952a6593bc3b376f9c018d99437a0",
+      "current_sha256": "3d76513fb6f32f642b0df6e8d98570770d8952a6593bc3b376f9c018d99437a0",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "10-web-multi-hop-detail",
+      "source_count": 4,
+      "source_order": [
+        "/10-web-multi-hop-detail/index.html",
+        "/10-web-multi-hop-detail/parking.html",
+        "/10-web-multi-hop-detail/policies.html",
+        "/10-web-multi-hop-detail/festival-detail.html"
+      ],
+      "stored_evidence_count": 15,
+      "current_evidence_count": 15,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "0e30760f5ab12c7dbf90976f57ec1b03801bee8454e57cfff549c28e77fd91df",
+      "current_sha256": "0e30760f5ab12c7dbf90976f57ec1b03801bee8454e57cfff549c28e77fd91df",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "11-web-missing-answer",
+      "source_count": 3,
+      "source_order": [
+        "/11-web-missing-answer/index.html",
+        "/11-web-missing-answer/refunds.html",
+        "/11-web-missing-answer/access.html"
+      ],
+      "stored_evidence_count": 11,
+      "current_evidence_count": 11,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "9521190bf8c73515b76827fa3df4451c8a188ec450664b456786e7d4d1157547",
+      "current_sha256": "9521190bf8c73515b76827fa3df4451c8a188ec450664b456786e7d4d1157547",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "12-web-conflicting-current-hours",
+      "source_count": 3,
+      "source_order": [
+        "/12-web-conflicting-current-hours/index.html",
+        "/12-web-conflicting-current-hours/winter-policy.html",
+        "/12-web-conflicting-current-hours/hours.html"
+      ],
+      "stored_evidence_count": 11,
+      "current_evidence_count": 11,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "2079d4ebea67788d6b6c1d6c1d1f5ccf59f9923d8b081319dfb4d93f04730e34",
+      "current_sha256": "2079d4ebea67788d6b6c1d6c1d1f5ccf59f9923d8b081319dfb4d93f04730e34",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "13-web-inline-details",
+      "source_count": 2,
+      "source_order": [
+        "/13-web-inline-details/index.html",
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "stored_evidence_count": 9,
+      "current_evidence_count": 9,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "88efabe7849d016299d9ef8c051cac29c29530189de2686be60215241d08f6d6",
+      "current_sha256": "88efabe7849d016299d9ef8c051cac29c29530189de2686be60215241d08f6d6",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "14-web-conditional-route",
+      "source_count": 3,
+      "source_order": [
+        "/14-web-conditional-route/index.html",
+        "/14-web-conditional-route/north.html",
+        "/14-web-conditional-route/south.html"
+      ],
+      "stored_evidence_count": 11,
+      "current_evidence_count": 11,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "c7a71fe282a1418d1d9646078b7ce22b0e6ba02ffa824b84a79aebd231fe9c38",
+      "current_sha256": "c7a71fe282a1418d1d9646078b7ce22b0e6ba02ffa824b84a79aebd231fe9c38",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "15-web-effective-date-policy",
+      "source_count": 3,
+      "source_order": [
+        "/15-web-effective-date-policy/index.html",
+        "/15-web-effective-date-policy/warranty-2026.html",
+        "/15-web-effective-date-policy/warranty-2024.html"
+      ],
+      "stored_evidence_count": 9,
+      "current_evidence_count": 9,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "9d0089dfb8c0ff74777ab870b139e8a4e915f18c77f6ff4b44c7e65c8a9b8e6d",
+      "current_sha256": "9d0089dfb8c0ff74777ab870b139e8a4e915f18c77f6ff4b44c7e65c8a9b8e6d",
+      "differences": []
+    },
+    {
+      "suite": "synthetic",
+      "mode": "verified",
+      "case_id": "16-web-two-source-mapping",
+      "source_count": 3,
+      "source_order": [
+        "/16-web-two-source-mapping/index.html",
+        "/16-web-two-source-mapping/fees.html",
+        "/16-web-two-source-mapping/categories.html"
+      ],
+      "stored_evidence_count": 12,
+      "current_evidence_count": 12,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "6ba5aebd1c7d18f155a7ad80c50733fa9fbb2d46dcb79237ce7e8bb4f60e427b",
+      "current_sha256": "6ba5aebd1c7d18f155a7ad80c50733fa9fbb2d46dcb79237ce7e8bb4f60e427b",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "baseline",
+      "case_id": "h01-late-code-fact",
+      "source_count": 2,
+      "source_order": [
+        "/h01-late-code-fact/index.html",
+        "/h01-late-code-fact/v6.html"
+      ],
+      "stored_evidence_count": 10,
+      "current_evidence_count": 10,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "454e2533bf8949af147fea931399e33b9d292c766b7d4171b6e502d07b0972f4",
+      "current_sha256": "454e2533bf8949af147fea931399e33b9d292c766b7d4171b6e502d07b0972f4",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "baseline",
+      "case_id": "h02-numeric-version-suffix",
+      "source_count": 3,
+      "source_order": [
+        "/h02-numeric-version-suffix/index.html",
+        "/h02-numeric-version-suffix/v4.html",
+        "/h02-numeric-version-suffix/v40.html"
+      ],
+      "stored_evidence_count": 12,
+      "current_evidence_count": 12,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "623b4ce073b7d73dc27dc3a5c85f71eef6ebab6693e337a23cdc55ecdaaea3c9",
+      "current_sha256": "623b4ce073b7d73dc27dc3a5c85f71eef6ebab6693e337a23cdc55ecdaaea3c9",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "baseline",
+      "case_id": "h03-unseparated-prerelease",
+      "source_count": 3,
+      "source_order": [
+        "/h03-unseparated-prerelease/index.html",
+        "/h03-unseparated-prerelease/v4.html",
+        "/h03-unseparated-prerelease/v4beta.html"
+      ],
+      "stored_evidence_count": 14,
+      "current_evidence_count": 14,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "5c35d20b7e3f187a83437a4f89fa7932182d26c9a39998b39183123e38137ced",
+      "current_sha256": "5c35d20b7e3f187a83437a4f89fa7932182d26c9a39998b39183123e38137ced",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "baseline",
+      "case_id": "h04-same-page-conflict",
+      "source_count": 1,
+      "source_order": [
+        "/h04-same-page-conflict/index.html"
+      ],
+      "stored_evidence_count": 7,
+      "current_evidence_count": 7,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "396d3beec63127b338567e4508c2c62c4b7ec0fb15cb77de7d8585a225fed9a2",
+      "current_sha256": "396d3beec63127b338567e4508c2c62c4b7ec0fb15cb77de7d8585a225fed9a2",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "baseline",
+      "case_id": "h05-multiple-table-context",
+      "source_count": 1,
+      "source_order": [
+        "/h05-multiple-table-context/index.html"
+      ],
+      "stored_evidence_count": 12,
+      "current_evidence_count": 12,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "2e14d7834e9978e0bcb720c6ddcb015823a157aa70ca7dd314344c31fc9248c6",
+      "current_sha256": "2e14d7834e9978e0bcb720c6ddcb015823a157aa70ca7dd314344c31fc9248c6",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "baseline",
+      "case_id": "h06-missing-query-qualifiers",
+      "source_count": 2,
+      "source_order": [
+        "/h06-missing-query-qualifiers/index.html",
+        "/h06-missing-query-qualifiers/membership.html"
+      ],
+      "stored_evidence_count": 7,
+      "current_evidence_count": 7,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "be537db0ed13ecaefc23da442f69a08c771812277a779f5ef5bfec39acd969e7",
+      "current_sha256": "be537db0ed13ecaefc23da442f69a08c771812277a779f5ef5bfec39acd969e7",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "verified",
+      "case_id": "h01-late-code-fact",
+      "source_count": 2,
+      "source_order": [
+        "/h01-late-code-fact/index.html",
+        "/h01-late-code-fact/v6.html"
+      ],
+      "stored_evidence_count": 10,
+      "current_evidence_count": 10,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "454e2533bf8949af147fea931399e33b9d292c766b7d4171b6e502d07b0972f4",
+      "current_sha256": "454e2533bf8949af147fea931399e33b9d292c766b7d4171b6e502d07b0972f4",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "verified",
+      "case_id": "h02-numeric-version-suffix",
+      "source_count": 3,
+      "source_order": [
+        "/h02-numeric-version-suffix/index.html",
+        "/h02-numeric-version-suffix/v4.html",
+        "/h02-numeric-version-suffix/v40.html"
+      ],
+      "stored_evidence_count": 4,
+      "current_evidence_count": 4,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "bb6967eabae7665d8d9dbb40dfc5cf1bb17787e91f850872256c50861c8c095e",
+      "current_sha256": "bb6967eabae7665d8d9dbb40dfc5cf1bb17787e91f850872256c50861c8c095e",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "verified",
+      "case_id": "h03-unseparated-prerelease",
+      "source_count": 3,
+      "source_order": [
+        "/h03-unseparated-prerelease/index.html",
+        "/h03-unseparated-prerelease/v4.html",
+        "/h03-unseparated-prerelease/v4beta.html"
+      ],
+      "stored_evidence_count": 5,
+      "current_evidence_count": 5,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "8522444f75646749a9941531901319eaff1ee7f3b958ff9215d5808b33325d92",
+      "current_sha256": "8522444f75646749a9941531901319eaff1ee7f3b958ff9215d5808b33325d92",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "verified",
+      "case_id": "h04-same-page-conflict",
+      "source_count": 1,
+      "source_order": [
+        "/h04-same-page-conflict/index.html"
+      ],
+      "stored_evidence_count": 7,
+      "current_evidence_count": 7,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "396d3beec63127b338567e4508c2c62c4b7ec0fb15cb77de7d8585a225fed9a2",
+      "current_sha256": "396d3beec63127b338567e4508c2c62c4b7ec0fb15cb77de7d8585a225fed9a2",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "verified",
+      "case_id": "h05-multiple-table-context",
+      "source_count": 1,
+      "source_order": [
+        "/h05-multiple-table-context/index.html"
+      ],
+      "stored_evidence_count": 12,
+      "current_evidence_count": 12,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "2e14d7834e9978e0bcb720c6ddcb015823a157aa70ca7dd314344c31fc9248c6",
+      "current_sha256": "2e14d7834e9978e0bcb720c6ddcb015823a157aa70ca7dd314344c31fc9248c6",
+      "differences": []
+    },
+    {
+      "suite": "stress",
+      "mode": "verified",
+      "case_id": "h06-missing-query-qualifiers",
+      "source_count": 2,
+      "source_order": [
+        "/h06-missing-query-qualifiers/index.html",
+        "/h06-missing-query-qualifiers/membership.html"
+      ],
+      "stored_evidence_count": 7,
+      "current_evidence_count": 7,
+      "exact_normalized_json_unchanged": true,
+      "stored_sha256": "be537db0ed13ecaefc23da442f69a08c771812277a779f5ef5bfec39acd969e7",
+      "current_sha256": "be537db0ed13ecaefc23da442f69a08c771812277a779f5ef5bfec39acd969e7",
+      "differences": []
+    }
+  ],
+  "working_tree_changes_under_test": true
+}

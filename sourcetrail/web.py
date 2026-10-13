@@ -28,6 +28,7 @@ class Page:
     content_type: str
     truncated: bool
     block_tags: list[str] = field(default_factory=list)
+    block_tables: list[int | None] = field(default_factory=list)
 
 
 class WebReadError(ValueError):
@@ -115,6 +116,7 @@ class _ReadableHTML(HTMLParser):
         self.title = ""
         self.blocks: list[str] = []
         self.block_tags: list[str] = []
+        self.block_tables: list[int | None] = []
         self.links: list[dict[str, str]] = []
         self._stack: list[tuple[str, bool]] = []
         self._text: list[str] = []
@@ -123,16 +125,28 @@ class _ReadableHTML(HTMLParser):
         self._title_depth: int | None = None
         self._anchor: dict[str, object] | None = None
         self._row_cells: dict[int, int] = {}
+        self._tables: dict[int, int] = {}
+        self._next_table = 1
 
     @property
     def _blocked(self) -> bool:
         return bool(self._stack and self._stack[-1][1])
 
-    def _flush(self) -> None:
+    def _flush(self, force: bool = False) -> None:
+        in_cell = any(tag in {"td", "th"} and not blocked for tag, blocked in self._stack)
+        if in_cell and not force:
+            # Paragraphs and other block markup inside a cell separate words;
+            # they do not end the row or remove its column relationships.
+            self._text.append(" ")
+            if self._anchor is not None:
+                self._anchor["text"].append(" ")
+            return
         text = _clean_text("".join(self._text))
         if text:
             self.blocks.append(text)
-            self.block_tags.append(next((tag for tag, blocked in reversed(self._stack) if not blocked and tag in self._blocks), ""))
+            tag = "tr" if in_cell and any(tag == "tr" and not blocked for tag, blocked in self._stack) else next((tag for tag, blocked in reversed(self._stack) if not blocked and tag in self._blocks), "")
+            self.block_tags.append(tag)
+            self.block_tables.append(self._tables[max(self._tables)] if self._tables else None)
         self._text.clear()
 
     def _finish_anchor(self) -> None:
@@ -151,7 +165,10 @@ class _ReadableHTML(HTMLParser):
         blocked = self._blocked or tag in self._drop or hidden
         if not blocked:
             if tag in self._blocks:
-                self._flush()
+                self._flush(force=tag in {"table", "tr"})
+                if tag == "table":
+                    self._tables[len(self._stack)] = self._next_table
+                    self._next_table += 1
                 if tag == "tr":
                     self._row_cells[len(self._stack)] = 0
             elif tag in {"td", "th"}:
@@ -187,10 +204,11 @@ class _ReadableHTML(HTMLParser):
         if any(name == "a" and not blocked for name, blocked in frames):
             self._finish_anchor()
         if any(name in self._blocks and not blocked for name, blocked in frames):
-            self._flush()
+            self._flush(force=any(name in {"table", "tr"} and not blocked for name, blocked in frames))
         if self._title_depth is not None and matching <= self._title_depth:
             self._title_depth = None
         self._row_cells = {depth: count for depth, count in self._row_cells.items() if depth < matching}
+        self._tables = {depth: identity for depth, identity in self._tables.items() if depth < matching}
         del self._stack[matching:]
 
     def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -213,7 +231,7 @@ class _ReadableHTML(HTMLParser):
 
     def close(self) -> None:
         super().close()
-        self._flush()
+        self._flush(force=True)
         self._finish_anchor()
         self.title = _clean_text("".join(self._title_text))
 
@@ -395,12 +413,12 @@ class WebReader:
                 if content_type == "text/plain":
                     blocks = [_clean_text(block) for block in re.split(r"\n\s*\n", source)]
                     blocks = [block for block in blocks if block]
-                    title, raw_links, block_tags = "", [], [""] * len(blocks)
+                    title, raw_links, block_tags, block_tables = "", [], [""] * len(blocks), [None] * len(blocks)
                 else:
                     parser = _ReadableHTML()
                     parser.feed(source)
                     parser.close()
-                    title, blocks, raw_links, block_tags = parser.title, parser.blocks, parser.links, parser.block_tags
+                    title, blocks, raw_links, block_tags, block_tables = parser.title, parser.blocks, parser.links, parser.block_tags, parser.block_tables
                 links: dict[str, dict[str, str]] = {}
                 for link in raw_links:
                     try:
@@ -413,7 +431,7 @@ class WebReader:
                         links[destination]["label"] = link["label"] or destination
                 deadline.remaining()
                 # Preserve document order and repeated headings/rows across separate tables.
-                return Page(normalized, title, blocks, list(links.values()), round((time.monotonic() - started) * 1000), sha256(data).hexdigest(), content_type, truncated, block_tags)
+                return Page(normalized, title, blocks, list(links.values()), round((time.monotonic() - started) * 1000), sha256(data).hexdigest(), content_type, truncated, block_tags, block_tables)
             except WebReadError:
                 raise
             except (OSError, http.client.HTTPException, ValueError, UnicodeError) as exc:

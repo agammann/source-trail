@@ -24,6 +24,31 @@ class EvidenceTests(unittest.TestCase):
         self.assertFalse(is_version_comparison("What is the cache in the old version?"))
         self.assertTrue(is_version_comparison("How did cache change from version 2 to version 3?"))
         self.assertTrue(is_version_comparison("How does this compare with the previous version?"))
+        self.assertTrue(is_version_comparison("Compare v4.0-rc.1 and v4.0"))
+
+    def test_prerelease_comparison_keeps_and_requires_both_versions(self):
+        pages = [page("https://example.com/v4.0-rc.1/", "Settings", ["Timeout is 7 seconds."]),
+                 page("https://example.com/v4.0/", "Settings", ["Timeout is 9 seconds."])]
+        evidence = select_evidence(pages, "Compare v4.0-rc.1 and v4.0", "4.0")
+        self.assertEqual({e["source_version"] for e in evidence}, {"4.0-rc.1", "4.0"})
+        raw = {"status": "answered", "answer": "7 to 9 seconds", "citations": [{"block_id": e["block_id"], "quote": e["text"]} for e in evidence]}
+        self.assertEqual(validate_answer(raw, evidence, "4.0", comparison=True, comparison_versions=["4.0-rc.1", "4.0"])["status"], "answered")
+
+    def test_query_requires_every_explicit_comparison_version(self):
+        pages = [page(f"https://example.com/v{v}/", "Settings", [f"The timeout in version {v} is 9 seconds."]) for v in ("4.0-rc.1", "4.0", "3.9")]
+        class IncompleteModel:
+            def answer(self, question, evidence, target_version):
+                return {"status": "answered", "answer": "9 seconds", "citations": [{"block_id": e["block_id"], "quote": e["text"]} for e in evidence if e["source_version"] != "4.0-rc.1"]}, {"input_tokens": 1, "output_tokens": 1}
+        with patch("sourcetrail.engine.WebReader.fetch", side_effect=pages):
+            result = query("Compare v4.0-rc.1 and v4.0", [p.url for p in pages], target_version="4.0", max_pages=3, model=IncompleteModel())
+        self.assertEqual(result["status"], "failed")
+        self.assertIn("every requested version", result["error"])
+
+    def test_adjacent_tables_do_not_inherit_another_currency_header(self):
+        p = Page("https://example.com/prices", "Prices", ["Item | USD", "Basic | 12", "Item | EUR", "Basic | 20"], [], 1, "digest", "text/html", False, ["tr"] * 4, [1, 1, 2, 2])
+        evidence = select_evidence([p], "What is the Basic price in EUR?")
+        row = next(e for e in evidence if e["text"] == "Basic | 20")
+        self.assertEqual(row["table_header"], "Item | EUR")
 
     def test_prerelease_marker_is_preserved_and_cannot_match_stable_major(self):
         for marker in ("4beta", "4.0-rc.1", "4.0-dev", "4.0-preview.2", "40"):

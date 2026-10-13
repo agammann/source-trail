@@ -4,18 +4,20 @@ Checked October 12, 2026. This is a local prototype for AMD AI League Match 4, I
 
 | Check | Recorded result |
 | --- | --- |
-| Unit and integration suite | 93/93 passed, including real loopback HTTP and provider stubs. |
+| Unit and integration suite | 98/98 passed, including real loopback HTTP and provider stubs. |
 | Main synthetic development set | Verified 14/16; baseline 12/16. All output, scoring failures, and resource records are committed. |
 | Separate synthetic stress-development set | Both modes 6/6 with actual local Qwen inference. Cases informed fixes; not held out. |
 | Completed-response replay | Final validator accepted 46 saved completed responses; no new inference in this replay. |
 | Public websites | Three latest queries answered: Python TaskGroup, organizer GPU quota, FastAPI settings. Quotes match retrieved blocks. |
 | Browser | Prior desktop/mobile interaction checks passed. Final-source example filling, live query, quotes, navigation, JSON download and console checks passed. |
-| Python packaging | Final wheel build and isolated installed metadata/CLI/HTML/HTTP/health smoke passed. |
+| Python packaging | Earlier wheel/install checks passed; latest audit rebuild pending. |
 | Windows launcher | Interpreter discovery, explicit and relative paths, start from another directory, and health request passed. |
-| GitHub | Source published. All four Ubuntu/Windows and Python 3.11/3.12 CI jobs passed; see evidence/github-ci.json. |
+| GitHub | Source published. Earlier four-job CI passed; latest audit fixes await remote CI. |
 | Docker | Not run: local daemon unavailable. Dockerfile.prototype packages only the coordinator. |
 | AMD notebook | Approved sign-in completed; dashboard reported the account email was not registered for this hackathon. No GPU session launched. |
 | Official evaluator | Not available or run; no submission made. |
+
+The later audit repaired prerelease-to-stable comparisons, adjacent-table column context, and block markup inside table cells. Fresh loopback acquisition and selection reproduced all 44 saved main/stress evidence inputs with zero model calls; see evidence/evidence-selection-recheck.json.
 
 The verified main-set failures were an unexpected refusal on complete table evidence and a correct cross-version answer whose wording did not match the strict complete-answer aliases. The baseline also supplied extra unnecessary sources on current-release and effective-date cases. No aliases were changed for this recheck.
 

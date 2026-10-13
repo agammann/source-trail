@@ -70,6 +70,10 @@ class FixtureHandler(BaseHTTPRequestHandler):
             content_type, body = "text/html", b'<p>The confirmed price is $12.</p><a href="http://[broken/">Broken</a><a href="/text">Valid</a>'
         elif path == "/empty-table-cell":
             content_type, body = "text/html", b'<table><tr><th>Plan</th><th>Price</th></tr><tr><td></td><td>12 dollars</td></tr></table>'
+        elif path == "/adjacent-tables":
+            content_type, body = "text/html", b'<h2>Prices</h2><table><tr><th>Item</th><th>USD</th></tr><tr><td>Basic</td><td>12</td></tr></table><table><tr><th>Item</th><th>EUR</th></tr><tr><td>Basic</td><td>20</td></tr></table><p>Terms apply.</p>'
+        elif path == "/paragraph-table-cells":
+            content_type, body = "text/html", b'<h2>Prices</h2><table><tr><th>Item</th><th>USD</th></tr><tr><td><p>Basic</p><p>plan</p></td><td><p>12 <em>dollars</em></p></td></tr></table>'
         self.send_response(status)
         self.send_header("Content-Type", content_type)
         if path == "/compressed":
@@ -147,11 +151,24 @@ class WebReaderFixtureTests(unittest.TestCase):
         self.assertIn("| 12 dollars", page.blocks)
         self.assertNotIn("12 dollars", page.blocks)
 
+    def test_adjacent_tables_retain_distinct_identities_without_visible_separators(self):
+        page = self.reader().fetch(self.base + "/adjacent-tables")
+        self.assertEqual(page.blocks, ["Prices", "Item | USD", "Basic | 12", "Item | EUR", "Basic | 20", "Terms apply."])
+        self.assertEqual(page.block_tags, ["h2", "tr", "tr", "tr", "tr", "p"])
+        self.assertEqual(page.block_tables, [None, 1, 1, 2, 2, None])
+
+    def test_paragraph_markup_inside_cells_preserves_one_row_and_column_context(self):
+        page = self.reader().fetch(self.base + "/paragraph-table-cells")
+        self.assertEqual(page.blocks, ["Prices", "Item | USD", "Basic plan | 12 dollars"])
+        self.assertEqual(page.block_tags, ["h2", "tr", "tr"])
+        self.assertEqual(page.block_tables, [None, 1, 1])
+
     def test_plain_text_and_charset_decoding(self):
         page = self.reader().fetch(self.base + "/text")
         self.assertEqual(page.blocks, ["First paragraph. Still first.", "Second paragraph."])
         self.assertEqual(page.links, [])
         self.assertEqual(page.title, "")
+        self.assertEqual(page.block_tables, [None, None])
         self.assertEqual(self.reader().fetch(self.base + "/latin").blocks, ["caf\u00e9", "Price $12"])
         self.assertEqual(self.reader().fetch(self.base + "/unknown-charset").blocks, ["caf\u00e9"])
 
