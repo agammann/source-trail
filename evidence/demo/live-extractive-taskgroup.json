@@ -1,0 +1,289 @@
+{
+  "question": "What happens to other tasks when one task in a TaskGroup fails?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "version": null
+    },
+    {
+      "url": "https://docs.python.org/3/contents.html",
+      "title": "Python Documentation contents — Python 3.15.0 documentation",
+      "version": null
+    },
+    {
+      "url": "https://docs.python.org/3/library/asyncio-runner.html",
+      "title": "Runners — Python 3.15.0 documentation",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B115",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Creating tasks¶",
+      "text": "Note that this approach never awaits the tasks, so if a task fails, its exception is never retrieved and asyncio logs a “Task exception was never retrieved” message when the task is garbage collected. To avoid this, use asyncio.TaskGroup which keeps a strong reference to each task, awaits them and propagates their exceptions:"
+    },
+    {
+      "block_id": "P1B147",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "The first time any of the tasks belonging to the group fails with an exception other than asyncio.CancelledError, the remaining tasks in the group are cancelled. No further tasks can then be added to the group. At this point, if the body of the async with statement is still active (i.e., __aexit__() hasn’t been called yet), the task directly containing the async with statement is also cancelled. The resulting asyncio.CancelledError will interrupt an await, but it will not bubble out of the containing async with statement."
+    },
+    {
+      "block_id": "P1B151",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "Task groups are careful not to mix up the internal cancellation used to “wake up” their __aexit__() with cancellation requests for the task in which they are running made by other parties. In particular, when one task group is syntactically nested in another, and both experience an exception in one of their child tasks simultaneously, the inner task group will process its exceptions, and then the outer task group will receive another cancellation and process its own exceptions."
+    },
+    {
+      "block_id": "P1B174",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Running tasks concurrently¶",
+      "text": "If any Task or Future from the aws sequence is cancelled, it is treated as if it raised CancelledError – the gather() call is not cancelled in this case. This is to prevent the cancellation of one submitted Task/Future to cause other Tasks/Futures to be cancelled."
+    },
+    {
+      "block_id": "P1B332",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task object¶",
+      "text": "Event loops use cooperative scheduling: an event loop runs one Task at a time. While a Task awaits for the completion of a Future, the event loop runs other Tasks, callbacks, or performs IO operations."
+    },
+    {
+      "block_id": "P1B137",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "If cancel() is called before entering the task group, the group will be cancelled upon entry. This is useful for patterns where one piece of code passes an unused asyncio.TaskGroup instance to another in order to have the ability to cancel anything run within the group."
+    },
+    {
+      "block_id": "P1B146",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "The async with statement will wait for all tasks in the group to finish. While waiting, new tasks may still be added to the group (for example, by passing tg into one of the coroutines and calling tg.create_task() in that coroutine). There is also opportunity to request termination of the entire task group with tg.cancel(), based on some condition. Once the last task has finished and the async with block is exited, no new tasks may be added to the group."
+    },
+    {
+      "block_id": "P1B149",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "Two base exceptions are treated specially: If any task fails with KeyboardInterrupt or SystemExit, the task group still cancels the remaining tasks and waits for them, but then the initial KeyboardInterrupt or SystemExit is re-raised instead of ExceptionGroup or BaseExceptionGroup."
+    },
+    {
+      "block_id": "P1B150",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "If the body of the async with statement exits with an exception (so __aexit__() is called with an exception set), this is treated the same as if one of the tasks failed: the remaining tasks are cancelled and then waited for, and non-cancellation exceptions are grouped into an exception group and raised. The exception passed into __aexit__(), unless it is asyncio.CancelledError, is also included in the exception group. The same special case is made for KeyboardInterrupt and SystemExit as in the previous paragraph. There is an additional special case made only for the body of the async with: if it raises GeneratorExit and none of the other tasks raise exceptions that would be reported, then the GeneratorExit is reraised."
+    },
+    {
+      "block_id": "P1B160",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Sleeping¶",
+      "text": "sleep() always suspends the current task, allowing other tasks to run."
+    },
+    {
+      "block_id": "P1B176",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Running tasks concurrently¶",
+      "text": "A new alternative to create and run tasks concurrently and wait for their completion is asyncio.TaskGroup. TaskGroup provides stronger safety guarantees than gather for scheduling a nesting of subtasks: if a task (or a subtask, a task scheduled by a task) raises an exception, TaskGroup will, while gather will not, cancel the remaining scheduled tasks."
+    },
+    {
+      "block_id": "P1B285",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Waiting primitives¶",
+      "text": "ipv4_connect = create_task(open_connection(\"127.0.0.1\", 80)) ipv6_connect = create_task(open_connection(\"::1\", 80)) tasks = [ipv4_connect, ipv6_connect] for next_connect in as_completed(tasks): # next_connect is not one of the original task objects. It must be # awaited to obtain the result value or raise the exception of the # awaitable that finishes next. reader, writer = await next_connect"
+    },
+    {
+      "block_id": "P1B111",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Creating tasks¶",
+      "text": "asyncio.TaskGroup.create_task() is a new alternative leveraging structural concurrency; it allows for waiting for a group of related tasks with strong safety guarantees."
+    },
+    {
+      "block_id": "P1B113",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Creating tasks¶",
+      "text": "Save a reference to the result of this function, to avoid a task disappearing mid-execution. The event loop only keeps weak references to tasks. A task that isn’t referenced elsewhere may get garbage collected at any time, even before it’s done. For reliable “fire-and-forget” background tasks, gather them in a collection:"
+    },
+    {
+      "block_id": "P1B114",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Creating tasks¶",
+      "text": "background_tasks = set() for i in range(10): task = asyncio.create_task(some_coro(param=i)) # Add task to the set. This creates a strong reference. background_tasks.add(task) # To prevent keeping references to finished tasks forever, # make each task remove its own reference from the set after # completion: task.add_done_callback(background_tasks.discard)"
+    },
+    {
+      "block_id": "P1B122",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task cancellation¶",
+      "text": "Tasks can easily and safely be cancelled. When a task is cancelled, asyncio.CancelledError will be raised in the task at the next opportunity."
+    },
+    {
+      "block_id": "P1B126",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "Task groups combine a task creation API with a convenient and reliable way to wait for all tasks in the group to finish."
+    },
+    {
+      "block_id": "P1B136",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "cancel() will be called on any tasks in the group that aren’t yet done, as well as the parent (body) of the group. The task group context manager will exit without asyncio.CancelledError being raised."
+    },
+    {
+      "block_id": "P1B141",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "pass the task group instance to child tasks via create_task(), allowing a child task to conditionally cancel the entire group"
+    },
+    {
+      "block_id": "P1B142",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "pass the task group instance or bound cancel() method to some other task before opening the task group, allowing remote cancellation"
+    },
+    {
+      "block_id": "P1B145",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "async def main(): async with asyncio.TaskGroup() as tg: task1 = tg.create_task(some_coro(...)) task2 = tg.create_task(another_coro(...)) print(f\"Both tasks have completed now: {task1.result()}, {task2.result()}\")"
+    },
+    {
+      "block_id": "P1B148",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Task groups¶",
+      "text": "Once all tasks have finished, if any tasks have failed with an exception other than asyncio.CancelledError, those exceptions are combined in an ExceptionGroup or BaseExceptionGroup (as appropriate; see their documentation) which is then raised."
+    },
+    {
+      "block_id": "P1B161",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Sleeping¶",
+      "text": "Setting the delay to 0 provides an optimized path to allow other tasks to run. This can be used by long-running functions to avoid blocking the event loop for the full duration of the function call."
+    },
+    {
+      "block_id": "P1B171",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "source_version": null,
+      "section": "Running tasks concurrently¶",
+      "text": "If return_exceptions is False (default), the first raised exception is immediately propagated to the task that awaits on gather(). Other awaitables in the aws sequence won’t be cancelled and will continue to run."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "title": "Coroutines and tasks — Python 3.15.0 documentation",
+      "blocks": 464,
+      "elapsed_ms": 375,
+      "sha256": "9f6bcb36135228e83a79909f164f5f436b4400941b3cb9a38128861953907309",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/contents.html",
+      "title": "Python Documentation contents — Python 3.15.0 documentation",
+      "blocks": 3858,
+      "elapsed_ms": 828,
+      "sha256": "213be5d97b1066a71cafa213cba351854eff38e8d17c8bb90c74897e7a3e6f61",
+      "truncated": true
+    },
+    {
+      "action": "read",
+      "url": "https://docs.python.org/3/library/asyncio-runner.html",
+      "title": "Runners — Python 3.15.0 documentation",
+      "blocks": 116,
+      "elapsed_ms": 157,
+      "sha256": "7cfa642ff193aefc6d4cccf3f38cce9bb0862f9b575d2288bd354f1b3d1ab004",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 695,
+    "output_tokens": 13,
+    "usage_recorded": true,
+    "model": "qwen3:0.6b",
+    "reported_model": "qwen3:0.6b",
+    "duration_ms": 1860
+  },
+  "status": "answered",
+  "answer": "The first time any of the tasks belonging to the group fails with an exception other than asyncio.CancelledError, the remaining tasks in the group are cancelled. No further tasks can then be added to the group. At this point, if the body of the async with statement is still active (i.e., __aexit__() hasn’t been called yet), the task directly containing the async with statement is also cancelled. The resulting asyncio.CancelledError will interrupt an await, but it will not bubble out of the containing async with statement.",
+  "citations": [
+    {
+      "url": "https://docs.python.org/3/library/asyncio-task.html",
+      "quote": "The first time any of the tasks belonging to the group fails with an exception other than asyncio.CancelledError, the remaining tasks in the group are cancelled. No further tasks can then be added to the group. At this point, if the body of the async with statement is still active (i.e., __aexit__() hasn’t been called yet), the task directly containing the async with statement is also cancelled. The resulting asyncio.CancelledError will interrupt an await, but it will not bubble out of the containing async with statement.",
+      "block_id": "P1B147",
+      "source_version": null
+    }
+  ],
+  "demo_runtime": {
+    "model": "qwen3:0.6b",
+    "model_digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+    "provider": "local Ollama",
+    "ollama_version": "0.35.0",
+    "profile": "single-passage extraction; CPU hosting target",
+    "page_budget": 3,
+    "candidate_limit": 4,
+    "context_tokens": 4096,
+    "max_generated_tokens": 64
+  },
+  "demo_selection": {
+    "profile": "extractive-selector-v1",
+    "candidate_block_ids": [
+      "P1B115",
+      "P1B147",
+      "P1B151",
+      "P1B174"
+    ],
+    "selected_block_id": "P1B147",
+    "excerpt_chars": 527,
+    "excerpt_truncated": false
+  }
+}

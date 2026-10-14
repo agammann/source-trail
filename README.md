@@ -6,11 +6,17 @@ The project explores a specific question: can a retrieval workflow handle stale 
 
 ## Challenge status
 
-Checked on **October 13, 2026**: the organizer lists Match 4, *Intelligent Web Information Retrieval*, as live for October 13–27. Its public description calls for an agent that navigates websites and retrieves specific information from a natural-language request. The Match 4 detail link still opens the overview, and the visible starter kit is labeled Match 3. A detailed Match 4 interface, evaluator, runtime contract, and inference rules were not available from those links. See the [official challenge page](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge).
+Checked on **October 13, 2026**: the organizer lists Match 4, *Intelligent Web Information Retrieval*, as live for October 13–27. Its public description calls for an agent that navigates websites and retrieves specific information from a natural-language request. The Match 4 detail link still opens the overview, and the visible starter kit is labeled Match 3. The organizer's infrastructure PDF supplies common container rules, but its task interface describes OCR rather than Match 4. See the [contract review](docs/official-match4-status.md) and [official challenge page](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge). Match 4's request/output interface and evaluator remain unavailable.
 
 The LabLab project entry was successfully submitted under **Ammann Labs**. Its public page displays October 14, 2026; the [submission receipt](evidence/lablab-submission.json) records verification at 2026-10-14 04:45:39 UTC and the local date of October 13. This published entry precedes the detailed Match 4 brief and does not establish an official evaluator score or runtime compatibility. A specific development run on an AMD Instinct MI300X through the general notebook tutorial service is verified. The default connector uses local Ollama; an operator-selected local vLLM connector supports the tested AMD runtime.
 
 The submitted source snapshot is `babe608e31d5f672baf27550487102ba6a06f550`; AMD model validation used `7e406424b14ce49a77352111c51f5ae7980df4f0`. The existing source ZIP, evidence ZIP, manifest and wheel remain frozen at that submitted snapshot. These later receipt and documentation updates do not change those downloads.
+
+## Interactive extractive demo
+
+The optional [Streamlit demo](demo/README.md) accepts a new question and public starting URLs. It uses the same retrieval and quote/version validator as the AMD application, with a separate Qwen3 0.6B prompt that selects one source passage from up to four candidates and returns it verbatim. It does not synthesize across sources or establish version comparisons. This smaller configuration has not been scored against the AMD benchmark.
+
+Fresh local browser checks answered the Python TaskGroup question with its qualified source passage and identified the repository's MIT license. Both used real web retrieval and model calls; the [results and validation record](evidence/demo/) retain the model profile, usage, and limitations. The original full-answer prompt abstained on three initial small-model queries; those results are also retained. The extractive adapter has 24 focused tests in addition to the unchanged 114 core tests. Free public hosting is being tested; no working hosted endpoint is claimed until that check completes.
 
 ## Run locally
 

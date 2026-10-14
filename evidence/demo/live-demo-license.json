@@ -1,0 +1,238 @@
+{
+  "question": "What license is Source Trail released under?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B2",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "Source Trail retrieves web evidence for a question and makes the answer, supporting quotes, source versions, and navigation path inspectable. It is a local prototype by **agammann**, [submitted to the AMD AI League under Ammann Labs](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/ammann-labs/source-trail)."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "# Source Trail"
+    },
+    {
+      "block_id": "P1B29",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "Run Source Trail in another terminal in the same environment:"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The project explores a specific question: can a retrieval workflow handle stale pages, conflicting sources, and missing answers more reliably than a simpler workflow under the same page budget? Its synthetic fixtures provide a way to inspect those cases. They do not establish originality, broad web performance, or a competitive score."
+    },
+    {
+      "block_id": "P1B6",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The LabLab project entry was successfully submitted under **Ammann Labs**. Its public page displays October 14, 2026; the [submission receipt](evidence/lablab-submission.json) records verification at 2026-10-14 04:45:39 UTC and the local date of October 13. This published entry precedes the detailed Match 4 brief and does not establish an official evaluator score or runtime compatibility. A specific development run on an AMD Instinct MI300X through the general notebook tutorial service is verified. The default connector uses local Ollama; an operator-selected local vLLM connector supports the tested AMD runtime."
+    },
+    {
+      "block_id": "P1B7",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The submitted source snapshot is `babe608e31d5f672baf27550487102ba6a06f550`; AMD model validation used `7e406424b14ce49a77352111c51f5ae7980df4f0`. The existing source ZIP, evidence ZIP, manifest and wheel remain frozen at that submitted snapshot. These later receipt and documentation updates do not change those downloads."
+    },
+    {
+      "block_id": "P1B23",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "Open [the local inspector](http://127.0.0.1:8765). Enter a question and one URL per line, optionally add a target version, and select **Run query**. The example buttons fill the form with public documentation questions; they do not run a query or supply an answer. After a result arrives, inspect quotes, expand source versions and the navigation path, or download its JSON."
+    },
+    {
+      "block_id": "P1B39",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "Quote presence establishes that a passage occurs in the retrieved text. It does not by itself prove that the passage entails the answer. Inspect the quotes and the surrounding source when making a decision."
+    },
+    {
+      "block_id": "P1B44",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The local inspector uses `GET /api/health` and `POST /api/query`. A query request contains `question`, `urls`, optional `target_version`, `mode`, and `max_pages`. External page text is evidence data, not executable instructions. The inspector renders returned text as text and restricts clickable source links to HTTP(S)."
+    },
+    {
+      "block_id": "P1B53",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The runner retains output JSON, process logs, `summary.json`, and a human-readable report. It supplies the app with questions and starting URLs, not expected answers. Scoring checks expected status, complete normalized answer aliases, the necessary set of source paths, quote presence, and the page budget. Answer aliases are not a semantic judge; citation block IDs are shape-checked by the benchmark. All failures are retained. See [benchmark/README.md](benchmark/README.md) for the scoring limits."
+    },
+    {
+      "block_id": "P1B57",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The repository retains the historical [Ollama synthetic summary](evidence/synthetic/summary.json), [current local unit-test log](evidence/unit-tests.txt), [AMD development evidence](evidence/amd/verification.json), and [package verification record](evidence/package-verification.json). Rerunning the commands above produces fresh evidence for your environment. The original local delivery also had a separate `source-trail-evidence` directory beside the source folder; repository links use the committed `evidence/` snapshot."
+    },
+    {
+      "block_id": "P1B59",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The [CI workflow](.github/workflows/ci.yml) runs the standard-library unit and loopback integration suite on Ubuntu and Windows with Python 3.11 and 3.12. It builds a wheel, installs it into a separate virtual environment, and checks the installed metadata, CLI, inspector HTML, and health endpoint outside the source checkout. CI does not call a live model or run the model-backed benchmark."
+    },
+    {
+      "block_id": "P1B68",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The prototype focuses on readable HTML and plain-text pages. A browser that executes JavaScript, authenticated sessions, PDF extraction, and broader media parsing are outside this first implementation. HTML reading does not reproduce a browser's layout or every CSS visibility rule. A six-page query is deliberately bounded and can miss necessary evidence. Source conflicts and model mistakes still require inspection."
+    },
+    {
+      "block_id": "P1B69",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "Official Match 4 evaluation still requires the detailed brief, its input/output and runtime contract, validation in the required environment, and the released evaluator. General AMD GPU development validation is complete, and the LabLab project entry is published. Official evaluator results and entry-container compatibility remain unverified."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "## Challenge status"
+    },
+    {
+      "block_id": "P1B5",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "Checked on **October 13, 2026**: the organizer lists Match 4, *Intelligent Web Information Retrieval*, as live for October 13–27. Its public description calls for an agent that navigates websites and retrieves specific information from a natural-language request. The Match 4 detail link still opens the overview, and the visible starter kit is labeled Match 3. A detailed Match 4 interface, evaluator, runtime contract, and inference rules were not available from those links. See the [official challenge page](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge)."
+    },
+    {
+      "block_id": "P1B8",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "## Run locally"
+    },
+    {
+      "block_id": "P1B9",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "Use Python 3.11 or later and a running [Ollama](https://ollama.com/) instance. The Python coordinator has no third-party runtime dependencies. Run commands from the project root."
+    },
+    {
+      "block_id": "P1B10",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "On Windows, the helper selects a working interpreter from an explicit `-PythonPath`, the `SOURCETRAIL_PYTHON` environment variable, a project `.venv`, or the standard Python launcher/commands. It rejects candidates that fail the version check, including inactive Microsoft Store aliases."
+    },
+    {
+      "block_id": "P1B11",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "```powershell .\\run.ps1 -Check ollama list ```"
+    },
+    {
+      "block_id": "P1B12",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "To choose an interpreter explicitly, replace this example path with your Python executable:"
+    },
+    {
+      "block_id": "P1B13",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "```powershell .\\run.ps1 -PythonPath \"C:\\Python312\\python.exe\" -Check ```"
+    },
+    {
+      "block_id": "P1B14",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "A project virtual environment is optional. Create one with a working Python interpreter using `python -m venv .venv`. In the CLI examples below, `python` means that working interpreter; on Windows, you can use `.\\.venv\\Scripts\\python.exe` in its place if it is not on `PATH`."
+    },
+    {
+      "block_id": "P1B15",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "source_version": null,
+      "section": "",
+      "text": "The default model is `qwen3.5:4b-q4_K_M`. If it is not already installed, pull it before running a query:"
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "https://raw.githubusercontent.com/agammann/source-trail/bbd94d87e47c2d78dbcd5c25a31eaa632707a80b/README.md",
+      "title": "",
+      "blocks": 73,
+      "elapsed_ms": 422,
+      "sha256": "6370481ecf5dab23ed18eb026672483311463f695fbd2f452f399b4dc936ce10",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 1,
+    "successful_pages": 1,
+    "model_calls": 1,
+    "input_tokens": 3733,
+    "output_tokens": 19,
+    "usage_recorded": true,
+    "model": "qwen3:0.6b",
+    "duration_ms": 3515
+  },
+  "status": "abstained",
+  "answer": "",
+  "citations": [],
+  "demo_runtime": {
+    "model": "qwen3:0.6b",
+    "model_digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+    "provider": "local Ollama",
+    "ollama_version": "0.35.0",
+    "profile": "small-model demonstration; CPU hosting target",
+    "page_budget": 3
+  }
+}

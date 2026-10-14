@@ -1,0 +1,60 @@
+{
+  "date_local": "2026-10-13",
+  "author": "agammann",
+  "profile": "extractive-selector-v1",
+  "fresh_local_browser_queries": [
+    {
+      "file": "live-extractive-license.json",
+      "status": "answered",
+      "model_calls": 1,
+      "input_tokens": 398,
+      "output_tokens": 11,
+      "duration_ms": 4750,
+      "exact_passage_checked": true
+    },
+    {
+      "file": "live-extractive-taskgroup.json",
+      "status": "answered",
+      "model_calls": 1,
+      "input_tokens": 695,
+      "output_tokens": 13,
+      "duration_ms": 1860,
+      "exact_passage_checked": true
+    }
+  ],
+  "core_tests": 114,
+  "demo_tests": 24,
+  "cloud_deployment_verified": false,
+  "browser": {
+    "identity": "Source Trail",
+    "nonblank": true,
+    "query": true,
+    "supporting_quote": true,
+    "source_disclosure": true,
+    "navigation_disclosure": true,
+    "json_download": true,
+    "mobile_viewport": [
+      390,
+      844
+    ],
+    "mobile_document_width": 390,
+    "no_framework_error": true,
+    "console": "Only transient disconnect/health errors from the controlled server restart preceded the retest; no later warning or error observed."
+  },
+  "initial_full_answer_prompt_results": [
+    "live-demo-taskgroup.json",
+    "live-demo-license.json",
+    "live-demo-short-document.json"
+  ],
+  "limitations": [
+    "Local fresh queries do not establish hosted resource viability.",
+    "This is a separate small-model passage-selection prompt, not the AMD answer prompt or benchmark.",
+    "The README license query also exposed an unchanged retrieval limitation: lexical selection did not include the licensed paragraph."
+  ],
+  "demo_file_sha256": {
+    "demo\\app.py": "5bed2b90a038ae89174f1707c9ee84628ecfb797068e0f79449f221d8987d45b",
+    "demo\\bootstrap.py": "84e48fbf857cbc1640c18255dff4071bffcb9820df967b963d8676492998e675",
+    "demo\\selector.py": "f1d012335e4d9d12d8b589d85b01479bf4c895706b9662f37b6374bd253a10e5",
+    "demo\\__init__.py": "cf0f47aae1334b618a88963e5cfae50999c85e06ff2ec806c6d9afac7eb6c839"
+  }
+}

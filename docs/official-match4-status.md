@@ -1,0 +1,11 @@
+# Match 4 contract review
+
+Checked October 13, 2026. The [AMD AI League page](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge) lists Intelligent Web Information Retrieval for October 13–27. Its Match 4 link still opens the overview. The visible starter is Match 3. Signed-in AMD and LabLab Discord announcement/FAQ channels did not supply a Match 4 request/output schema or evaluator during this check. No message was posted.
+
+The organizer's [13-page infrastructure and mini-challenge PDF](https://storage.googleapis.com/lablab-static-eu/events/LabLab_AMD%20AI%20Challenge%20-%20Mini%20Challenge.pdf) states on page 1 that its infrastructure and submission rules apply across challenges. Pages 3–5 require the final Docker stage to retain the layers of `rocm/pytorch:rocm10.0_ubuntu26.04_py3.14_pytorch_release_2.13.0`, an uncompressed image no larger than 60 GiB, application code at `/app/app.py`, and GPU memory use from 1 to 48 GiB with 1% upper tolerance. The submission image must be publicly pullable without credentials. Its final registry reference is to be provided through the organizer's submission channel rather than advertised in the public repository. No secrets belong in the image or source.
+
+The downloaded PDF's SHA-256 is `6eec89109e4c3e04cb32b38b80c03fdeb1cb307802373fbf00492bfc10a343c3`. Its remaining task interface uses images and OCR output; those arguments, scoring and time limits cannot be assumed to define Match 4's web-retrieval task.
+
+The recorded AMD tutorial run used ROCm 7.14 and PyTorch 2.11, and did not use the mandated common base. It remains valid evidence of that specific development run, but establishes neither official container compatibility nor an evaluator score. `Dockerfile.prototype` is only coordinator packaging. A final container adapter requires the actual Match 4 task contract and must be tested on the prescribed base before it is claimed as compatible.
+
+LabLab's general submission requirements also call for a 16:9 cover, an MP4 demonstration, a PDF presentation, public source and a working online application. The shorter AMD entry form did not expose all of those fields; no event-specific waiver was found. Supplemental media and hosted-demo checks are being completed separately from the already-published project entry.
