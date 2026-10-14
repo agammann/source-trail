@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "creator": "agammann",
   "updated_date": "2026-10-13",
-  "stage": "AMD-validated development prototype; official contract pending",
+  "stage": "Published LabLab entry; AMD development validated; official evaluation pending",
   "challenge": {
     "name": "AMD AI League Match 4: Intelligent Web Information Retrieval",
     "source": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
@@ -14,7 +14,7 @@
     ],
     "detailed_contract": "Public Match 4 details still link to the overview; the visible starter is for Match 3.",
     "official_evaluator_run": false,
-    "submitted": false,
+    "submitted": true,
     "status": "live"
   },
   "runtime": {
@@ -176,6 +176,13 @@
       },
       "public_query": "Python TaskGroup answered with one exact quote preserving the exception qualifier.",
       "evidence": "evidence/amd/verification.json"
+    },
+    "lablab_submission": {
+      "state": "published and confirmed",
+      "verified_at_utc": "2026-10-14T04:45:39Z",
+      "evidence": "evidence/lablab-submission.json",
+      "official_match4_evaluator_run": false,
+      "official_match4_score_verified": false
     }
   },
   "evidence_limits": [
@@ -191,12 +198,33 @@
   "publication": {
     "repository_published": true,
     "demo_published": false,
-    "submitted": false,
-    "repository_url": "https://github.com/agammann/source-trail"
+    "submitted": true,
+    "repository_url": "https://github.com/agammann/source-trail",
+    "entry_name": "Ammann Labs",
+    "submission_id": "r0n5faukcayp5frbgzqb6apm",
+    "submission_url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/ammann-labs/source-trail",
+    "canonical_submission_url": "https://lablab.ai/submissions/r0n5faukcayp5frbgzqb6apm",
+    "verified_at_utc": "2026-10-14T04:45:39Z",
+    "local_date": "2026-10-13",
+    "public_page_display_date": "October 14, 2026",
+    "submitted_source_snapshot": "babe608e31d5f672baf27550487102ba6a06f550",
+    "submission_evidence": "evidence/lablab-submission.json"
   },
   "next_required": [
     "Obtain and record the detailed Match 4 contract.",
     "Adapt interfaces and permitted local inference to its required environment.",
-    "Run the released official evaluator and review completed submission materials."
-  ]
+    "Run the released official evaluator and record its results."
+  ],
+  "submitted_artifact_snapshot": {
+    "source_revision": "babe608e31d5f672baf27550487102ba6a06f550",
+    "amd_runtime_source_revision": "7e406424b14ce49a77352111c51f5ae7980df4f0",
+    "frozen": true,
+    "artifacts": [
+      "source ZIP",
+      "evidence ZIP",
+      "manifest",
+      "wheel"
+    ],
+    "note": "Existing downloads retain the submitted snapshot; later receipt and documentation updates do not rebuild or replace them."
+  }
 }

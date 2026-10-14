@@ -1,6 +1,6 @@
 # Source Trail
 
-Source Trail retrieves web evidence for a question and makes the answer, supporting quotes, source versions, and navigation path inspectable. It is a local prototype by **agammann**, being prepared for the AMD AI League's web information retrieval match.
+Source Trail retrieves web evidence for a question and makes the answer, supporting quotes, source versions, and navigation path inspectable. It is a local prototype by **agammann**, [submitted to the AMD AI League under Ammann Labs](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/ammann-labs/source-trail).
 
 The project explores a specific question: can a retrieval workflow handle stale pages, conflicting sources, and missing answers more reliably than a simpler workflow under the same page budget? Its synthetic fixtures provide a way to inspect those cases. They do not establish originality, broad web performance, or a competitive score.
 
@@ -8,7 +8,9 @@ The project explores a specific question: can a retrieval workflow handle stale 
 
 Checked on **October 13, 2026**: the organizer lists Match 4, *Intelligent Web Information Retrieval*, as live for October 13–27. Its public description calls for an agent that navigates websites and retrieves specific information from a natural-language request. The Match 4 detail link still opens the overview, and the visible starter kit is labeled Match 3. A detailed Match 4 interface, evaluator, runtime contract, and inference rules were not available from those links. See the [official challenge page](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge).
 
-This implementation precedes the detailed brief and has not been submitted. A specific development run on an AMD Instinct MI300X through the general notebook tutorial service is verified. Official environment and entry-container compatibility still depend on the detailed requirements. The default connector uses local Ollama; an operator-selected local vLLM connector supports the tested AMD runtime.
+The LabLab project entry was successfully submitted under **Ammann Labs**. Its public page displays October 14, 2026; the [submission receipt](evidence/lablab-submission.json) records verification at 2026-10-14 04:45:39 UTC and the local date of October 13. This published entry precedes the detailed Match 4 brief and does not establish an official evaluator score or runtime compatibility. A specific development run on an AMD Instinct MI300X through the general notebook tutorial service is verified. The default connector uses local Ollama; an operator-selected local vLLM connector supports the tested AMD runtime.
+
+The submitted source snapshot is `babe608e31d5f672baf27550487102ba6a06f550`; AMD model validation used `7e406424b14ce49a77352111c51f5ae7980df4f0`. The existing source ZIP, evidence ZIP, manifest and wheel remain frozen at that submitted snapshot. These later receipt and documentation updates do not change those downloads.
 
 ## Run locally
 
@@ -183,7 +185,7 @@ For model-backed queries inside a container, supply a writable location for outp
 
 The prototype focuses on readable HTML and plain-text pages. A browser that executes JavaScript, authenticated sessions, PDF extraction, and broader media parsing are outside this first implementation. HTML reading does not reproduce a browser's layout or every CSS visibility rule. A six-page query is deliberately bounded and can miss necessary evidence. Source conflicts and model mistakes still require inspection.
 
-Before an official entry can be called ready, obtain the detailed Match 4 brief, adapt the input/output and runtime contract, validate in that required environment, run the released evaluator, and review the resulting submission materials. General AMD GPU development validation is complete. The challenge entry has not been submitted.
+Official Match 4 evaluation still requires the detailed brief, its input/output and runtime contract, validation in the required environment, and the released evaluator. General AMD GPU development validation is complete, and the LabLab project entry is published. Official evaluator results and entry-container compatibility remain unverified.
 
 MIT licensed. Copyright 2026 agammann.
 

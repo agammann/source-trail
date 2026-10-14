@@ -1,0 +1,29 @@
+{
+  "project": "Source Trail",
+  "event": "AMD AI League",
+  "entry_name": "Ammann Labs",
+  "submission_id": "r0n5faukcayp5frbgzqb6apm",
+  "submitted": true,
+  "verified_at_utc": "2026-10-14T04:45:39Z",
+  "local_date": "2026-10-13",
+  "public_page_display_date": "October 14, 2026",
+  "submission_url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/ammann-labs/source-trail",
+  "canonical_submission_url": "https://lablab.ai/submissions/r0n5faukcayp5frbgzqb6apm",
+  "repository_url": "https://github.com/agammann/source-trail",
+  "submitted_source_snapshot": "babe608e31d5f672baf27550487102ba6a06f550",
+  "amd_runtime_source_revision": "7e406424b14ce49a77352111c51f5ae7980df4f0",
+  "confirmation_text": "You have successfully submitted your project for the AMD AI League event!",
+  "verified_public_fields": [
+    "Source Trail",
+    "Ammann Labs",
+    "AMD ROCm",
+    "Qwen3",
+    "Web Scraping & Data Extraction",
+    "GitHub repository",
+    "Submitted description and unchanged benchmark scores"
+  ],
+  "judging_notice": "Judging is in progress. Your feedback will be available once the event organizers publish it.",
+  "official_match4_evaluator_run": false,
+  "official_match4_score_verified": false,
+  "scope": "Published LabLab project entry; this receipt does not establish AMD evaluator compatibility or a competitive score."
+}

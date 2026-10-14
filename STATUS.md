@@ -1,6 +1,6 @@
 # Source Trail status
 
-Checked October 13, 2026. This prototype has completed a specific AMD GPU development run for AMD AI League Match 4, Intelligent Web Information Retrieval, now listed as live for October 13–27. The detailed contract is still unavailable from the public Match 4 link, which returns the overview; the visible starter kit is labeled Match 3.
+Checked October 13, 2026 locally. The [LabLab project entry](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/ammann-labs/source-trail) is published under Ammann Labs; its public page displays October 14. Submission confirmation and public fields were verified at 2026-10-14 04:45:39 UTC; see [the receipt](evidence/lablab-submission.json). This prototype has completed a specific AMD GPU development run for AMD AI League Match 4, Intelligent Web Information Retrieval, now listed as live for October 13–27. The detailed contract is still unavailable from the public Match 4 link, which returns the overview; the visible starter kit is labeled Match 3.
 
 | Check | Recorded result |
 | --- | --- |
@@ -14,10 +14,13 @@ Checked October 13, 2026. This prototype has completed a specific AMD GPU develo
 | Python packaging | Final audit wheel build and isolated installed metadata/CLI/HTML/HTTP/health smoke passed. |
 | Windows launcher | Interpreter discovery, explicit and relative paths, start from another directory, and health request passed. |
 | GitHub | Source published. All four Ubuntu/Windows and Python 3.11/3.12 jobs passed for the vLLM code revision; see evidence/github-ci.json. |
+| LabLab submission | Successfully submitted under Ammann Labs; public title, team, repository, description and tags verified. See evidence/lablab-submission.json. |
 | Docker | Not run: local daemon unavailable. Dockerfile.prototype packages only the coordinator. |
 | General AMD notebook | One-Click Tutorial launched an MI300X virtual function. Local vLLM completed 44 model requests; provider usage, server metrics and generation-time GPU activity agree. See evidence/amd/verification.json. |
-| Hackathon notebook route | Earlier signed-in /hackathon dashboard reported the account email was not registered. General tutorial access does not verify official Match 4 registration. No Discord note sent. |
-| Official evaluator | Not available or run; no submission made. |
+| Hackathon notebook route | Earlier signed-in /hackathon dashboard reported the account email was not registered. Registration with AMD's hackathon notebook route remains unverified; the published LabLab entry is a separate record. No Discord note sent. |
+| Official evaluator | Not available or run; no official Match 4 score verified. |
+
+The submitted source snapshot is `babe608e31d5f672baf27550487102ba6a06f550`, and the AMD runtime source is `7e406424b14ce49a77352111c51f5ae7980df4f0`. Existing source and evidence ZIPs, the manifest and the wheel retain the submitted snapshot. This receipt/documentation update does not rebuild or replace them.
 
 The later audit repaired prerelease-to-stable comparisons, adjacent-table column context, and block markup inside table cells. Fresh loopback acquisition and selection reproduced all 44 saved main/stress evidence inputs with zero model calls; see evidence/evidence-selection-recheck.json.
 
@@ -35,4 +38,4 @@ These are engineering checks on a small development corpus. They do not establis
 
 The implementation supports static HTML and plain text, up to the configured page/evidence limits. JavaScript browser navigation, authenticated sources, PDFs, and media remain outside its scope. Version markers are heuristic, and requested versions require identifiable matching context.
 
-Remaining official-entry work: obtain the detailed Match 4 contract, adapt its interface and permitted runtime, establish access to that required environment, run its evaluator, and review the completed submission. The local prototype, general AMD GPU development validation and public source delivery are complete.
+Remaining official-evaluation work: obtain the detailed Match 4 contract, adapt its interface and permitted runtime, establish access to that required environment, and run its evaluator. The local prototype, general AMD GPU development validation, public source delivery and LabLab project submission are complete. Publication of the entry does not establish official evaluator compatibility or a competitive score.
