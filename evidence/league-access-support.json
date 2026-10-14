@@ -1,0 +1,19 @@
+{
+  "project": "Source Trail",
+  "team": "Ammann Labs",
+  "lablab_username": "agammann",
+  "channel": "LabLab AMD AI League participants",
+  "message_url": "https://discord.com/channels/877056448956346408/1537126924663660664/1559823328888233995",
+  "verified_at_utc": "2026-10-14T07:01:39Z",
+  "posted_date_local": "2026-10-14",
+  "state": "Published and visible in channel; organizer reply pending",
+  "purpose": [
+    "Resolve dedicated hackathon notebook registration",
+    "Locate the official Match 4 input/output contract and evaluator"
+  ],
+  "account_email_shared": false,
+  "text": "Hi, I’m participating in AMD AI League Match 4 as agammann / Ammann Labs, with the project Source Trail. My LabLab profile shows AMD SSO and Discord connected, and the general AMD Notebooks tutorial works, but the signed-in /hackathon dashboard says: “Your email is not registered for the hackathon. Please contact admins.”\n\nCould an organizer check League access or point me to the required activation step or event-password instructions? Also, where is the official Match 4 input/output contract and evaluator published?\n\nI can provide the account email privately if needed.",
+  "delivery_note": "The first version containing URLs was rejected by the server link policy. The published version removes all URLs and complies with that restriction.",
+  "access_resolved": false,
+  "official_interface_obtained": false
+}

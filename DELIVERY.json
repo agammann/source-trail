@@ -2,8 +2,8 @@
   "project": "Source Trail",
   "version": "0.1.0",
   "creator": "agammann",
-  "updated_date": "2026-10-13",
-  "stage": "Public demo and supplemental media verified; existing LabLab entry update in progress; official evaluation pending",
+  "updated_date": "2026-10-14",
+  "stage": "Published LabLab entry updated with verified public demo and supplemental media; official evaluation pending",
   "challenge": {
     "name": "AMD AI League Match 4: Intelligent Web Information Retrieval",
     "source": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
@@ -28,7 +28,8 @@
     "default_model_endpoint": "http://127.0.0.1:11434",
     "default_inspector": "http://127.0.0.1:8765",
     "amd_gpu_verified": true,
-    "amd_notebook_access": "General tutorial MI300X run verified; dedicated /hackathon route rechecked October 13 and still reports email not registered.",
+    "amd_notebook_access": "General tutorial MI300X run verified; dedicated /hackathon route rechecked October 13 and still reports email not registered. Organizer access and Match 4 interface question posted October 14; reply pending.",
+    "organizer_access_request": "evidence/league-access-support.json",
     "vllm": {
       "model": "Qwen3-4B-Instruct-2507",
       "endpoint": "http://127.0.0.1:8000/v1",
@@ -249,17 +250,18 @@
     "public_page_display_date": "October 14, 2026",
     "submitted_source_snapshot": "babe608e31d5f672baf27550487102ba6a06f550",
     "submission_evidence": "evidence/lablab-submission.json",
-    "supplemental_completion": "MP4/PDF/cover published and free public demo verified; existing entry supplemental-link update pending.",
+    "supplemental_completion": "MP4/PDF/cover published and free online demo verified; saved entry fields verified after reopening.",
     "demo_url": "https://source-trail.streamlit.app/",
     "demo_profile": "extractive-selector-v1",
     "demo_evidence": "evidence/demo/cloud-checks.json",
     "media_published": true,
     "media_release_url": "https://github.com/agammann/source-trail/releases/tag/submission-media-2026-10-13",
     "media_evidence": "evidence/media-release.json",
-    "supplemental_entry_updated": false
+    "supplemental_entry_updated": true,
+    "supplemental_evidence": "evidence/lablab-supplemental-update.json",
+    "supplemental_verified_at_utc": "2026-10-14T06:42:02.328743+00:00"
   },
   "next_required": [
-    "Add supplemental links to the existing LabLab entry and verify publication.",
     "Obtain Match 4 request/output contract and evaluator.",
     "Resolve dedicated hackathon-pool notebook registration with organizers.",
     "Adapt and test a final container on the prescribed common ROCm base.",

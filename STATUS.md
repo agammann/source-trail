@@ -19,9 +19,10 @@ Checked October 13, 2026 locally. The [LabLab project entry](https://lablab.ai/a
 | GitHub | Source published. All four Ubuntu/Windows and Python 3.11/3.12 jobs passed for the vLLM code revision; see evidence/github-ci.json. |
 | Supplemental demo CI | All four Ubuntu/Windows and Python 3.11/3.12 jobs passed for b558b7b, with 114 core tests, 24 demo tests and isolated installed-package checks in each job. See evidence/demo/github-ci.json. |
 | LabLab submission | Successfully submitted under Ammann Labs; public title, team, repository, description and tags verified. See evidence/lablab-submission.json. |
+| LabLab supplemental update | Update Submission succeeded. The new 1900-character description and 1567-character Additional Information, including live-demo/MP4/PDF/cover links, exactly matched the prepared values after reopening the editor. Public description verified; see evidence/lablab-supplemental-update.json. |
 | Docker | Not run: local daemon unavailable. Dockerfile.prototype packages only the coordinator. |
 | General AMD notebook | One-Click Tutorial launched an MI300X virtual function. Local vLLM completed 44 model requests; provider usage, server metrics and generation-time GPU activity agree. See evidence/amd/verification.json. |
-| Hackathon notebook route | Rechecked signed-in /hackathon dashboard October 13: it still reports the account email is not registered for the hackathon. Dedicated-pool access is blocked; the published LabLab entry is a separate record. No Discord note sent. |
+| Hackathon notebook route | Rechecked signed-in /hackathon dashboard October 13: it still reports the account email is not registered for the hackathon. Dedicated-pool access is blocked; the published LabLab entry is a separate record. An approved plain-text organizer question was posted October 14 in the LabLab League channel; reply pending. See evidence/league-access-support.json. |
 | Official evaluator | Not available or run; no official Match 4 score verified. |
 
 The submitted source snapshot is `babe608e31d5f672baf27550487102ba6a06f550`, and the AMD runtime source is `7e406424b14ce49a77352111c51f5ae7980df4f0`. Existing source and evidence ZIPs, the manifest and the wheel retain the submitted snapshot. Supplemental demo and documentation updates do not rebuild or replace them.
@@ -44,6 +45,6 @@ These are engineering checks on a small development corpus. They do not establis
 
 The implementation supports static HTML and plain text, up to the configured page/evidence limits. JavaScript browser navigation, authenticated sources, PDFs, and media remain outside its scope. Version markers are heuristic, and requested versions require identifiable matching context.
 
-The general LabLab requirements include a 16:9 cover, MP4 video, PDF presentation and a working online application. The AMD form did not expose all those fields, and no waiver was found. These supplemental media are now publicly downloadable, and the online demo completed actual hosted queries. Links are being added to the existing entry through its Additional Information field.
+The general LabLab requirements include a 16:9 cover, MP4 video, PDF presentation and a working online application. The AMD form did not expose separate media-upload fields, and no waiver was found. These media are publicly downloadable, and the online demo completed actual hosted queries. Their URLs were saved in the entry's Additional Information field and verified after reopening; the public repository README also links them.
 
 Remaining official-evaluation work: obtain the Match 4 task interface, adapt it to the prescribed common container base, establish access to that environment, and run its evaluator. The tutorial run used ROCm 7.14/PyTorch 2.11, differing from the required base. Publication of the entry does not establish official evaluator compatibility or a competitive score.

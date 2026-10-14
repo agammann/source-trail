@@ -1,0 +1,31 @@
+{
+  "project": "Source Trail",
+  "entry_name": "Ammann Labs",
+  "author": "agammann",
+  "submission_id": "r0n5faukcayp5frbgzqb6apm",
+  "submission_url": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/ammann-labs/source-trail",
+  "updated": true,
+  "verified_at_utc": "2026-10-14T06:42:02.328743+00:00",
+  "date_local": "2026-10-13",
+  "confirmation": "Submission Updated! Your submission for AMD AI League has been updated successfully.",
+  "public_description_verified": true,
+  "saved_description_chars": 1900,
+  "saved_description_words": 270,
+  "saved_additional_information_chars": 1567,
+  "description_matches_after_reopening": true,
+  "additional_information_matches_after_reopening": true,
+  "saved_links": {
+    "live_demo": "https://source-trail.streamlit.app/",
+    "media_release": "https://github.com/agammann/source-trail/releases/tag/submission-media-2026-10-13",
+    "video": "https://github.com/agammann/source-trail/releases/download/submission-media-2026-10-13/source-trail-demo.mp4",
+    "pdf": "https://github.com/agammann/source-trail/releases/download/submission-media-2026-10-13/source-trail-pitch.pdf",
+    "cover": "https://github.com/agammann/source-trail/releases/download/submission-media-2026-10-13/source-trail-cover.png"
+  },
+  "description_sha256": "10a5603be0027a2b821abc439f707e7536542c7853124daf2e72fcc7c46b88f7",
+  "additional_information_sha256": "f5a26aa11633b9669b84da36918e6b6d2b1364a987ee705937796723415ee5a5",
+  "form_note": "AMD-specific form has no separate MP4/PDF/cover upload fields. Their public URLs and the live demo URL were saved in Additional Information; public repository README links the media and demo.",
+  "original_submitted_source_snapshot": "babe608e31d5f672baf27550487102ba6a06f550",
+  "runtime_and_media_evidence_revision": "63b6e93442572505e204cc135631941a08cc60b5",
+  "official_match4_evaluator_run": false,
+  "official_container_compatibility_verified": false
+}
