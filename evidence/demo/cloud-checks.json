@@ -1,0 +1,68 @@
+{
+  "author": "agammann",
+  "checked_date_local": "2026-10-13",
+  "url": "https://source-trail.streamlit.app/",
+  "repository_revision": "b558b7b95b87ff7dd2946e438deecadaf928d85c",
+  "entrypoint": "demo/app.py",
+  "platform": "Streamlit Community Cloud",
+  "free_hosting": true,
+  "python": "3.12.15",
+  "streamlit": "1.65.0",
+  "zstandard": "0.25.0",
+  "runtime": "Ollama 0.40.3",
+  "model": "qwen3:0.6b",
+  "model_digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+  "profile": "extractive-selector-v1",
+  "public_visibility": "Streamlit Share dialog Make this app public checkbox checked; no visibility setting changed.",
+  "browser": {
+    "identity": "Source Trail",
+    "fresh_questions": 2,
+    "quotes": true,
+    "source_versions": true,
+    "navigation": true,
+    "json_downloads": 2,
+    "console_warnings_or_errors": [],
+    "mobile": "Same app checked at 390x844 locally. Hosted browser viewport override did not apply to this tab, so no hosted mobile check is claimed."
+  },
+  "queries": [
+    {
+      "result": "cloud-extractive-taskgroup.json",
+      "status": "answered",
+      "exact_passage_checked": true,
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 695,
+        "output_tokens": 13,
+        "usage_recorded": true,
+        "model": "qwen3:0.6b",
+        "reported_model": "qwen3:0.6b",
+        "duration_ms": 36630
+      }
+    },
+    {
+      "result": "cloud-extractive-license.json",
+      "status": "answered",
+      "exact_passage_checked": true,
+      "metrics": {
+        "pages": 1,
+        "successful_pages": 1,
+        "model_calls": 1,
+        "input_tokens": 398,
+        "output_tokens": 11,
+        "usage_recorded": true,
+        "model": "qwen3:0.6b",
+        "reported_model": "qwen3:0.6b",
+        "duration_ms": 1853
+      }
+    }
+  ],
+  "limitations": [
+    "Two successful live queries establish this observed hosted startup and inference, not general retrieval quality.",
+    "First-use duration includes initialization and retrieval; no comparative latency or uptime claim.",
+    "Free hosting may sleep or restart; runtime/model files are not guaranteed persistent.",
+    "This separate CPU hosting target uses a smaller extractive prompt, not the AMD benchmark pipeline.",
+    "No official Match 4 evaluator or prescribed-base compatibility has been verified."
+  ]
+}

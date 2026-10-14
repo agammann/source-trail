@@ -1,0 +1,30 @@
+{
+  "conclusion": "success",
+  "jobs": [
+    {
+      "conclusion": "success",
+      "name": "Python 3.11 on windows-latest",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "name": "Python 3.11 on ubuntu-latest",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "name": "Python 3.12 on ubuntu-latest",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "name": "Python 3.12 on windows-latest",
+      "status": "completed"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/agammann/source-trail/actions/runs/38519455369",
+  "head_sha": "b558b7b95b87ff7dd2946e438deecadaf928d85c",
+  "core_tests_per_job": 114,
+  "demo_tests_per_job": 24
+}

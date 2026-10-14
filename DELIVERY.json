@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "creator": "agammann",
   "updated_date": "2026-10-13",
-  "stage": "Published LabLab entry; AMD development validated; official evaluation pending",
+  "stage": "Public demo and supplemental media verified; existing LabLab entry update in progress; official evaluation pending",
   "challenge": {
     "name": "AMD AI League Match 4: Intelligent Web Information Retrieval",
     "source": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
@@ -12,10 +12,13 @@
       "2026-10-13",
       "2026-10-27"
     ],
-    "detailed_contract": "Public Match 4 details still link to the overview; the visible starter is for Match 3.",
+    "detailed_contract": "Common container rules are available; Match 4 request/output interface and evaluator remain unavailable.",
     "official_evaluator_run": false,
     "submitted": true,
-    "status": "live"
+    "status": "live",
+    "contract_review": "docs/official-match4-status.md",
+    "common_required_base": "rocm/pytorch:rocm10.0_ubuntu26.04_py3.14_pytorch_release_2.13.0",
+    "common_base_verified": false
   },
   "runtime": {
     "python_minimum": "3.11",
@@ -25,7 +28,7 @@
     "default_model_endpoint": "http://127.0.0.1:11434",
     "default_inspector": "http://127.0.0.1:8765",
     "amd_gpu_verified": true,
-    "amd_notebook_access": "General One-Click Tutorial session launched an MI300X VF; official /hackathon registration remains unverified.",
+    "amd_notebook_access": "General tutorial MI300X run verified; dedicated /hackathon route rechecked October 13 and still reports email not registered.",
     "vllm": {
       "model": "Qwen3-4B-Instruct-2507",
       "endpoint": "http://127.0.0.1:8000/v1",
@@ -183,6 +186,43 @@
       "evidence": "evidence/lablab-submission.json",
       "official_match4_evaluator_run": false,
       "official_match4_score_verified": false
+    },
+    "extractive_demo": {
+      "profile": "extractive-selector-v1",
+      "model": "qwen3:0.6b",
+      "prompt": "Single passage selection, distinct from AMD answer prompt",
+      "unit_tests_passed": 24,
+      "fresh_local_browser_queries_passed": 2,
+      "evidence": "evidence/demo/local-checks.json",
+      "hosted_queries_verified": true,
+      "benchmark_run": false,
+      "hosted_queries_passed": 2,
+      "hosted_evidence": "evidence/demo/cloud-checks.json",
+      "public_visibility_verified": true
+    },
+    "supplemental_demo_ci": {
+      "state": "passed",
+      "source_revision": "b558b7b95b87ff7dd2946e438deecadaf928d85c",
+      "url": "https://github.com/agammann/source-trail/actions/runs/38519455369",
+      "evidence": "evidence/demo/github-ci.json",
+      "jobs": 4,
+      "core_tests_per_job": 114,
+      "demo_tests_per_job": 24,
+      "live_model_calls": false
+    },
+    "submission_media": {
+      "state": "passed",
+      "video_seconds": 118.9,
+      "video_bytes": 2738145,
+      "pdf_pages": 6,
+      "pptx_slides": 6,
+      "cover_pixels": [
+        2560,
+        1440
+      ],
+      "public_asset_hashes_match": true,
+      "evidence": "evidence/media-release.json",
+      "qa": "evidence/media-qa.json"
     }
   },
   "evidence_limits": [
@@ -197,7 +237,7 @@
   ],
   "publication": {
     "repository_published": true,
-    "demo_published": false,
+    "demo_published": true,
     "submitted": true,
     "repository_url": "https://github.com/agammann/source-trail",
     "entry_name": "Ammann Labs",
@@ -208,12 +248,22 @@
     "local_date": "2026-10-13",
     "public_page_display_date": "October 14, 2026",
     "submitted_source_snapshot": "babe608e31d5f672baf27550487102ba6a06f550",
-    "submission_evidence": "evidence/lablab-submission.json"
+    "submission_evidence": "evidence/lablab-submission.json",
+    "supplemental_completion": "MP4/PDF/cover published and free public demo verified; existing entry supplemental-link update pending.",
+    "demo_url": "https://source-trail.streamlit.app/",
+    "demo_profile": "extractive-selector-v1",
+    "demo_evidence": "evidence/demo/cloud-checks.json",
+    "media_published": true,
+    "media_release_url": "https://github.com/agammann/source-trail/releases/tag/submission-media-2026-10-13",
+    "media_evidence": "evidence/media-release.json",
+    "supplemental_entry_updated": false
   },
   "next_required": [
-    "Obtain and record the detailed Match 4 contract.",
-    "Adapt interfaces and permitted local inference to its required environment.",
-    "Run the released official evaluator and record its results."
+    "Add supplemental links to the existing LabLab entry and verify publication.",
+    "Obtain Match 4 request/output contract and evaluator.",
+    "Resolve dedicated hackathon-pool notebook registration with organizers.",
+    "Adapt and test a final container on the prescribed common ROCm base.",
+    "Run the released official evaluator and record results."
   ],
   "submitted_artifact_snapshot": {
     "source_revision": "babe608e31d5f672baf27550487102ba6a06f550",

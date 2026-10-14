@@ -1,0 +1,51 @@
+{
+  "assets": [
+    {
+      "browser_download_url": "https://github.com/agammann/source-trail/releases/download/submission-media-2026-10-13/source-trail-cover.png",
+      "content_type": "image/png",
+      "digest": "sha256:28127562481c6717cfbd8b0e9c21102e648d90c11dffc1fed3405d5b3f1186e9",
+      "name": "source-trail-cover.png",
+      "size": 96029,
+      "state": "uploaded"
+    },
+    {
+      "browser_download_url": "https://github.com/agammann/source-trail/releases/download/submission-media-2026-10-13/source-trail-demo.mp4",
+      "content_type": "video/mp4",
+      "digest": "sha256:e4ed13f01cc31e8706ca50d205beccd23629272846ef009eec34d297fcd2b0e4",
+      "name": "source-trail-demo.mp4",
+      "size": 2738145,
+      "state": "uploaded"
+    },
+    {
+      "browser_download_url": "https://github.com/agammann/source-trail/releases/download/submission-media-2026-10-13/source-trail-pitch.pdf",
+      "content_type": "application/pdf",
+      "digest": "sha256:648f1927368bfb791ab6f4ee47bb4c487ff5df3276ce6b4b7c025560b4baceb3",
+      "name": "source-trail-pitch.pdf",
+      "size": 914544,
+      "state": "uploaded"
+    },
+    {
+      "browser_download_url": "https://github.com/agammann/source-trail/releases/download/submission-media-2026-10-13/source-trail-pitch.pptx",
+      "content_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "digest": "sha256:4c4c5c1f7ff7b7be627c8f6a9acb9cd9ec600d6a7ac96886137d96b77602f563",
+      "name": "source-trail-pitch.pptx",
+      "size": 118702,
+      "state": "uploaded"
+    }
+  ],
+  "draft": false,
+  "html_url": "https://github.com/agammann/source-trail/releases/tag/submission-media-2026-10-13",
+  "published_at": "2026-10-14T06:21:54Z",
+  "target_commitish": "b558b7b95b87ff7dd2946e438deecadaf928d85c",
+  "author": "agammann",
+  "checked_date_local": "2026-10-13",
+  "local_hashes_match_all_remote_digests": true,
+  "video_seconds": 118.9,
+  "video_full_decode_passed": true,
+  "PDF_pages": 6,
+  "cover_pixels": [
+    2560,
+    1440
+  ],
+  "original_submitted_archives_unchanged": true
+}

@@ -2,6 +2,8 @@
 
 This optional Streamlit app by **agammann** retrieves fresh public web evidence and uses local Ollama `qwen3:0.6b` to select one relevant passage. It copies the selected passage into the result and citation, then applies Source Trail's existing quote and version validation. It does not replay saved answers.
 
+The free [public demo](https://source-trail.streamlit.app/) completed fresh TaskGroup and license questions on October 13, 2026. See [the hosted validation record](../evidence/demo/cloud-checks.json). Those checks establish the observed startup and inference, not uptime, peak memory usage, or general retrieval quality.
+
 This is a separate **extractive-selector-v1** profile. The full AMD-validated application uses Qwen3-4B-Instruct-2507 and a different prompt to produce short answers. Its benchmark results do not describe this smaller demo.
 
 The demo uses verified retrieval with a three-page budget. It considers at most four ranked passages, bounds the serialized selection prompt to 3,500 UTF-8 bytes, and requests a 4,096-token context with at most 64 generated tokens. Excerpts remain exact prefixes of source text and contain at most 1,200 characters. One shared lock permits one query at a time; results stay in each visitor's Streamlit session. The model and its loopback endpoint cannot be selected through the form.

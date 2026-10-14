@@ -1,0 +1,70 @@
+{
+  "duration_seconds": 118.9,
+  "video_size": 2738145,
+  "video_format": "H.264 High, yuv420p, 1280x720, 30fps",
+  "audio_format": "AAC LC, 48kHz, stereo",
+  "full_decode_exit": 0,
+  "decode_warnings": [],
+  "join_timestamp_warnings": false,
+  "sample_audio": {
+    "seconds": 13.0,
+    "peak_dbfs": -5.28,
+    "clipped_samples": 0,
+    "nonzero_samples": 239519
+  },
+  "sample_frames_inspected_at_seconds": [
+    1,
+    18,
+    26,
+    34,
+    42,
+    49,
+    62,
+    78,
+    108,
+    116
+  ],
+  "live_clip": "Successful LOCAL browser capture only. Idle intervals shortened, readability holds labeled.",
+  "deck_metadata": {
+    "slides": "6",
+    "notes": "6",
+    "actual_slides": 6,
+    "actual_notes": 6,
+    "application": "Ammann Labs"
+  },
+  "PDF_pages": 6,
+  "PDF_link_URIs": [
+    "https://docs.python.org/3/library/asyncio-task.html",
+    "https://github.com/agammann/source-trail",
+    "https://source-trail.streamlit.app/"
+  ],
+  "cover": {
+    "format": "PNG",
+    "pixels": [
+      2560,
+      1440
+    ]
+  },
+  "hosted_demo": "https://source-trail.streamlit.app/",
+  "hosted_claim": "One fresh TaskGroup query tested by root; no uptime or performance guarantee.",
+  "artifacts": {
+    "source-trail-pitch.pptx": {
+      "bytes": 118702,
+      "sha256": "4c4c5c1f7ff7b7be627c8f6a9acb9cd9ec600d6a7ac96886137d96b77602f563"
+    },
+    "source-trail-pitch.pdf": {
+      "bytes": 914544,
+      "sha256": "648f1927368bfb791ab6f4ee47bb4c487ff5df3276ce6b4b7c025560b4baceb3"
+    },
+    "source-trail-cover.png": {
+      "bytes": 96029,
+      "sha256": "28127562481c6717cfbd8b0e9c21102e648d90c11dffc1fed3405d5b3f1186e9"
+    },
+    "source-trail-demo.mp4": {
+      "bytes": 2738145,
+      "sha256": "e4ed13f01cc31e8706ca50d205beccd23629272846ef009eec34d297fcd2b0e4"
+    }
+  },
+  "local_caption": "Separate local extractive demo - Qwen3 0.6B",
+  "local_hardware_allocation": "No CPU-vs-GPU claim"
+}
