@@ -73,6 +73,16 @@ class InspectorTests(unittest.TestCase):
         self.assertEqual(status, 200)
         self.assertEqual(body, evidence_result)
 
+    def test_browser_cannot_select_the_provider_model_endpoint_or_authentication(self):
+        result = {"status": "abstained", "answer": "", "citations": []}
+        with patch("sourcetrail.server.query", return_value=result) as run:
+            status, _ = self.post({"question": "Question?", "urls": ["https://example.com"],
+                                   "provider": "vllm", "model": "untrusted", "endpoint": "https://outside.example",
+                                   "api_key": "untrusted", "allow_local": True})
+        self.assertEqual(status, 200)
+        self.assertEqual(run.call_args.args, ("Question?", ["https://example.com"], None, "verified", 6, False))
+        self.assertEqual(run.call_args.kwargs, {})
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -5,7 +5,7 @@ import re
 import time
 from urllib.parse import urldefrag, urlsplit
 
-from .model import ModelError, Ollama
+from .model import ModelError, make_model
 from .web import WebReader, WebReadError
 
 
@@ -214,10 +214,11 @@ def query(question, urls, target_version=None, mode="verified", max_pages=6, all
         result.update({"status": "abstained", "answer": "", "citations": []})
     else:
         try:
+            client = model or make_model()
             metrics["model_calls"] = 1
             metrics["input_tokens"] = metrics["output_tokens"] = None
             metrics["usage_recorded"] = False
-            raw, use = (model or Ollama()).answer(question, evidence, target_version)
+            raw, use = client.answer(question, evidence, target_version)
             metrics.update(use)
             metrics["usage_recorded"] = use.get("usage_recorded", all(isinstance(use.get(key), int) and not isinstance(use[key], bool) for key in ("input_tokens", "output_tokens")))
             versions = versions_in(question)

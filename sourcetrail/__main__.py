@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 
 from .engine import query
-from .model import Ollama
+from .model import ModelError, make_model
 
 
 def main():
@@ -18,6 +18,7 @@ def main():
     run.add_argument("--max-pages", type=int, default=6)
     run.add_argument("--output", type=Path)
     run.add_argument("--model")
+    run.add_argument("--provider", choices=["ollama", "vllm"], help="Operator-selected local inference provider.")
     run.add_argument("--allow-local", action="store_true", help="Explicitly permit local benchmark fixtures.")
     serve = sub.add_parser("serve", help="Start the local evidence inspector.")
     serve.add_argument("--host", default="127.0.0.1", choices=["127.0.0.1", "localhost"])
@@ -30,8 +31,8 @@ def main():
         return 0
     try:
         result = query(args.question, args.url, args.target_version, args.mode, args.max_pages,
-                       args.allow_local, Ollama(model=args.model))
-    except ValueError as exc:
+                       args.allow_local, make_model(model=args.model, provider=args.provider))
+    except (ValueError, ModelError) as exc:
         parser.error(str(exc))
     encoded = json.dumps(result, ensure_ascii=False, indent=2)
     if args.output:
