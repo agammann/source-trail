@@ -1,0 +1,132 @@
+{
+  "question": "Who can request a River Lantern Library digital card?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/13-web-inline-details/index.html",
+      "title": "River Lantern Library membership",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "title": "River Lantern Library digital cards",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "title": "River Lantern Library digital cards",
+      "source_version": null,
+      "section": "River Lantern Library digital cards",
+      "text": "Who can request a digital card?"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "title": "River Lantern Library digital cards",
+      "source_version": null,
+      "section": "River Lantern Library digital cards",
+      "text": "River Lantern Library digital cards"
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "title": "River Lantern Library digital cards",
+      "source_version": null,
+      "section": "River Lantern Library digital cards",
+      "text": "Residents aged 16 and over can request a digital card."
+    },
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "title": "River Lantern Library digital cards",
+      "source_version": null,
+      "section": "River Lantern Library digital cards",
+      "text": "Who can request a children’s card?"
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/index.html",
+      "title": "River Lantern Library membership",
+      "source_version": null,
+      "section": "River Lantern Library membership",
+      "text": "River Lantern Library membership"
+    },
+    {
+      "block_id": "P2B6",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "title": "River Lantern Library digital cards",
+      "source_version": null,
+      "section": "River Lantern Library digital cards",
+      "text": "Residents under 16 need a parent or guardian to request a children’s card."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "title": "River Lantern Library digital cards",
+      "source_version": null,
+      "section": "River Lantern Library digital cards",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/index.html",
+      "title": "River Lantern Library membership",
+      "source_version": null,
+      "section": "River Lantern Library membership",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/index.html",
+      "title": "River Lantern Library membership",
+      "source_version": null,
+      "section": "River Lantern Library membership",
+      "text": "Digital-card eligibility questions"
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/index.html",
+      "title": "River Lantern Library membership",
+      "blocks": 3,
+      "elapsed_ms": 3,
+      "sha256": "82d3e83a573abf61605b849616ba2e33542ea51dd2d3635b4085ac0be3e742d5",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "title": "River Lantern Library digital cards",
+      "blocks": 6,
+      "elapsed_ms": 1,
+      "sha256": "7f476701b3118aa9be91c10dd4c188a76700b62861e8149fa3d9fedf64166bb1",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 1016,
+    "output_tokens": 57,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 760
+  },
+  "status": "answered",
+  "answer": "Residents aged 16 and over can request a digital card.",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:35929/13-web-inline-details/eligibility.html",
+      "quote": "Residents aged 16 and over can request a digital card.",
+      "block_id": "P2B4",
+      "source_version": null
+    }
+  ]
+}

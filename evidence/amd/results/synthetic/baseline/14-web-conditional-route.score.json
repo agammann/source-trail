@@ -1,0 +1,32 @@
+{
+  "case_id": "14-web-conditional-route",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": true,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/14-web-conditional-route/north.html"
+  ],
+  "expected_source_paths": [
+    "/14-web-conditional-route/north.html"
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1226,
+    "output_tokens": 53,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 750
+  },
+  "passed": true,
+  "errors": [],
+  "mode": "baseline",
+  "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/14-web-conditional-route.json",
+  "wall_duration_ms": 815
+}

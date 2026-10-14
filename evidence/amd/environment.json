@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-10-13",
+  "checked_at_utc": "2026-10-14T03:13:27.045189+00:00",
+  "python": "3.14.7",
+  "torch": "2.11.0+rocm7.14.1",
+  "hip": "7.14.60850",
+  "vllm": "0.23.1.dev1+g9ddef7117.d20260901.rocm714",
+  "transformers": "5.16.1",
+  "gpu_available": true,
+  "gpu_name": "AMD Instinct MI300X VF",
+  "gpu_memory_gib": 191.69,
+  "gpu_matmul_value": 128.0,
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "weight_files": 3,
+  "weight_bytes": 8044982000
+}

@@ -1,0 +1,154 @@
+{
+  "question": "What is the maximum number of workers in the current stable CopperFlow release?",
+  "requested_version": null,
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/index.html",
+      "title": "CopperFlow worker limits",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v4.html",
+      "title": "CopperFlow v4 limits — current stable",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v2.html",
+      "title": "CopperFlow v2 limits — archived",
+      "version": "2"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v4.html",
+      "title": "CopperFlow v4 limits — current stable",
+      "source_version": "4",
+      "section": "CopperFlow v4 limits — current stable",
+      "text": "The current stable release allows a maximum of 12 workers."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v4.html",
+      "title": "CopperFlow v4 limits — current stable",
+      "source_version": "4",
+      "section": "CopperFlow v4 limits — current stable",
+      "text": "CopperFlow v4 limits — current stable"
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v4.html",
+      "title": "CopperFlow v4 limits — current stable",
+      "source_version": "4",
+      "section": "CopperFlow v4 limits — current stable",
+      "text": "Published 2026-08-01. Version 4 is the current stable release."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/index.html",
+      "title": "CopperFlow worker limits",
+      "source_version": null,
+      "section": "CopperFlow worker limits",
+      "text": "The current stable release is version 4."
+    },
+    {
+      "block_id": "P1B5",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/index.html",
+      "title": "CopperFlow worker limits",
+      "source_version": null,
+      "section": "CopperFlow worker limits",
+      "text": "Current stable version 4 worker-limit reference"
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/index.html",
+      "title": "CopperFlow worker limits",
+      "source_version": null,
+      "section": "CopperFlow worker limits",
+      "text": "CopperFlow worker limits"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v4.html",
+      "title": "CopperFlow v4 limits — current stable",
+      "source_version": "4",
+      "section": "CopperFlow v4 limits — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v4.html",
+      "title": "CopperFlow v4 limits — current stable",
+      "source_version": "4",
+      "section": "CopperFlow v4 limits — current stable",
+      "text": "Documentation version: 4."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/index.html",
+      "title": "CopperFlow worker limits",
+      "source_version": null,
+      "section": "CopperFlow worker limits",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/index.html",
+      "title": "CopperFlow worker limits",
+      "source_version": null,
+      "section": "CopperFlow worker limits",
+      "text": "Worker-limit reference from 2024 (archived version 2)"
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/index.html",
+      "title": "CopperFlow worker limits",
+      "blocks": 5,
+      "elapsed_ms": 3,
+      "sha256": "5aac08667b6e255de9ea0fc780eeee9a72b6c5fe20518566861b00d6f3ee3c50",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v4.html",
+      "title": "CopperFlow v4 limits — current stable",
+      "blocks": 5,
+      "elapsed_ms": 1,
+      "sha256": "4ae1bf5fdc7bd74ed5a6b17b64984b6988e9456f2e5353d80039ad43537d8f4b",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v2.html",
+      "title": "CopperFlow v2 limits — archived",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "dc2533e0d36307d7ffc8c02ce0ca4de109bac4a1496c9417d06d30ee4ce4c892",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1186,
+    "output_tokens": 47,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 591
+  },
+  "status": "answered",
+  "answer": "12",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:35929/05-doc-current-stale-release/v4.html",
+      "quote": "The current stable release allows a maximum of 12 workers.",
+      "block_id": "P2B5",
+      "source_version": "4"
+    }
+  ]
+}

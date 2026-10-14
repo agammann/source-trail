@@ -1,0 +1,143 @@
+{
+  "question": "What is the configured digest_window in HemlockSync version 6?",
+  "requested_version": "6",
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/index.html",
+      "title": "HemlockSync guide directory",
+      "version": "6"
+    },
+    {
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "version": "6"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/index.html",
+      "title": "HemlockSync guide directory",
+      "source_version": "6",
+      "section": "HemlockSync guide directory",
+      "text": "Version 6 digest-window configuration"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "source_version": "6",
+      "section": "HemlockSync v6 digest configuration",
+      "text": "Documentation version: 6."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/index.html",
+      "title": "HemlockSync guide directory",
+      "source_version": "6",
+      "section": "HemlockSync guide directory",
+      "text": "HemlockSync guide directory"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "source_version": "6",
+      "section": "HemlockSync v6 digest configuration",
+      "text": "HemlockSync v6 digest configuration"
+    },
+    {
+      "block_id": "P2B5S3",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "source_version": "6",
+      "section": "HemlockSync v6 digest configuration",
+      "text": "g_112 = \"unset\" reserved_flag_113 = \"unset\" reserved_flag_114 = \"unset\" reserved_flag_115 = \"unset\" reserved_flag_116 = \"unset\" reserved_flag_117 = \"unset\" reserved_flag_118 = \"unset\" reserved_flag_119 = \"unset\" reserved_flag_120 = \"unset\" reserved_flag_121 = \"unset\" reserved_flag_122 = \"unset\" reserved_flag_123 = \"unset\" reserved_flag_124 = \"unset\" reserved_flag_125 = \"unset\" reserved_flag_126 = \"unset\" reserved_flag_127 = \"unset\" reserved_flag_128 = \"unset\" reserved_flag_129 = \"unset\" reserved_flag_130 = \"unset\" reserved_flag_131 = \"unset\" reserved_flag_132 = \"unset\" reserved_flag_133 = \"unset\" reserved_flag_134 = \"unset\" reserved_flag_135 = \"unset\" reserved_flag_136 = \"unset\" reserved_flag_137 = \"unset\" reserved_flag_138 = \"unset\" reserved_flag_139 = \"unset\" reserved_flag_140 = \"unset\" reserved_flag_141 = \"unset\" reserved_flag_142 = \"unset\" reserved_flag_143 = \"unset\" reserved_flag_144 = \"unset\" reserved_flag_145 = \"unset\" reserved_flag_146 = \"unset\" reserved_flag_147 = \"unset\" reserved_flag_148 = \"unset\" reserved_flag_149 = \"unset\" reserved_flag_150 = \"unset\" digest_window = \"36 hours\"",
+      "text_offset": 3120
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/index.html",
+      "title": "HemlockSync guide directory",
+      "source_version": "6",
+      "section": "HemlockSync guide directory",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "source_version": "6",
+      "section": "HemlockSync v6 digest configuration",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "source_version": "6",
+      "section": "HemlockSync v6 digest configuration",
+      "text": "The following code block is the published default configuration."
+    },
+    {
+      "block_id": "P2B5S1",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "source_version": "6",
+      "section": "HemlockSync v6 digest configuration",
+      "text": "reserved_flag_001 = \"unset\" reserved_flag_002 = \"unset\" reserved_flag_003 = \"unset\" reserved_flag_004 = \"unset\" reserved_flag_005 = \"unset\" reserved_flag_006 = \"unset\" reserved_flag_007 = \"unset\" reserved_flag_008 = \"unset\" reserved_flag_009 = \"unset\" reserved_flag_010 = \"unset\" reserved_flag_011 = \"unset\" reserved_flag_012 = \"unset\" reserved_flag_013 = \"unset\" reserved_flag_014 = \"unset\" reserved_flag_015 = \"unset\" reserved_flag_016 = \"unset\" reserved_flag_017 = \"unset\" reserved_flag_018 = \"unset\" reserved_flag_019 = \"unset\" reserved_flag_020 = \"unset\" reserved_flag_021 = \"unset\" reserved_flag_022 = \"unset\" reserved_flag_023 = \"unset\" reserved_flag_024 = \"unset\" reserved_flag_025 = \"unset\" reserved_flag_026 = \"unset\" reserved_flag_027 = \"unset\" reserved_flag_028 = \"unset\" reserved_flag_029 = \"unset\" reserved_flag_030 = \"unset\" reserved_flag_031 = \"unset\" reserved_flag_032 = \"unset\" reserved_flag_033 = \"unset\" reserved_flag_034 = \"unset\" reserved_flag_035 = \"unset\" reserved_flag_036 = \"unset\" reserved_flag_037 = \"unset\" reserved_flag_038 = \"unset\" reserved_flag_039 = \"unset\" reserved_flag_040 = \"unset\" reserved_flag_041 = \"unset\" reserved_flag_042 = \"unset\" reserved_flag_043 = \"unset\" reserved_flag_044 = \"unset\" reserved_flag_045 = \"unset\" reserved_flag_046 = \"unset\" reserved_flag_047 = \"unset\" reserved_flag_048 = \"unset\" reserved_flag_049 = \"unset\" reserved_flag_050 = \"unset\" reserved_flag_051 = \"unset\" reserved_flag_052 = \"unset\" reserved_flag_053 = \"unset\" reserved_flag_054 = \"unset\" reserved_flag_055 = \"unset\" reserved_flag_056 = \"unset\" reserved_flag_057 = \"unset\" reserved_flag_058 = \"unset\" reserved_flag_059 = \"unset\" reserved_flag_060 = \"unset\" reserved_flag_061 = \"unset\" reserved_flag_062 = \"unset\" reserved_flag_063 = \"unset\" reserved_flag_064 = \"unset\" reserved",
+      "text_offset": 0
+    },
+    {
+      "block_id": "P2B5S2",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "source_version": "6",
+      "section": "HemlockSync v6 digest configuration",
+      "text": "\"unset\" reserved_flag_057 = \"unset\" reserved_flag_058 = \"unset\" reserved_flag_059 = \"unset\" reserved_flag_060 = \"unset\" reserved_flag_061 = \"unset\" reserved_flag_062 = \"unset\" reserved_flag_063 = \"unset\" reserved_flag_064 = \"unset\" reserved_flag_065 = \"unset\" reserved_flag_066 = \"unset\" reserved_flag_067 = \"unset\" reserved_flag_068 = \"unset\" reserved_flag_069 = \"unset\" reserved_flag_070 = \"unset\" reserved_flag_071 = \"unset\" reserved_flag_072 = \"unset\" reserved_flag_073 = \"unset\" reserved_flag_074 = \"unset\" reserved_flag_075 = \"unset\" reserved_flag_076 = \"unset\" reserved_flag_077 = \"unset\" reserved_flag_078 = \"unset\" reserved_flag_079 = \"unset\" reserved_flag_080 = \"unset\" reserved_flag_081 = \"unset\" reserved_flag_082 = \"unset\" reserved_flag_083 = \"unset\" reserved_flag_084 = \"unset\" reserved_flag_085 = \"unset\" reserved_flag_086 = \"unset\" reserved_flag_087 = \"unset\" reserved_flag_088 = \"unset\" reserved_flag_089 = \"unset\" reserved_flag_090 = \"unset\" reserved_flag_091 = \"unset\" reserved_flag_092 = \"unset\" reserved_flag_093 = \"unset\" reserved_flag_094 = \"unset\" reserved_flag_095 = \"unset\" reserved_flag_096 = \"unset\" reserved_flag_097 = \"unset\" reserved_flag_098 = \"unset\" reserved_flag_099 = \"unset\" reserved_flag_100 = \"unset\" reserved_flag_101 = \"unset\" reserved_flag_102 = \"unset\" reserved_flag_103 = \"unset\" reserved_flag_104 = \"unset\" reserved_flag_105 = \"unset\" reserved_flag_106 = \"unset\" reserved_flag_107 = \"unset\" reserved_flag_108 = \"unset\" reserved_flag_109 = \"unset\" reserved_flag_110 = \"unset\" reserved_flag_111 = \"unset\" reserved_flag_112 = \"unset\" reserved_flag_113 = \"unset\" reserved_flag_114 = \"unset\" reserved_flag_115 = \"unset\" reserved_flag_116 = \"unset\" reserved_flag_117 = \"unset\" reserved_flag_118 = \"unset\" reserved_flag_119 = \"unset\" reserved_flag_120 = \"unset\" ",
+      "text_offset": 1560
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/index.html",
+      "title": "HemlockSync guide directory",
+      "blocks": 3,
+      "elapsed_ms": 3,
+      "sha256": "efefe15a92fdc91f0a98594b2d3e22cb8d8f465534f7f615579da415c68efd14",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "title": "HemlockSync v6 digest configuration",
+      "blocks": 5,
+      "elapsed_ms": 1,
+      "sha256": "0968bccebd1ca95c0b78d11d17222f2deec35b880b4598c29c7901f88a362d09",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 2857,
+    "output_tokens": 45,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 580
+  },
+  "status": "answered",
+  "answer": "36 hours",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:36611/h01-late-code-fact/v6.html",
+      "quote": "digest_window = \"36 hours\"",
+      "block_id": "P2B5S3",
+      "source_version": "6"
+    }
+  ]
+}

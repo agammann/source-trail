@@ -2,36 +2,44 @@
   "project": "Source Trail",
   "version": "0.1.0",
   "creator": "agammann",
-  "updated_date": "2026-10-12",
-  "stage": "pre-brief local prototype",
+  "updated_date": "2026-10-13",
+  "stage": "AMD-validated development prototype; official contract pending",
   "challenge": {
     "name": "AMD AI League Match 4: Intelligent Web Information Retrieval",
     "source": "https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge",
-    "checked_date": "2026-10-12",
+    "checked_date": "2026-10-13",
     "scheduled_dates": [
       "2026-10-13",
       "2026-10-27"
     ],
-    "detailed_contract": "unavailable through public detail link; it returned the overview",
+    "detailed_contract": "Public Match 4 details still link to the overview; the visible starter is for Match 3.",
     "official_evaluator_run": false,
-    "submitted": false
+    "submitted": false,
+    "status": "live"
   },
   "runtime": {
     "python_minimum": "3.11",
     "python_runtime_dependencies": [],
-    "provider": "local Ollama connector",
+    "provider": "Operator-selected local Ollama (default) or loopback vLLM",
     "default_model": "qwen3.5:4b-q4_K_M",
     "default_model_endpoint": "http://127.0.0.1:11434",
     "default_inspector": "http://127.0.0.1:8765",
-    "amd_gpu_verified": false,
-    "amd_notebook_access": "Authenticated; dashboard reported account email not registered for hackathon. No GPU session launched."
+    "amd_gpu_verified": true,
+    "amd_notebook_access": "General One-Click Tutorial session launched an MI300X VF; official /hackathon registration remains unverified.",
+    "vllm": {
+      "model": "Qwen3-4B-Instruct-2507",
+      "endpoint": "http://127.0.0.1:8000/v1",
+      "configuration": "SOURCETRAIL_PROVIDER=vllm; operator sets model and local URL",
+      "evidence": "evidence/amd/verification.json"
+    }
   },
   "validation": {
     "unit_tests": {
       "state": "passed",
-      "passed": 98,
-      "total": 98,
-      "evidence": "evidence/unit-tests.txt"
+      "passed": 114,
+      "total": 114,
+      "evidence": "evidence/unit-tests.txt",
+      "amd_evidence": "evidence/amd/results/unit.stderr.txt"
     },
     "local_model": {
       "state": "real local inference completed",
@@ -100,7 +108,7 @@
     },
     "official_match4": {
       "state": "not run",
-      "reason": "Detailed interface and evaluator not yet available from public detail link"
+      "reason": "Match is live, but public details still expose no detailed interface or evaluator; visible starter is Match 3."
     },
     "package": {
       "state": "passed",
@@ -130,8 +138,8 @@
       "state": "passed",
       "matrix": "Ubuntu and Windows, Python 3.11 and 3.12",
       "live_model_calls": false,
-      "source_revision": "31d3a3ada852ef5bdc55ecf1a7390f73bbdf7f61",
-      "url": "https://github.com/agammann/source-trail/actions/runs/38358097557",
+      "source_revision": "7e406424b14ce49a77352111c51f5ae7980df4f0",
+      "url": "https://github.com/agammann/source-trail/actions/runs/38506333020",
       "evidence": "evidence/github-ci.json"
     },
     "evidence_selection_recheck": {
@@ -140,6 +148,34 @@
       "unchanged": 44,
       "new_model_calls": 0,
       "evidence": "evidence/evidence-selection-recheck.json"
+    },
+    "amd_model": {
+      "state": "completed",
+      "hardware": "AMD Instinct MI300X VF",
+      "provider": "local vLLM",
+      "model": "Qwen3-4B-Instruct-2507",
+      "source_revision": "7e406424b14ce49a77352111c51f5ae7980df4f0",
+      "model_calls": 44,
+      "completed_responses": 44,
+      "input_tokens": 58604,
+      "output_tokens": 2335,
+      "gpu_samples": 101,
+      "samples_with_nonzero_gfx": 96,
+      "all_request_intervals_overlap_active_samples": true,
+      "main_synthetic": {
+        "verified_passed": 11,
+        "baseline_passed": 12,
+        "cases": 16,
+        "held_out": false
+      },
+      "stress_development": {
+        "verified_passed": 6,
+        "baseline_passed": 6,
+        "cases": 6,
+        "held_out": false
+      },
+      "public_query": "Python TaskGroup answered with one exact quote preserving the exception qualifier.",
+      "evidence": "evidence/amd/verification.json"
     }
   },
   "evidence_limits": [
@@ -149,7 +185,8 @@
     "No originality, prize, official compatibility, or AMD GPU performance claim is established.",
     "Synthetic cases were used during development and are not a held-out benchmark.",
     "Explicit target-version queries conservatively require identifiable matching version context.",
-    "Version markers are heuristic; source identity does not establish authority or factual truth."
+    "Version markers are heuristic; source identity does not establish authority or factual truth.",
+    "The AMD run uses Qwen3-4B-Instruct-2507; its frozen verified score is lower than its baseline and is not directly comparable with historical Qwen3.5/Ollama results."
   ],
   "publication": {
     "repository_published": true,
@@ -159,8 +196,7 @@
   },
   "next_required": [
     "Obtain and record the detailed Match 4 contract.",
-    "Adapt interfaces and permitted local inference to the official environment.",
-    "Validate on AMD infrastructure and the released evaluator.",
-    "Review complete submission materials before publication or submission."
+    "Adapt interfaces and permitted local inference to its required environment.",
+    "Run the released official evaluator and review completed submission materials."
   ]
 }

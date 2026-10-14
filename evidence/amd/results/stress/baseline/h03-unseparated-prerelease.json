@@ -1,0 +1,186 @@
+{
+  "question": "In JuncoMail version 4, what is the delivery acknowledgement timeout?",
+  "requested_version": "4",
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/index.html",
+      "title": "JuncoMail acknowledgement-guide directory",
+      "version": "4beta"
+    },
+    {
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4.html",
+      "title": "JuncoMail v4 delivery acknowledgement",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4beta.html",
+      "title": "JuncoMail v4beta delivery acknowledgement",
+      "version": "4beta.html"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4.html",
+      "title": "JuncoMail v4 delivery acknowledgement",
+      "source_version": "4",
+      "section": "JuncoMail v4 delivery acknowledgement",
+      "text": "The delivery acknowledgement timeout in version 4 is 11 seconds."
+    },
+    {
+      "block_id": "P3B5",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4beta.html",
+      "title": "JuncoMail v4beta delivery acknowledgement",
+      "source_version": "4beta.html",
+      "section": "JuncoMail v4beta delivery acknowledgement",
+      "text": "The delivery acknowledgement timeout in version 4beta is 2 seconds."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/index.html",
+      "title": "JuncoMail acknowledgement-guide directory",
+      "source_version": "4beta",
+      "section": "JuncoMail acknowledgement-guide directory",
+      "text": "Version 4 acknowledgement timeout"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4.html",
+      "title": "JuncoMail v4 delivery acknowledgement",
+      "source_version": "4",
+      "section": "JuncoMail v4 delivery acknowledgement",
+      "text": "JuncoMail v4 delivery acknowledgement"
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4beta.html",
+      "title": "JuncoMail v4beta delivery acknowledgement",
+      "source_version": "4beta.html",
+      "section": "JuncoMail v4beta delivery acknowledgement",
+      "text": "JuncoMail v4beta delivery acknowledgement"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/index.html",
+      "title": "JuncoMail acknowledgement-guide directory",
+      "source_version": "4beta",
+      "section": "JuncoMail acknowledgement-guide directory",
+      "text": "Version 4beta acknowledgement timeout"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4.html",
+      "title": "JuncoMail v4 delivery acknowledgement",
+      "source_version": "4",
+      "section": "JuncoMail v4 delivery acknowledgement",
+      "text": "Documentation version: 4."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4.html",
+      "title": "JuncoMail v4 delivery acknowledgement",
+      "source_version": "4",
+      "section": "JuncoMail v4 delivery acknowledgement",
+      "text": "Version 4 is the current stable release."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4beta.html",
+      "title": "JuncoMail v4beta delivery acknowledgement",
+      "source_version": "4beta.html",
+      "section": "JuncoMail v4beta delivery acknowledgement",
+      "text": "This is a prerelease preview of version 4beta, not stable version 4."
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4beta.html",
+      "title": "JuncoMail v4beta delivery acknowledgement",
+      "source_version": "4beta.html",
+      "section": "JuncoMail v4beta delivery acknowledgement",
+      "text": "Documentation version: 4beta."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/index.html",
+      "title": "JuncoMail acknowledgement-guide directory",
+      "source_version": "4beta",
+      "section": "JuncoMail acknowledgement-guide directory",
+      "text": "JuncoMail acknowledgement-guide directory"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4.html",
+      "title": "JuncoMail v4 delivery acknowledgement",
+      "source_version": "4",
+      "section": "JuncoMail v4 delivery acknowledgement",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4beta.html",
+      "title": "JuncoMail v4beta delivery acknowledgement",
+      "source_version": "4beta.html",
+      "section": "JuncoMail v4beta delivery acknowledgement",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/index.html",
+      "title": "JuncoMail acknowledgement-guide directory",
+      "source_version": "4beta",
+      "section": "JuncoMail acknowledgement-guide directory",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/index.html",
+      "title": "JuncoMail acknowledgement-guide directory",
+      "blocks": 4,
+      "elapsed_ms": 3,
+      "sha256": "c05c71462b1c79b629da5852905292d2e73140f6bee57cefadc31750355ca83e",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4.html",
+      "title": "JuncoMail v4 delivery acknowledgement",
+      "blocks": 5,
+      "elapsed_ms": 1,
+      "sha256": "017173229046b341b8e0fc9a88249f342a831c70a0527fa6b01ae64c5b844117",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4beta.html",
+      "title": "JuncoMail v4beta delivery acknowledgement",
+      "blocks": 5,
+      "elapsed_ms": 1,
+      "sha256": "1eff9e8d340ac45fdcee4b2fdedfb3d1f1f91ee829aff281c8aa8b0895bd3126",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1572,
+    "output_tokens": 49,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 636
+  },
+  "status": "answered",
+  "answer": "11 seconds",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:36611/h03-unseparated-prerelease/v4.html",
+      "quote": "The delivery acknowledgement timeout in version 4 is 11 seconds.",
+      "block_id": "P2B5",
+      "source_version": "4"
+    }
+  ]
+}

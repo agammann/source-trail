@@ -1,0 +1,201 @@
+{
+  "question": "How much is the Mossbridge street-festival permit application fee?",
+  "requested_version": null,
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/index.html",
+      "title": "Mossbridge visitor and permit directory",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/parking.html",
+      "title": "Mossbridge parking passes",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/policies.html",
+      "title": "Mossbridge event-permit policies",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/festival-detail.html",
+      "title": "Mossbridge street-festival permits",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P4B3",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/festival-detail.html",
+      "title": "Mossbridge street-festival permits",
+      "source_version": null,
+      "section": "Mossbridge street-festival permits",
+      "text": "The application fee for a street-festival permit is $28."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/policies.html",
+      "title": "Mossbridge event-permit policies",
+      "source_version": null,
+      "section": "Mossbridge event-permit policies",
+      "text": "Street-festival permit fee and application detail"
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/index.html",
+      "title": "Mossbridge visitor and permit directory",
+      "source_version": null,
+      "section": "Mossbridge visitor and permit directory",
+      "text": "Mossbridge visitor and permit directory"
+    },
+    {
+      "block_id": "P4B2",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/festival-detail.html",
+      "title": "Mossbridge street-festival permits",
+      "source_version": null,
+      "section": "Mossbridge street-festival permits",
+      "text": "Mossbridge street-festival permits"
+    },
+    {
+      "block_id": "P4B4",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/festival-detail.html",
+      "title": "Mossbridge street-festival permits",
+      "source_version": null,
+      "section": "Mossbridge street-festival permits",
+      "text": "The fee applies once per application."
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/policies.html",
+      "title": "Mossbridge event-permit policies",
+      "source_version": null,
+      "section": "Mossbridge event-permit policies",
+      "text": "Street-festival application information is in the permit-detail page."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/parking.html",
+      "title": "Mossbridge parking passes",
+      "source_version": null,
+      "section": "Mossbridge parking passes",
+      "text": "Mossbridge parking passes"
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/policies.html",
+      "title": "Mossbridge event-permit policies",
+      "source_version": null,
+      "section": "Mossbridge event-permit policies",
+      "text": "Mossbridge event-permit policies"
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/index.html",
+      "title": "Mossbridge visitor and permit directory",
+      "source_version": null,
+      "section": "Mossbridge visitor and permit directory",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/index.html",
+      "title": "Mossbridge visitor and permit directory",
+      "source_version": null,
+      "section": "Mossbridge visitor and permit directory",
+      "text": "Parking passes"
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/index.html",
+      "title": "Mossbridge visitor and permit directory",
+      "source_version": null,
+      "section": "Mossbridge visitor and permit directory",
+      "text": "Event-permit policies"
+    },
+    {
+      "block_id": "P4B1",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/festival-detail.html",
+      "title": "Mossbridge street-festival permits",
+      "source_version": null,
+      "section": "Mossbridge street-festival permits",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/parking.html",
+      "title": "Mossbridge parking passes",
+      "source_version": null,
+      "section": "Mossbridge parking passes",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/parking.html",
+      "title": "Mossbridge parking passes",
+      "source_version": null,
+      "section": "Mossbridge parking passes",
+      "text": "A monthly parking pass costs $14."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/policies.html",
+      "title": "Mossbridge event-permit policies",
+      "source_version": null,
+      "section": "Mossbridge event-permit policies",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/index.html",
+      "title": "Mossbridge visitor and permit directory",
+      "blocks": 4,
+      "elapsed_ms": 3,
+      "sha256": "085ac7118c213528b7f8a4d4a55e8afc3fcbb3a44635151630d1aac4a741c364",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/parking.html",
+      "title": "Mossbridge parking passes",
+      "blocks": 3,
+      "elapsed_ms": 1,
+      "sha256": "a8fad5f2bebe59e5bae4038c51b3593324dbd1130cf994c8863186f799a2316c",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/policies.html",
+      "title": "Mossbridge event-permit policies",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "9e5390cad706f71c91d7f638137af931d2624ebaca6af0b2aa7f6c09ce33921a",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/10-web-multi-hop-detail/festival-detail.html",
+      "title": "Mossbridge street-festival permits",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "46a8b73487d86a4bc0942da90d308a832f0550ac61764c3e2bb6f2a1656046db",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 4,
+    "successful_pages": 4,
+    "model_calls": 1,
+    "input_tokens": 1585,
+    "output_tokens": 19,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 282
+  },
+  "status": "abstained",
+  "answer": "",
+  "citations": []
+}

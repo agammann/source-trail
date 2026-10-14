@@ -1,0 +1,75 @@
+{
+  "checked_date": "2026-10-13",
+  "state": "AMD tutorial development validation completed",
+  "source_revision": "7e406424b14ce49a77352111c51f5ae7980df4f0",
+  "source_clean_before_run": true,
+  "environment": {
+    "checked_date": "2026-10-13",
+    "checked_at_utc": "2026-10-14T03:13:27.045189+00:00",
+    "python": "3.14.7",
+    "torch": "2.11.0+rocm7.14.1",
+    "hip": "7.14.60850",
+    "vllm": "0.23.1.dev1+g9ddef7117.d20260901.rocm714",
+    "transformers": "5.16.1",
+    "gpu_available": true,
+    "gpu_name": "AMD Instinct MI300X VF",
+    "gpu_memory_gib": 191.69,
+    "gpu_matmul_value": 128.0,
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "weight_files": 3,
+    "weight_bytes": 8044982000
+  },
+  "provider": "local vLLM",
+  "provider_requests": 44,
+  "completed_provider_responses": 44,
+  "input_tokens": 58604,
+  "output_tokens": 2335,
+  "unit_tests": {
+    "passed": 114,
+    "total": 114,
+    "evidence": "results/unit.stderr.txt"
+  },
+  "public_query": {
+    "status": "answered",
+    "answer": "The remaining tasks in the group are cancelled.",
+    "evidence": "results/live-python-taskgroup.json"
+  },
+  "main_synthetic": {
+    "baseline": "12/16",
+    "verified": "11/16",
+    "held_out": false,
+    "evidence": "results/synthetic/summary.json"
+  },
+  "stress_development": {
+    "baseline": "6/6",
+    "verified": "6/6",
+    "held_out": false,
+    "evidence": "results/stress/summary.json"
+  },
+  "gpu_activity": {
+    "samples": 101,
+    "samples_with_nonzero_gfx": 96,
+    "max_gfx_percent": 100,
+    "evidence": "results/gpu-activity.json"
+  },
+  "download_archive_sha256": "e8ae571f8d80dd1815e7e889c42f7866aa8bac7ca1c4b08e014c61f4963306fd",
+  "curation": "GPU records retain device index, utilization, memory, process IDs/names and occupancy. Unneeded device identifiers, session names and the distributed-initialization network line are omitted. Requests, responses and scores are unchanged.",
+  "official_evaluator": false,
+  "submitted": false,
+  "limits": [
+    "This verifies a specific MI300X run through the general tutorial service.",
+    "It does not verify hackathon registration or the missing Match 4 interface.",
+    "The development fixtures and frozen answer aliases are not an official or held-out score.",
+    "Different model/runtime configurations prevent a direct comparison with historical Ollama results.",
+    "Exact quotes establish retrieved-text integrity; answer applicability still needs review."
+  ],
+  "tested_code_sha256": {
+    "sourcetrail/__init__.py": "f5ae2e0a30bcf427b5940910ce2ea5a0f69f83b9597700fa3423a04377c5ac87",
+    "sourcetrail/__main__.py": "2663bc04f63a9b1bec45ed18089b6a0491f9ea9e68671709c95ebdd4142cb009",
+    "sourcetrail/engine.py": "cc9e72399f2d8839b972b724be981803b881826490636695d2f9ed47adf4e265",
+    "sourcetrail/model.py": "b15fedf530a111410a7bb3ff9d60694afb8da97c46b0f89f46e896e5826e283d",
+    "sourcetrail/server.py": "2169ce5225387227456d7c65d2038fa539285efd1277e6730db6d61b450f2370",
+    "sourcetrail/web.py": "fe9a7f7549e817efa595821ac48a911d15e27d9fe41686db5f1e306077ddc011"
+  }
+}

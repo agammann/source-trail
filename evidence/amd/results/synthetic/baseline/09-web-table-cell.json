@@ -1,0 +1,135 @@
+{
+  "question": "On what day and during which hours does Amber Bay collect electronics?",
+  "requested_version": null,
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "source_version": null,
+      "section": "Amber Bay collection services",
+      "text": "Amber Bay collection services"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Amber Bay collection timetable"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Material | Day | Time"
+    },
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Electronics | First Saturday of each month | 09:00–12:00",
+      "table_header": "Material | Day | Time"
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "source_version": null,
+      "section": "Amber Bay collection services",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "source_version": null,
+      "section": "Amber Bay collection services",
+      "text": "Collection schedule by material"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Glass | Every Tuesday | 08:00–10:00",
+      "table_header": "Material | Day | Time"
+    },
+    {
+      "block_id": "P2B6",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "source_version": null,
+      "section": "Amber Bay collection timetable",
+      "text": "Cardboard | Every Friday | 13:00–15:00",
+      "table_header": "Material | Day | Time"
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/index.html",
+      "title": "Amber Bay collection services",
+      "blocks": 3,
+      "elapsed_ms": 3,
+      "sha256": "b0b0b7d0b4c18a6598906bd30e2f24295150374ffd48fda7e1d106fce9f66ac8",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "title": "Amber Bay collection timetable",
+      "blocks": 6,
+      "elapsed_ms": 1,
+      "sha256": "104b0e9fafa5552b35d13df94964f6a108fa542cfa48ea0a38699ebbd09b861f",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 1069,
+    "output_tokens": 75,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 923
+  },
+  "status": "answered",
+  "answer": "On the first Saturday of each month, from 09:00 to 12:00",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:35929/09-web-table-cell/schedule.html",
+      "quote": "Electronics | First Saturday of each month | 09:00–12:00",
+      "block_id": "P2B5",
+      "source_version": null
+    }
+  ]
+}

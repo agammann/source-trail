@@ -1,0 +1,178 @@
+{
+  "question": "Which QuartzSite version 3 configuration option replaces route_cache?",
+  "requested_version": "3",
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/index.html",
+      "title": "QuartzSite configuration guides",
+      "version": "2"
+    },
+    {
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/migration-v3.html",
+      "title": "QuartzSite v3 migration — current stable",
+      "version": "3"
+    },
+    {
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/v2.html",
+      "title": "QuartzSite v2 caching — archived",
+      "version": "2"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/migration-v3.html",
+      "title": "QuartzSite v3 migration — current stable",
+      "source_version": "3",
+      "section": "QuartzSite v3 migration — current stable",
+      "text": "The old option route_cache is not accepted in version 3."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/migration-v3.html",
+      "title": "QuartzSite v3 migration — current stable",
+      "source_version": "3",
+      "section": "QuartzSite v3 migration — current stable",
+      "text": "In version 3, route_cache was renamed to page_cache. Use page_cache to enable page-output caching."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/index.html",
+      "title": "QuartzSite configuration guides",
+      "source_version": "2",
+      "section": "QuartzSite configuration guides",
+      "text": "QuartzSite configuration guides"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/index.html",
+      "title": "QuartzSite configuration guides",
+      "source_version": "2",
+      "section": "QuartzSite configuration guides",
+      "text": "Version 2 cache configuration (archived)"
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/index.html",
+      "title": "QuartzSite configuration guides",
+      "source_version": "2",
+      "section": "QuartzSite configuration guides",
+      "text": "Version 3 migration guide"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/migration-v3.html",
+      "title": "QuartzSite v3 migration — current stable",
+      "source_version": "3",
+      "section": "QuartzSite v3 migration — current stable",
+      "text": "Documentation version: 3."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/v2.html",
+      "title": "QuartzSite v2 caching — archived",
+      "source_version": "2",
+      "section": "QuartzSite v2 caching — archived",
+      "text": "Set route_cache to enable route-output caching in version 2."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/migration-v3.html",
+      "title": "QuartzSite v3 migration — current stable",
+      "source_version": "3",
+      "section": "QuartzSite v3 migration — current stable",
+      "text": "QuartzSite v3 migration — current stable"
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/v2.html",
+      "title": "QuartzSite v2 caching — archived",
+      "source_version": "2",
+      "section": "QuartzSite v2 caching — archived",
+      "text": "QuartzSite v2 caching — archived"
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/v2.html",
+      "title": "QuartzSite v2 caching — archived",
+      "source_version": "2",
+      "section": "QuartzSite v2 caching — archived",
+      "text": "Documentation version: 2."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/index.html",
+      "title": "QuartzSite configuration guides",
+      "source_version": "2",
+      "section": "QuartzSite configuration guides",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/migration-v3.html",
+      "title": "QuartzSite v3 migration — current stable",
+      "source_version": "3",
+      "section": "QuartzSite v3 migration — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/v2.html",
+      "title": "QuartzSite v2 caching — archived",
+      "source_version": "2",
+      "section": "QuartzSite v2 caching — archived",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/index.html",
+      "title": "QuartzSite configuration guides",
+      "blocks": 4,
+      "elapsed_ms": 3,
+      "sha256": "3be9a1ee3a75d9e41b0432bf87a11b0fac7763e9dd9899f6127d9675b8c6dd78",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/migration-v3.html",
+      "title": "QuartzSite v3 migration — current stable",
+      "blocks": 5,
+      "elapsed_ms": 1,
+      "sha256": "029d7baa0afab8a0d5eab59558548b29a519ed230e18e4499a8b7343761bed1e",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/v2.html",
+      "title": "QuartzSite v2 caching — archived",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "c6a7cc49b965f448db473c975b19402a059917058df74a2b732478ff3d54f3e6",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1479,
+    "output_tokens": 56,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 688
+  },
+  "status": "answered",
+  "answer": "page_cache",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:35929/03-doc-renamed-configuration/migration-v3.html",
+      "quote": "In version 3, route_cache was renamed to page_cache. Use page_cache to enable page-output caching.",
+      "block_id": "P2B4",
+      "source_version": "3"
+    }
+  ]
+}

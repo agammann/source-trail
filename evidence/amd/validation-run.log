@@ -1,0 +1,97 @@
+START unit
+DONE unit exit 0
+START public-taskgroup
+DONE public-taskgroup exit 0
+START synthetic
+DONE synthetic exit 1
+START stress
+DONE stress exit 0
+{
+  "source_revision": "7e406424b14ce49a77352111c51f5ae7980df4f0",
+  "source_clean_before_run": true,
+  "model": "Qwen3-4B-Instruct-2507",
+  "provider": "vllm",
+  "provider_requests": 44,
+  "commands": [
+    {
+      "name": "unit",
+      "command": [
+        "/opt/python/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_utc": "2026-10-14T03:27:54.515432+00:00",
+      "finished_utc": "2026-10-14T03:27:58.131657+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "public-taskgroup",
+      "command": [
+        "/opt/python/bin/python",
+        "-m",
+        "sourcetrail",
+        "query",
+        "--question",
+        "What happens to other tasks when one task in a TaskGroup fails?",
+        "--url",
+        "https://docs.python.org/3/library/asyncio-task.html",
+        "--mode",
+        "verified",
+        "--max-pages",
+        "6",
+        "--model",
+        "Qwen3-4B-Instruct-2507",
+        "--output",
+        "/workspace/source-trail-validation/results/live-python-taskgroup.json"
+      ],
+      "started_utc": "2026-10-14T03:27:58.141404+00:00",
+      "finished_utc": "2026-10-14T03:28:00.607407+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "/opt/python/bin/python",
+        "-m",
+        "benchmark.run",
+        "--report-dir",
+        "/workspace/source-trail-validation/results/synthetic",
+        "--modes",
+        "baseline",
+        "verified",
+        "--model",
+        "Qwen3-4B-Instruct-2507"
+      ],
+      "started_utc": "2026-10-14T03:28:00.607428+00:00",
+      "finished_utc": "2026-10-14T03:28:24.686439+00:00",
+      "exit_code": 1
+    },
+    {
+      "name": "stress",
+      "command": [
+        "/opt/python/bin/python",
+        "-m",
+        "benchmark.holdout.run",
+        "--run-model",
+        "--report-dir",
+        "/workspace/source-trail-validation/results/stress",
+        "--modes",
+        "baseline",
+        "verified",
+        "--model",
+        "Qwen3-4B-Instruct-2507"
+      ],
+      "started_utc": "2026-10-14T03:28:24.686461+00:00",
+      "finished_utc": "2026-10-14T03:28:33.385662+00:00",
+      "exit_code": 0
+    }
+  ],
+  "gpu_samples": 101,
+  "classification": "development validation",
+  "official_evaluator": false,
+  "note": "The recording relay stores the unmodified local vLLM request and response. Unit tests use stubs; model calls belong to the following query and development suites."
+}

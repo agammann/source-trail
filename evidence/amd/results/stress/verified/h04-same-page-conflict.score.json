@@ -1,0 +1,33 @@
+{
+  "case_id": "h04-same-page-conflict",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": true,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/h04-same-page-conflict/index.html"
+  ],
+  "expected_source_paths": [
+    "/h04-same-page-conflict/index.html"
+  ],
+  "metrics": {
+    "pages": 1,
+    "successful_pages": 1,
+    "model_calls": 1,
+    "input_tokens": 898,
+    "output_tokens": 77,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 964
+  },
+  "passed": true,
+  "errors": [],
+  "mode": "verified",
+  "classification": "stress-development",
+  "output_path": "/workspace/source-trail-validation/results/stress/verified/h04-same-page-conflict.json",
+  "wall_duration_ms": 1030
+}

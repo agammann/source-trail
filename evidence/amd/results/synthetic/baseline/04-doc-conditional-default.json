@@ -1,0 +1,132 @@
+{
+  "question": "In LumenServe version 3 production mode with cold starts enabled, is the result cache enabled or disabled by default?",
+  "requested_version": "3",
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/index.html",
+      "title": "LumenServe mode documentation",
+      "version": "3"
+    },
+    {
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "title": "LumenServe v3 cache defaults — current stable",
+      "version": "3"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "title": "LumenServe v3 cache defaults — current stable",
+      "source_version": "3",
+      "section": "LumenServe v3 cache defaults — current stable",
+      "text": "In production mode with cold starts enabled, the result cache is disabled by default."
+    },
+    {
+      "block_id": "P2B6",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "title": "LumenServe v3 cache defaults — current stable",
+      "source_version": "3",
+      "section": "LumenServe v3 cache defaults — current stable",
+      "text": "In production mode without cold starts, the result cache is enabled by default."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "title": "LumenServe v3 cache defaults — current stable",
+      "source_version": "3",
+      "section": "LumenServe v3 cache defaults — current stable",
+      "text": "In development mode, the result cache is enabled by default."
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/index.html",
+      "title": "LumenServe mode documentation",
+      "source_version": "3",
+      "section": "LumenServe mode documentation",
+      "text": "Version 3 cache defaults by deployment mode"
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/index.html",
+      "title": "LumenServe mode documentation",
+      "source_version": "3",
+      "section": "LumenServe mode documentation",
+      "text": "LumenServe mode documentation"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "title": "LumenServe v3 cache defaults — current stable",
+      "source_version": "3",
+      "section": "LumenServe v3 cache defaults — current stable",
+      "text": "LumenServe v3 cache defaults — current stable"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "title": "LumenServe v3 cache defaults — current stable",
+      "source_version": "3",
+      "section": "LumenServe v3 cache defaults — current stable",
+      "text": "Documentation version: 3."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/index.html",
+      "title": "LumenServe mode documentation",
+      "source_version": "3",
+      "section": "LumenServe mode documentation",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "title": "LumenServe v3 cache defaults — current stable",
+      "source_version": "3",
+      "section": "LumenServe v3 cache defaults — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/index.html",
+      "title": "LumenServe mode documentation",
+      "blocks": 3,
+      "elapsed_ms": 3,
+      "sha256": "1a84c3e876540317c7dd58aeccfe9454bd42b0d829b6f352705eea6d6949ce3f",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "title": "LumenServe v3 cache defaults — current stable",
+      "blocks": 6,
+      "elapsed_ms": 1,
+      "sha256": "2369b1116a681b75cf88cca8b10c3ad5d83d5845d4c35c7385a39fa59d855d89",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 2,
+    "successful_pages": 2,
+    "model_calls": 1,
+    "input_tokens": 1129,
+    "output_tokens": 49,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 611
+  },
+  "status": "answered",
+  "answer": "disabled",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:35929/04-doc-conditional-default/cache-v3.html",
+      "quote": "In production mode with cold starts enabled, the result cache is disabled by default.",
+      "block_id": "P2B5",
+      "source_version": "3"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "args": [
+    "vllm",
+    "serve",
+    "/root/.cache/huggingface/hub/models--Qwen--Qwen3-4B-Instruct-2507/snapshots/cdbee75f17c01a7cc42f958dc650907174af0554",
+    "--served-model-name",
+    "Qwen3-4B-Instruct-2507",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--max-model-len",
+    "8192",
+    "--gpu-memory-utilization",
+    "0.2",
+    "--max-num-seqs",
+    "1",
+    "--enforce-eager",
+    "--generation-config",
+    "vllm",
+    "--dtype",
+    "bfloat16"
+  ],
+  "pid": 676
+}

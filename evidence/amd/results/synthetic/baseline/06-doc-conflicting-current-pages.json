@@ -1,0 +1,200 @@
+{
+  "question": "What is the maximum automatic retry count in CedarRPC version 4?",
+  "requested_version": "4",
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/index.html",
+      "title": "CedarRPC version 4 retry references",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/reference-v4.html",
+      "title": "CedarRPC v4 retry reference — current stable",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/guide-v4.html",
+      "title": "CedarRPC v4 retry guide — current stable",
+      "version": "4"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B5",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/reference-v4.html",
+      "title": "CedarRPC v4 retry reference — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry reference — current stable",
+      "text": "The maximum automatic retry count in version 4 is 3."
+    },
+    {
+      "block_id": "P3B5",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/guide-v4.html",
+      "title": "CedarRPC v4 retry guide — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry guide — current stable",
+      "text": "The maximum automatic retry count in version 4 is 5."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/index.html",
+      "title": "CedarRPC version 4 retry references",
+      "source_version": "4",
+      "section": "CedarRPC version 4 retry references",
+      "text": "CedarRPC version 4 retry references"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/index.html",
+      "title": "CedarRPC version 4 retry references",
+      "source_version": "4",
+      "section": "CedarRPC version 4 retry references",
+      "text": "Both linked pages describe the current stable version 4. Neither page declares the other superseded."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/reference-v4.html",
+      "title": "CedarRPC v4 retry reference — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry reference — current stable",
+      "text": "CedarRPC v4 retry reference — current stable"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/reference-v4.html",
+      "title": "CedarRPC v4 retry reference — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry reference — current stable",
+      "text": "Documentation version: 4."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/reference-v4.html",
+      "title": "CedarRPC v4 retry reference — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry reference — current stable",
+      "text": "Current version 4 reference, updated 2026-09-01."
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/guide-v4.html",
+      "title": "CedarRPC v4 retry guide — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry guide — current stable",
+      "text": "CedarRPC v4 retry guide — current stable"
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/guide-v4.html",
+      "title": "CedarRPC v4 retry guide — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry guide — current stable",
+      "text": "Documentation version: 4."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/guide-v4.html",
+      "title": "CedarRPC v4 retry guide — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry guide — current stable",
+      "text": "Current version 4 guide, updated 2026-09-01."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/index.html",
+      "title": "CedarRPC version 4 retry references",
+      "source_version": "4",
+      "section": "CedarRPC version 4 retry references",
+      "text": "Current retry reference"
+    },
+    {
+      "block_id": "P1B5",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/index.html",
+      "title": "CedarRPC version 4 retry references",
+      "source_version": "4",
+      "section": "CedarRPC version 4 retry references",
+      "text": "Current retry setup guide"
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/index.html",
+      "title": "CedarRPC version 4 retry references",
+      "source_version": "4",
+      "section": "CedarRPC version 4 retry references",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/reference-v4.html",
+      "title": "CedarRPC v4 retry reference — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry reference — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/guide-v4.html",
+      "title": "CedarRPC v4 retry guide — current stable",
+      "source_version": "4",
+      "section": "CedarRPC v4 retry guide — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/index.html",
+      "title": "CedarRPC version 4 retry references",
+      "blocks": 5,
+      "elapsed_ms": 3,
+      "sha256": "2deed5e9039609045029ceec7d60cbb8e690abd0a47d3cd9435a450efb1a8489",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/reference-v4.html",
+      "title": "CedarRPC v4 retry reference — current stable",
+      "blocks": 5,
+      "elapsed_ms": 1,
+      "sha256": "e74742f8ee06099d12a6fba1757e3bd04f499a3ff3b5d4e435617075ac143bd8",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/guide-v4.html",
+      "title": "CedarRPC v4 retry guide — current stable",
+      "blocks": 5,
+      "elapsed_ms": 1,
+      "sha256": "d3a1d42beb1f1993fe07e63ec0287328dd77e6c60188875514722dd790fe2e11",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1735,
+    "output_tokens": 73,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 908
+  },
+  "status": "conflict",
+  "answer": "",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/reference-v4.html",
+      "quote": "The maximum automatic retry count in version 4 is 3.",
+      "block_id": "P2B5",
+      "source_version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:35929/06-doc-conflicting-current-pages/guide-v4.html",
+      "quote": "The maximum automatic retry count in version 4 is 5.",
+      "block_id": "P3B5",
+      "source_version": "4"
+    }
+  ]
+}

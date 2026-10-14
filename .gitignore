@@ -18,5 +18,9 @@ benchmark/results/
 work/
 wheelhouse/
 *.log
+!evidence/amd/results/
+!evidence/amd/results/**
+!evidence/amd/validation-run.log
+!evidence/amd/vllm-server.log
 .DS_Store
 Thumbs.db

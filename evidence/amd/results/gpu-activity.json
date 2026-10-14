@@ -1,0 +1,7678 @@
+[
+  {
+    "sample_started_utc": "2026-10-14T03:27:58.141348+00:00",
+    "sample_finished_utc": "2026-10-14T03:27:58.247085+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 0,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 0,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39017,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40610594816,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:27:58.497207+00:00",
+    "sample_finished_utc": "2026-10-14T03:27:58.600811+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 0,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 0,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39017,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40610594816,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:27:58.850948+00:00",
+    "sample_finished_utc": "2026-10-14T03:27:58.954696+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 0,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 0,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39017,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40610594816,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:27:59.204825+00:00",
+    "sample_finished_utc": "2026-10-14T03:27:59.303787+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 0,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 0,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39017,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40610594816,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:27:59.553934+00:00",
+    "sample_finished_utc": "2026-10-14T03:27:59.663101+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 0,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 0,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39017,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40610594816,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:27:59.913235+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:00.006801+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 97,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:00.256930+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:00.349783+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:00.599910+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:00.694370+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 44,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:00.944509+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:01.042270+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 96,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:01.292394+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:01.401324+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 48,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:01.651479+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:01.752899+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 98,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:02.003022+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:02.102931+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 53,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:02.353074+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:02.450877+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 27,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 3,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:02.700996+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:02.796718+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 97,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:03.046835+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:03.139981+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:03.390146+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:03.486748+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 95,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:03.736877+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:03.845405+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:04.095529+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:04.189986+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 88,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 11,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:04.440106+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:04.537529+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:04.787653+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:04.882089+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 91,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:05.132208+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:05.226878+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:05.476985+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:05.571471+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 92,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:05.821596+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:05.916978+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:06.167098+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:06.261268+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 94,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:06.511390+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:06.616362+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 93,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:06.866504+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:06.976512+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 96,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:07.226666+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:07.321968+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:07.572119+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:07.668774+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 43,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:07.919194+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:08.013682+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 98,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:08.263819+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:08.360416+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:08.610545+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:08.707054+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 73,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 10,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:08.957180+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:09.052445+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:09.302686+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:09.397582+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:09.647709+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:09.749722+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:09.999910+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:10.099339+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 45,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 5,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:10.349465+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:10.444068+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 98,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:10.694182+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:10.790647+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:11.040760+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:11.137697+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:11.387817+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:11.482708+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:11.732825+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:11.830333+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 95,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:12.080439+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:12.172198+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:12.422297+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:12.517290+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 96,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:12.767407+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:12.859435+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 85,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 11,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:13.109551+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:13.208707+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 96,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:13.458825+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:13.555064+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:13.805173+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:13.897085+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 51,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 7,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:14.147189+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:14.244637+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 98,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:14.494743+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:14.597137+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:14.847254+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:14.947146+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 57,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:15.197251+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:15.319631+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 64,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:15.569769+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:15.703252+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 77,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 7,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:15.953367+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:16.097943+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 83,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:16.348060+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:16.450864+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 78,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 10,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:16.700970+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:16.842163+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 9,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:17.092279+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:17.184971+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:17.435089+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:17.529030+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:17.779141+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:17.873148+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 88,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:18.123264+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:18.215978+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:18.466099+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:18.563410+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:18.813521+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:18.909322+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 67,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 8,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:19.159391+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:19.255237+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:19.505355+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:19.604628+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 75,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 9,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:19.854744+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:19.964506+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 97,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 11,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:20.214610+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:20.313291+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:20.563410+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:20.658233+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 90,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 11,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:20.908338+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:21.047275+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 9,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:21.297382+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:21.390672+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 78,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 9,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:21.640770+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:21.734811+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:21.984919+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:22.083469+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 59,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 7,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:22.333579+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:22.432563+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 98,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:22.682678+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:22.782019+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 77,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 9,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:23.032156+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:23.132760+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:23.382888+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:23.495260+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:23.745379+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:23.842311+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 57,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 7,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:24.092439+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:24.186936+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 48,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:24.437066+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:24.536181+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 43,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 5,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:24.786318+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:24.880402+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 40,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 3,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:25.130535+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:25.223245+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 97,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:25.473365+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:25.574470+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 58,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 6,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:25.824606+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:25.921354+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 98,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:26.171480+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:26.268050+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 76,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 10,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:26.518168+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:26.609301+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:26.859421+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:26.959309+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:27.209415+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:27.307287+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 94,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:27.557405+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:27.650484+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:27.900625+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:27.999357+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 91,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:28.249479+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:28.342482+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 13,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:28.592597+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:28.686706+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 89,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 10,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:28.936828+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:29.038590+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:29.288700+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:29.383862+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 89,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 11,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:29.633972+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:29.729194+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:29.979313+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:30.076264+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:30.326383+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:30.423268+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 83,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 10,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:30.673387+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:30.769771+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:31.019887+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:31.116140+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 100,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:31.366248+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:31.465796+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 85,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 10,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:31.715912+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:31.811534+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 99,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 12,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:32.061655+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:32.155841+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 92,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 11,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:32.405957+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:32.505805+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 87,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 11,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:32.755940+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:32.851095+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 70,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 9,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39331,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 40939847680,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sample_started_utc": "2026-10-14T03:28:33.101222+00:00",
+    "sample_finished_utc": "2026-10-14T03:28:33.196926+00:00",
+    "exit_code": 0,
+    "data": [
+      {
+        "gpu": 0,
+        "gfx": {
+          "value": 66,
+          "unit": "%"
+        },
+        "mem": {
+          "value": 8,
+          "unit": "%"
+        },
+        "vram_used": {
+          "value": 39461,
+          "unit": "MB"
+        },
+        "vram_total": {
+          "value": 196288,
+          "unit": "MB"
+        },
+        "processes": [
+          {
+            "name": "N/A",
+            "pid": 1523242,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2092460,
+            "mem_usage": {
+              "value": 0,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 0,
+              "unit": "ms"
+            }
+          },
+          {
+            "name": "N/A",
+            "pid": 2093268,
+            "mem_usage": {
+              "value": 41076162560,
+              "unit": "B"
+            },
+            "cu_occupancy": {
+              "value": 0.0,
+              "unit": "%"
+            },
+            "evicted_time": {
+              "value": 1228,
+              "unit": "ms"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "case_id": "08-doc-prerelease-distractor",
+  "synthetic": true,
+  "status_match": true,
+  "answer_match": true,
+  "source_match": true,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [
+    "/08-doc-prerelease-distractor/v4.html"
+  ],
+  "expected_source_paths": [
+    "/08-doc-prerelease-distractor/v4.html"
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1644,
+    "output_tokens": 47,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 614
+  },
+  "passed": true,
+  "errors": [],
+  "mode": "baseline",
+  "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/08-doc-prerelease-distractor.json",
+  "wall_duration_ms": 683
+}

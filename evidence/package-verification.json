@@ -1,12 +1,45 @@
 {
   "unit_tests": {
-    "passed": 98,
-    "total": 98
+    "passed": 114,
+    "total": 114,
+    "evidence": "evidence/unit-tests.txt",
+    "rerun_during_packaging": false
   },
   "wheel_build": "passed",
   "isolated_install": "passed",
   "installed_metadata_cli_static_http_health": "passed",
-  "wheel_sha256": "89757c08084698602addf6f5f49141b7358fbe6cdee64e806e07f36ecd93abc1",
+  "wheel_sha256": "41625e5781fd57464d0a680cbdba8d0a81bfe2a5c4307e66f2b541d6b3499a5d",
   "official_container": "not tested",
-  "official_evaluator": "not available"
+  "official_evaluator": "not available",
+  "checked_date": "2026-10-13",
+  "wheel_filename": "source_trail-0.1.0-py3-none-any.whl",
+  "tested_code_revision": "7e406424b14ce49a77352111c51f5ae7980df4f0",
+  "tracked_python_bytes_match_tested_revision": true,
+  "normalized_line_endings_only": [],
+  "source_file_sha256": {
+    "sourcetrail/__init__.py": "f5ae2e0a30bcf427b5940910ce2ea5a0f69f83b9597700fa3423a04377c5ac87",
+    "sourcetrail/__main__.py": "2663bc04f63a9b1bec45ed18089b6a0491f9ea9e68671709c95ebdd4142cb009",
+    "sourcetrail/engine.py": "cc9e72399f2d8839b972b724be981803b881826490636695d2f9ed47adf4e265",
+    "sourcetrail/model.py": "b15fedf530a111410a7bb3ff9d60694afb8da97c46b0f89f46e896e5826e283d",
+    "sourcetrail/server.py": "2169ce5225387227456d7c65d2038fa539285efd1277e6730db6d61b450f2370",
+    "sourcetrail/web.py": "fe9a7f7549e817efa595821ac48a911d15e27d9fe41686db5f1e306077ddc011"
+  },
+  "static_inspector_sha256": "0ed787d64df8a9fb51a7b650b54d4bf53024f9a5ab5761196d24edff617e620c",
+  "current_readme_in_wheel_metadata": true,
+  "current_readme_sha256": "41cb85a0e1c87f01bd22a0e6c0b542db8a6e1199921e8c0cbcd9417898bcf86c",
+  "wheel_file_sha256": {
+    "source_trail-0.1.0.dist-info/licenses/LICENSE": "99a76ed5585eb72779bf295be9b9fab91275ae9e0a306512400973ef8a581bca",
+    "sourcetrail/__init__.py": "f5ae2e0a30bcf427b5940910ce2ea5a0f69f83b9597700fa3423a04377c5ac87",
+    "sourcetrail/__main__.py": "2663bc04f63a9b1bec45ed18089b6a0491f9ea9e68671709c95ebdd4142cb009",
+    "sourcetrail/engine.py": "cc9e72399f2d8839b972b724be981803b881826490636695d2f9ed47adf4e265",
+    "sourcetrail/model.py": "b15fedf530a111410a7bb3ff9d60694afb8da97c46b0f89f46e896e5826e283d",
+    "sourcetrail/server.py": "2169ce5225387227456d7c65d2038fa539285efd1277e6730db6d61b450f2370",
+    "sourcetrail/web.py": "fe9a7f7549e817efa595821ac48a911d15e27d9fe41686db5f1e306077ddc011",
+    "sourcetrail/static/index.html": "0ed787d64df8a9fb51a7b650b54d4bf53024f9a5ab5761196d24edff617e620c",
+    "source_trail-0.1.0.dist-info/METADATA": "93fffb157de8bbb785155685c9af6a69161106f11ab17e850f9c344e1cec4582",
+    "source_trail-0.1.0.dist-info/WHEEL": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1",
+    "source_trail-0.1.0.dist-info/top_level.txt": "99da6f0526c9fcc33e5f85c5ec2e4eec100a2ecdd48c4bfe7b5276395617a109",
+    "source_trail-0.1.0.dist-info/RECORD": "8526a974760a300b30256da0fbd67e3ac839959387264c126679784625e95d34"
+  },
+  "new_model_calls_during_packaging": 0
 }

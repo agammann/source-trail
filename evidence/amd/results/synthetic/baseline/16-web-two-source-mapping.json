@@ -1,0 +1,163 @@
+{
+  "question": "What is the Blue Lantern market daily permit fee for a book vendor?",
+  "requested_version": null,
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/index.html",
+      "title": "Blue Lantern market vendor permits",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/fees.html",
+      "title": "Blue Lantern market daily permit fees",
+      "version": null
+    },
+    {
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/categories.html",
+      "title": "Blue Lantern market vendor categories",
+      "version": null
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/fees.html",
+      "title": "Blue Lantern market daily permit fees",
+      "source_version": null,
+      "section": "Blue Lantern market daily permit fees",
+      "text": "Blue Lantern market daily permit fees"
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/index.html",
+      "title": "Blue Lantern market vendor permits",
+      "source_version": null,
+      "section": "Blue Lantern market vendor permits",
+      "text": "Blue Lantern market vendor permits"
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/categories.html",
+      "title": "Blue Lantern market vendor categories",
+      "source_version": null,
+      "section": "Blue Lantern market vendor categories",
+      "text": "Blue Lantern market vendor categories"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/fees.html",
+      "title": "Blue Lantern market daily permit fees",
+      "source_version": null,
+      "section": "Blue Lantern market daily permit fees",
+      "text": "The daily permit fee for category B is $18."
+    },
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/fees.html",
+      "title": "Blue Lantern market daily permit fees",
+      "source_version": null,
+      "section": "Blue Lantern market daily permit fees",
+      "text": "The daily permit fee for category F is $32."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/index.html",
+      "title": "Blue Lantern market vendor permits",
+      "source_version": null,
+      "section": "Blue Lantern market vendor permits",
+      "text": "Daily permit fees by category"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/index.html",
+      "title": "Blue Lantern market vendor permits",
+      "source_version": null,
+      "section": "Blue Lantern market vendor permits",
+      "text": "Vendor category assignments"
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/categories.html",
+      "title": "Blue Lantern market vendor categories",
+      "source_version": null,
+      "section": "Blue Lantern market vendor categories",
+      "text": "Book vendors are assigned category B."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/fees.html",
+      "title": "Blue Lantern market daily permit fees",
+      "source_version": null,
+      "section": "Blue Lantern market daily permit fees",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/index.html",
+      "title": "Blue Lantern market vendor permits",
+      "source_version": null,
+      "section": "Blue Lantern market vendor permits",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/categories.html",
+      "title": "Blue Lantern market vendor categories",
+      "source_version": null,
+      "section": "Blue Lantern market vendor categories",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/categories.html",
+      "title": "Blue Lantern market vendor categories",
+      "source_version": null,
+      "section": "Blue Lantern market vendor categories",
+      "text": "Food vendors are assigned category F."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/index.html",
+      "title": "Blue Lantern market vendor permits",
+      "blocks": 4,
+      "elapsed_ms": 3,
+      "sha256": "66f9d388cc4dacdedc6e2a27afe509f913031469e8bd60e0b29ebf7d055751d8",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/fees.html",
+      "title": "Blue Lantern market daily permit fees",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "58b20124ad4731cb3a9d857d78286815ed6e9ed9a9b0304b36847ae0724f4e92",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/16-web-two-source-mapping/categories.html",
+      "title": "Blue Lantern market vendor categories",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "58e66ed5f5f76c300342ff8ecb71a850023c6326e5279515cc879e94c6319faf",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1293,
+    "output_tokens": 19,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 267
+  },
+  "status": "abstained",
+  "answer": "",
+  "citations": []
+}

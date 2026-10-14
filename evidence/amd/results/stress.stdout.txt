@@ -1,0 +1,12 @@
+h01-late-code-fact baseline: PASS
+h01-late-code-fact verified: PASS
+h02-numeric-version-suffix baseline: PASS
+h02-numeric-version-suffix verified: PASS
+h03-unseparated-prerelease baseline: PASS
+h03-unseparated-prerelease verified: PASS
+h04-same-page-conflict baseline: PASS
+h04-same-page-conflict verified: PASS
+h05-multiple-table-context baseline: PASS
+h05-multiple-table-context verified: PASS
+h06-missing-query-qualifiers baseline: PASS
+h06-missing-query-qualifiers verified: PASS

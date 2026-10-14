@@ -1,0 +1,34 @@
+{
+  "case_id": "10-web-multi-hop-detail",
+  "synthetic": true,
+  "status_match": false,
+  "answer_match": false,
+  "source_match": false,
+  "valid_quotes": true,
+  "invalid_quote_indices": [],
+  "page_budget_met": true,
+  "actual_source_paths": [],
+  "expected_source_paths": [
+    "/10-web-multi-hop-detail/festival-detail.html"
+  ],
+  "metrics": {
+    "pages": 4,
+    "successful_pages": 4,
+    "model_calls": 1,
+    "input_tokens": 1585,
+    "output_tokens": 19,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 282
+  },
+  "passed": false,
+  "errors": [
+    "status_mismatch: expected answered, got 'abstained'",
+    "answer_alias_mismatch",
+    "source_set_mismatch: missing=['/10-web-multi-hop-detail/festival-detail.html'], extra=[]"
+  ],
+  "mode": "baseline",
+  "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/10-web-multi-hop-detail.json",
+  "wall_duration_ms": 350
+}

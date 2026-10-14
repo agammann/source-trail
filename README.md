@@ -6,9 +6,9 @@ The project explores a specific question: can a retrieval workflow handle stale 
 
 ## Challenge status
 
-Checked on **October 12, 2026**: the organizer lists Match 4, *Intelligent Web Information Retrieval*, for October 13–27. Its public description calls for an agent that navigates websites and retrieves specific information from a natural-language request. The Match 4 detail link still opens the overview; a detailed interface, evaluator, runtime contract, and inference rules were not available from that link. See the [official challenge page](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge).
+Checked on **October 13, 2026**: the organizer lists Match 4, *Intelligent Web Information Retrieval*, as live for October 13–27. Its public description calls for an agent that navigates websites and retrieves specific information from a natural-language request. The Match 4 detail link still opens the overview, and the visible starter kit is labeled Match 3. A detailed Match 4 interface, evaluator, runtime contract, and inference rules were not available from those links. See the [official challenge page](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge).
 
-This implementation precedes the detailed brief. It has not been submitted. AMD GPU execution and an official entry container remain to be verified against the released requirements. The provider connector currently uses local Ollama; it can be adapted to the organizer's permitted local inference runtime once that contract is known.
+This implementation precedes the detailed brief and has not been submitted. A specific development run on an AMD Instinct MI300X through the general notebook tutorial service is verified. Official environment and entry-container compatibility still depend on the detailed requirements. The default connector uses local Ollama; an operator-selected local vLLM connector supports the tested AMD runtime.
 
 ## Run locally
 
@@ -58,6 +58,34 @@ Open [the local inspector](http://127.0.0.1:8765). Enter a question and one URL 
 
 Keep the service bound to loopback. The browser does not select or change the model endpoint.
 
+## Run with local vLLM on an AMD notebook
+
+The general [AMD notebook portal](https://notebooks.amd.com/) provides One-Click Tutorials separately from hackathon registration. The recorded run used its vLLM tutorial environment with one MI300X virtual function, ROCm-enabled PyTorch, and the pinned [Qwen3-4B-Instruct-2507 model](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507). The full runtime versions and weight revision are in [the AMD verification record](evidence/amd/verification.json).
+
+In an environment with ROCm-enabled vLLM already installed, start the model server:
+
+```bash
+vllm serve Qwen/Qwen3-4B-Instruct-2507 \
+  --revision cdbee75f17c01a7cc42f958dc650907174af0554 \
+  --served-model-name Qwen3-4B-Instruct-2507 \
+  --host 127.0.0.1 --port 8000 --max-model-len 8192 \
+  --gpu-memory-utilization 0.2 --max-num-seqs 1 \
+  --enforce-eager --generation-config vllm --dtype bfloat16
+```
+
+Run Source Trail in another terminal in the same environment:
+
+```bash
+export SOURCETRAIL_PROVIDER=vllm
+export SOURCETRAIL_VLLM_URL=http://127.0.0.1:8000/v1
+export SOURCETRAIL_MODEL=Qwen3-4B-Instruct-2507
+python -m sourcetrail query --question "What happens to other tasks when one task in a TaskGroup fails?" --url "https://docs.python.org/3/library/asyncio-task.html" --mode verified --output results/taskgroup.json
+```
+
+The CLI also accepts `--provider vllm --model Qwen3-4B-Instruct-2507`. The endpoint must be loopback HTTP(S), with an optional `/v1` base path. Optional `SOURCETRAIL_VLLM_API_KEY` authentication stays in the operator's environment and is sent only as a header to that local runtime. The vLLM client bypasses proxies and redirects, requests structured JSON, rejects incomplete responses, and preserves unavailable token counts as null. Both connectors share the evidence prompt and final quote/version validation.
+
+The AMD run completed 44 model requests with recorded responses, server token metrics, and overlapping GPU activity samples. Its fresh [Python TaskGroup query](evidence/amd/results/live-python-taskgroup.json) answered with an exact quote retaining the exception qualifier. These records establish that particular development run; official evaluator and container validation remain pending.
+
 ## Query from the CLI
 
 ```powershell
@@ -101,7 +129,7 @@ Run the local unit suite:
 python -m unittest discover -s tests -v
 ```
 
-The main benchmark contains **16 fictional cases**: eight documentation tasks and eight general website retrieval tasks. They exercise stale pages, unavailable versions, conflicting current sources, tables, conditions, missing answers, and navigation across multiple pages. They are engineering fixtures rather than the organizer's hidden tasks. Model-backed fixture runs still use the actual local inference endpoint; the web pages and expected facts remain synthetic.
+The main benchmark contains **16 fictional cases**: eight documentation tasks and eight general website retrieval tasks. They exercise stale pages, unavailable versions, conflicting current sources, tables, conditions, missing answers, and navigation across multiple pages. They are engineering fixtures rather than the organizer's hidden tasks. Model-backed fixture runs use the configured local inference endpoint; the web pages and expected facts remain synthetic. For vLLM runs, set the provider environment above and pass its served name using `--model Qwen3-4B-Instruct-2507` to either benchmark command.
 
 Start with a bounded run:
 
@@ -125,7 +153,7 @@ python -m benchmark.holdout.run --run-model --report-dir work\stress --modes bas
 
 The actual checks completed for this delivery, including failures and unavailable checks, are recorded in [STATUS.md](STATUS.md) and [DELIVERY.json](DELIVERY.json). Do not infer model or browser validation from a unit-test result.
 
-The repository retains a curated [synthetic run summary](evidence/synthetic/summary.json), [unit-test log](evidence/unit-tests.txt), and [package verification record](evidence/package-verification.json). These are recorded local checks. Rerunning the commands above produces fresh evidence for your environment. The original local delivery also had a separate `source-trail-evidence` directory beside the source folder; repository links use the committed `evidence/` snapshot.
+The repository retains the historical [Ollama synthetic summary](evidence/synthetic/summary.json), [current local unit-test log](evidence/unit-tests.txt), [AMD development evidence](evidence/amd/verification.json), and [package verification record](evidence/package-verification.json). Rerunning the commands above produces fresh evidence for your environment. The original local delivery also had a separate `source-trail-evidence` directory beside the source folder; repository links use the committed `evidence/` snapshot.
 
 ## Continuous integration and wheel build
 
@@ -149,16 +177,18 @@ docker build -f Dockerfile.prototype -t source-trail:prototype .
 docker run --rm source-trail:prototype --help
 ```
 
-For model-backed queries inside a container, supply an endpoint reachable from that container and a writable location for output. Inference on the target AMD environment must be adapted and tested separately. The prototype image has not been built or run in the current environment because the Docker daemon is unavailable.
+For model-backed queries inside a container, supply a writable location for output and run the chosen local model runtime in the appropriate network context. The vLLM connector requires a loopback endpoint in that context. The prototype image has not been built or run in the current environment because the local Docker daemon is unavailable. The completed general AMD notebook run does not validate this image against the official environment.
 
 ## Current limits
 
 The prototype focuses on readable HTML and plain-text pages. A browser that executes JavaScript, authenticated sessions, PDF extraction, and broader media parsing are outside this first implementation. HTML reading does not reproduce a browser's layout or every CSS visibility rule. A six-page query is deliberately bounded and can miss necessary evidence. Source conflicts and model mistakes still require inspection.
 
-Before an entry can be called ready, obtain the Match 4 brief, adapt the input/output and runtime contract, validate on AMD infrastructure, run the released evaluator, and review the resulting submission materials. The challenge entry has not been submitted.
+Before an official entry can be called ready, obtain the detailed Match 4 brief, adapt the input/output and runtime contract, validate in that required environment, run the released evaluator, and review the resulting submission materials. General AMD GPU development validation is complete. The challenge entry has not been submitted.
 
 MIT licensed. Copyright 2026 agammann.
 
-## Recorded local result
+## Recorded development results
 
-The latest local recheck scored 14/16 for the verified selection variant and 12/16 for the baseline. The verified failures included an unexpected table-answer abstention and a comparison answer whose wording did not match the strict aliases. Both variants use the same Qwen model and page caps; this is a small development fixture set, not a held-out or official score. Inspect the [recorded summary and failures](evidence/synthetic/summary.json). The latest three public queries answered with exact retrieved quotes from [Python TaskGroup documentation](evidence/live-python-taskgroup.json), the [organizer's GPU quota](evidence/live-amd-quota.json), and [FastAPI settings documentation](evidence/live-fastapi-settings.json). The FastAPI recheck initially failed because repeated exact citations exceeded the raw-list limit; the bounded deduplication repair and a successful fresh query are recorded in [diagnostics](evidence/diagnostics/live-fastapi-diagnostic-summary.json). Its short import quotes require the surrounding code to establish decorator usage. See [STATUS.md](STATUS.md) and [DELIVERY.json](DELIVERY.json) for model, browser, package, and unavailable checks.
+The historical local Qwen3.5 Ollama recheck scored verified 14/16 and baseline 12/16. Its verified failures included an unexpected table-answer abstention and comparison wording rejected by strict aliases. The three recorded public queries answered with exact retrieved quotes from [Python TaskGroup documentation](evidence/live-python-taskgroup.json), the [organizer's GPU quota](evidence/live-amd-quota.json), and [FastAPI settings documentation](evidence/live-fastapi-settings.json). The FastAPI citation-deduplication repair and fresh query are recorded in [diagnostics](evidence/diagnostics/live-fastapi-diagnostic-summary.json); its import quotes require surrounding code to establish decorator usage.
+
+The AMD Qwen3-4B-Instruct-2507 run scored **verified 11/16 and baseline 12/16** on the unchanged main fixtures. Both modes scored **6/6** on the stress-development fixtures. The main failures include equivalent full-sentence answers rejected by frozen aliases, two unexpected abstentions despite complete evidence, and a redundant citation in verified mode. All failures are retained in the [AMD main summary](evidence/amd/results/synthetic/summary.json) and [stress summary](evidence/amd/results/stress/summary.json). No aliases or prompts were changed for this run. The different model/runtime prevents a direct comparison with the historical Ollama run, and these development fixtures establish no held-out or official score. See [STATUS.md](STATUS.md) and [DELIVERY.json](DELIVERY.json) for the evidence and remaining requirements.

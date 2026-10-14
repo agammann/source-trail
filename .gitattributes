@@ -1,2 +1,6 @@
 * text=auto eol=lf
+# Preserve whitespace in the captured runtime and Prometheus output.
+evidence/amd/vllm-server.log whitespace=-blank-at-eol
+evidence/amd/results/server-metrics-before.txt whitespace=-blank-at-eol
+evidence/amd/results/server-metrics-after.txt whitespace=-blank-at-eol
 *.png binary

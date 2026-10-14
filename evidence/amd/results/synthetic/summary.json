@@ -1,0 +1,1394 @@
+{
+  "benchmark": "Source Trail synthetic fixtures",
+  "synthetic": true,
+  "scope": "Hand-authored fictional pages; not the official challenge evaluator.",
+  "answer_scoring": "Exact full normalized token sequence against explicit aliases; no semantic judge.",
+  "citation_scoring": "Exact necessary source path set and quote presence in visible fixture text. Block IDs are shape-checked only.",
+  "model": "Qwen3-4B-Instruct-2507",
+  "page_limit_per_query": 6,
+  "by_mode": {
+    "baseline": {
+      "cases": 16,
+      "passed": 12,
+      "status_correct": 14,
+      "answer_alias_correct": 12,
+      "exact_sources_correct": 14,
+      "quotes_valid": 16,
+      "within_page_budget": 16,
+      "totals": {
+        "pages": 45,
+        "model_calls": 16,
+        "input_tokens": 21835,
+        "output_tokens": 835,
+        "duration_ms": 10809
+      }
+    },
+    "verified": {
+      "cases": 16,
+      "passed": 11,
+      "status_correct": 14,
+      "answer_alias_correct": 12,
+      "exact_sources_correct": 13,
+      "quotes_valid": 16,
+      "within_page_budget": 16,
+      "totals": {
+        "pages": 45,
+        "model_calls": 15,
+        "input_tokens": 17389,
+        "output_tokens": 845,
+        "duration_ms": 10885
+      }
+    }
+  },
+  "failures": [
+    {
+      "case_id": "09-web-table-cell",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": false,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/09-web-table-cell/schedule.html"
+      ],
+      "expected_source_paths": [
+        "/09-web-table-cell/schedule.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1069,
+        "output_tokens": 75,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 923
+      },
+      "passed": false,
+      "errors": [
+        "answer_alias_mismatch"
+      ],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/09-web-table-cell.json",
+      "wall_duration_ms": 985
+    },
+    {
+      "case_id": "09-web-table-cell",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": false,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/09-web-table-cell/schedule.html"
+      ],
+      "expected_source_paths": [
+        "/09-web-table-cell/schedule.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1069,
+        "output_tokens": 75,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 939
+      },
+      "passed": false,
+      "errors": [
+        "answer_alias_mismatch"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/09-web-table-cell.json",
+      "wall_duration_ms": 1001
+    },
+    {
+      "case_id": "10-web-multi-hop-detail",
+      "synthetic": true,
+      "status_match": false,
+      "answer_match": false,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [
+        "/10-web-multi-hop-detail/festival-detail.html"
+      ],
+      "metrics": {
+        "pages": 4,
+        "successful_pages": 4,
+        "model_calls": 1,
+        "input_tokens": 1585,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 282
+      },
+      "passed": false,
+      "errors": [
+        "status_mismatch: expected answered, got 'abstained'",
+        "answer_alias_mismatch",
+        "source_set_mismatch: missing=['/10-web-multi-hop-detail/festival-detail.html'], extra=[]"
+      ],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/10-web-multi-hop-detail.json",
+      "wall_duration_ms": 350
+    },
+    {
+      "case_id": "10-web-multi-hop-detail",
+      "synthetic": true,
+      "status_match": false,
+      "answer_match": false,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [
+        "/10-web-multi-hop-detail/festival-detail.html"
+      ],
+      "metrics": {
+        "pages": 4,
+        "successful_pages": 4,
+        "model_calls": 1,
+        "input_tokens": 1585,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 278
+      },
+      "passed": false,
+      "errors": [
+        "status_mismatch: expected answered, got 'abstained'",
+        "answer_alias_mismatch",
+        "source_set_mismatch: missing=['/10-web-multi-hop-detail/festival-detail.html'], extra=[]"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/10-web-multi-hop-detail.json",
+      "wall_duration_ms": 343
+    },
+    {
+      "case_id": "13-web-inline-details",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": false,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "expected_source_paths": [
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1016,
+        "output_tokens": 57,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 729
+      },
+      "passed": false,
+      "errors": [
+        "answer_alias_mismatch"
+      ],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/13-web-inline-details.json",
+      "wall_duration_ms": 791
+    },
+    {
+      "case_id": "13-web-inline-details",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": false,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "expected_source_paths": [
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1016,
+        "output_tokens": 57,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 760
+      },
+      "passed": false,
+      "errors": [
+        "answer_alias_mismatch"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/13-web-inline-details.json",
+      "wall_duration_ms": 824
+    },
+    {
+      "case_id": "15-web-effective-date-policy",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/15-web-effective-date-policy/index.html",
+        "/15-web-effective-date-policy/warranty-2026.html"
+      ],
+      "expected_source_paths": [
+        "/15-web-effective-date-policy/warranty-2026.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1116,
+        "output_tokens": 87,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 1106
+      },
+      "passed": false,
+      "errors": [
+        "source_set_mismatch: missing=[], extra=['/15-web-effective-date-policy/index.html']"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/15-web-effective-date-policy.json",
+      "wall_duration_ms": 1168
+    },
+    {
+      "case_id": "16-web-two-source-mapping",
+      "synthetic": true,
+      "status_match": false,
+      "answer_match": false,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [
+        "/16-web-two-source-mapping/categories.html",
+        "/16-web-two-source-mapping/fees.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1293,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 267
+      },
+      "passed": false,
+      "errors": [
+        "status_mismatch: expected answered, got 'abstained'",
+        "answer_alias_mismatch",
+        "source_set_mismatch: missing=['/16-web-two-source-mapping/categories.html', '/16-web-two-source-mapping/fees.html'], extra=[]"
+      ],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/16-web-two-source-mapping.json",
+      "wall_duration_ms": 331
+    },
+    {
+      "case_id": "16-web-two-source-mapping",
+      "synthetic": true,
+      "status_match": false,
+      "answer_match": false,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [
+        "/16-web-two-source-mapping/categories.html",
+        "/16-web-two-source-mapping/fees.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1293,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 272
+      },
+      "passed": false,
+      "errors": [
+        "status_mismatch: expected answered, got 'abstained'",
+        "answer_alias_mismatch",
+        "source_set_mismatch: missing=['/16-web-two-source-mapping/categories.html', '/16-web-two-source-mapping/fees.html'], extra=[]"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/16-web-two-source-mapping.json",
+      "wall_duration_ms": 338
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "01-doc-old-distractor",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/01-doc-old-distractor/v4.html"
+      ],
+      "expected_source_paths": [
+        "/01-doc-old-distractor/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1541,
+        "output_tokens": 46,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 602
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/01-doc-old-distractor.json",
+      "wall_duration_ms": 668
+    },
+    {
+      "case_id": "01-doc-old-distractor",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/01-doc-old-distractor/v4.html"
+      ],
+      "expected_source_paths": [
+        "/01-doc-old-distractor/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 662,
+        "output_tokens": 46,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 594
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/01-doc-old-distractor.json",
+      "wall_duration_ms": 667
+    },
+    {
+      "case_id": "02-doc-target-version-absent",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1157,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 258
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/02-doc-target-version-absent.json",
+      "wall_duration_ms": 327
+    },
+    {
+      "case_id": "02-doc-target-version-absent",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "duration_ms": 4
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/02-doc-target-version-absent.json",
+      "wall_duration_ms": 64
+    },
+    {
+      "case_id": "03-doc-renamed-configuration",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/03-doc-renamed-configuration/migration-v3.html"
+      ],
+      "expected_source_paths": [
+        "/03-doc-renamed-configuration/migration-v3.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1479,
+        "output_tokens": 56,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 688
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/03-doc-renamed-configuration.json",
+      "wall_duration_ms": 755
+    },
+    {
+      "case_id": "03-doc-renamed-configuration",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/03-doc-renamed-configuration/migration-v3.html"
+      ],
+      "expected_source_paths": [
+        "/03-doc-renamed-configuration/migration-v3.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 769,
+        "output_tokens": 56,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 727
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/03-doc-renamed-configuration.json",
+      "wall_duration_ms": 805
+    },
+    {
+      "case_id": "04-doc-conditional-default",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/04-doc-conditional-default/cache-v3.html"
+      ],
+      "expected_source_paths": [
+        "/04-doc-conditional-default/cache-v3.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1129,
+        "output_tokens": 49,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 611
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/04-doc-conditional-default.json",
+      "wall_duration_ms": 677
+    },
+    {
+      "case_id": "04-doc-conditional-default",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/04-doc-conditional-default/cache-v3.html"
+      ],
+      "expected_source_paths": [
+        "/04-doc-conditional-default/cache-v3.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1129,
+        "output_tokens": 49,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 610
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/04-doc-conditional-default.json",
+      "wall_duration_ms": 673
+    },
+    {
+      "case_id": "05-doc-current-stale-release",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/05-doc-current-stale-release/v4.html"
+      ],
+      "expected_source_paths": [
+        "/05-doc-current-stale-release/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1570,
+        "output_tokens": 47,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 592
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/05-doc-current-stale-release.json",
+      "wall_duration_ms": 655
+    },
+    {
+      "case_id": "05-doc-current-stale-release",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/05-doc-current-stale-release/v4.html"
+      ],
+      "expected_source_paths": [
+        "/05-doc-current-stale-release/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1186,
+        "output_tokens": 47,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 591
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/05-doc-current-stale-release.json",
+      "wall_duration_ms": 652
+    },
+    {
+      "case_id": "06-doc-conflicting-current-pages",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/06-doc-conflicting-current-pages/guide-v4.html",
+        "/06-doc-conflicting-current-pages/reference-v4.html"
+      ],
+      "expected_source_paths": [
+        "/06-doc-conflicting-current-pages/guide-v4.html",
+        "/06-doc-conflicting-current-pages/reference-v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1735,
+        "output_tokens": 73,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 908
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/06-doc-conflicting-current-pages.json",
+      "wall_duration_ms": 978
+    },
+    {
+      "case_id": "06-doc-conflicting-current-pages",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/06-doc-conflicting-current-pages/guide-v4.html",
+        "/06-doc-conflicting-current-pages/reference-v4.html"
+      ],
+      "expected_source_paths": [
+        "/06-doc-conflicting-current-pages/guide-v4.html",
+        "/06-doc-conflicting-current-pages/reference-v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1735,
+        "output_tokens": 73,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 907
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/06-doc-conflicting-current-pages.json",
+      "wall_duration_ms": 971
+    },
+    {
+      "case_id": "07-doc-cross-version-comparison",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/07-doc-cross-version-comparison/v2.html",
+        "/07-doc-cross-version-comparison/v3.html"
+      ],
+      "expected_source_paths": [
+        "/07-doc-cross-version-comparison/v2.html",
+        "/07-doc-cross-version-comparison/v3.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1399,
+        "output_tokens": 109,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 1389
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/07-doc-cross-version-comparison.json",
+      "wall_duration_ms": 1453
+    },
+    {
+      "case_id": "07-doc-cross-version-comparison",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/07-doc-cross-version-comparison/v2.html",
+        "/07-doc-cross-version-comparison/v3.html"
+      ],
+      "expected_source_paths": [
+        "/07-doc-cross-version-comparison/v2.html",
+        "/07-doc-cross-version-comparison/v3.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1399,
+        "output_tokens": 109,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 1411
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/07-doc-cross-version-comparison.json",
+      "wall_duration_ms": 1478
+    },
+    {
+      "case_id": "08-doc-prerelease-distractor",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/08-doc-prerelease-distractor/v4.html"
+      ],
+      "expected_source_paths": [
+        "/08-doc-prerelease-distractor/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1644,
+        "output_tokens": 47,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 614
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/08-doc-prerelease-distractor.json",
+      "wall_duration_ms": 683
+    },
+    {
+      "case_id": "08-doc-prerelease-distractor",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/08-doc-prerelease-distractor/v4.html"
+      ],
+      "expected_source_paths": [
+        "/08-doc-prerelease-distractor/v4.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 673,
+        "output_tokens": 47,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 609
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/08-doc-prerelease-distractor.json",
+      "wall_duration_ms": 671
+    },
+    {
+      "case_id": "09-web-table-cell",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": false,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/09-web-table-cell/schedule.html"
+      ],
+      "expected_source_paths": [
+        "/09-web-table-cell/schedule.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1069,
+        "output_tokens": 75,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 923
+      },
+      "passed": false,
+      "errors": [
+        "answer_alias_mismatch"
+      ],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/09-web-table-cell.json",
+      "wall_duration_ms": 985
+    },
+    {
+      "case_id": "09-web-table-cell",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": false,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/09-web-table-cell/schedule.html"
+      ],
+      "expected_source_paths": [
+        "/09-web-table-cell/schedule.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1069,
+        "output_tokens": 75,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 939
+      },
+      "passed": false,
+      "errors": [
+        "answer_alias_mismatch"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/09-web-table-cell.json",
+      "wall_duration_ms": 1001
+    },
+    {
+      "case_id": "10-web-multi-hop-detail",
+      "synthetic": true,
+      "status_match": false,
+      "answer_match": false,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [
+        "/10-web-multi-hop-detail/festival-detail.html"
+      ],
+      "metrics": {
+        "pages": 4,
+        "successful_pages": 4,
+        "model_calls": 1,
+        "input_tokens": 1585,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 282
+      },
+      "passed": false,
+      "errors": [
+        "status_mismatch: expected answered, got 'abstained'",
+        "answer_alias_mismatch",
+        "source_set_mismatch: missing=['/10-web-multi-hop-detail/festival-detail.html'], extra=[]"
+      ],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/10-web-multi-hop-detail.json",
+      "wall_duration_ms": 350
+    },
+    {
+      "case_id": "10-web-multi-hop-detail",
+      "synthetic": true,
+      "status_match": false,
+      "answer_match": false,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [
+        "/10-web-multi-hop-detail/festival-detail.html"
+      ],
+      "metrics": {
+        "pages": 4,
+        "successful_pages": 4,
+        "model_calls": 1,
+        "input_tokens": 1585,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 278
+      },
+      "passed": false,
+      "errors": [
+        "status_mismatch: expected answered, got 'abstained'",
+        "answer_alias_mismatch",
+        "source_set_mismatch: missing=['/10-web-multi-hop-detail/festival-detail.html'], extra=[]"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/10-web-multi-hop-detail.json",
+      "wall_duration_ms": 343
+    },
+    {
+      "case_id": "11-web-missing-answer",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1230,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 306
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/11-web-missing-answer.json",
+      "wall_duration_ms": 370
+    },
+    {
+      "case_id": "11-web-missing-answer",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1230,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 317
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/11-web-missing-answer.json",
+      "wall_duration_ms": 377
+    },
+    {
+      "case_id": "12-web-conflicting-current-hours",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/12-web-conflicting-current-hours/hours.html",
+        "/12-web-conflicting-current-hours/winter-policy.html"
+      ],
+      "expected_source_paths": [
+        "/12-web-conflicting-current-hours/hours.html",
+        "/12-web-conflicting-current-hours/winter-policy.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1301,
+        "output_tokens": 102,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 1305
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/12-web-conflicting-current-hours.json",
+      "wall_duration_ms": 1370
+    },
+    {
+      "case_id": "12-web-conflicting-current-hours",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/12-web-conflicting-current-hours/hours.html",
+        "/12-web-conflicting-current-hours/winter-policy.html"
+      ],
+      "expected_source_paths": [
+        "/12-web-conflicting-current-hours/hours.html",
+        "/12-web-conflicting-current-hours/winter-policy.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1301,
+        "output_tokens": 89,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 1078
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/12-web-conflicting-current-hours.json",
+      "wall_duration_ms": 1141
+    },
+    {
+      "case_id": "13-web-inline-details",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": false,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "expected_source_paths": [
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1016,
+        "output_tokens": 57,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 729
+      },
+      "passed": false,
+      "errors": [
+        "answer_alias_mismatch"
+      ],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/13-web-inline-details.json",
+      "wall_duration_ms": 791
+    },
+    {
+      "case_id": "13-web-inline-details",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": false,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "expected_source_paths": [
+        "/13-web-inline-details/eligibility.html"
+      ],
+      "metrics": {
+        "pages": 2,
+        "successful_pages": 2,
+        "model_calls": 1,
+        "input_tokens": 1016,
+        "output_tokens": 57,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 760
+      },
+      "passed": false,
+      "errors": [
+        "answer_alias_mismatch"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/13-web-inline-details.json",
+      "wall_duration_ms": 824
+    },
+    {
+      "case_id": "14-web-conditional-route",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/14-web-conditional-route/north.html"
+      ],
+      "expected_source_paths": [
+        "/14-web-conditional-route/north.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1226,
+        "output_tokens": 53,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 750
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/14-web-conditional-route.json",
+      "wall_duration_ms": 815
+    },
+    {
+      "case_id": "14-web-conditional-route",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/14-web-conditional-route/north.html"
+      ],
+      "expected_source_paths": [
+        "/14-web-conditional-route/north.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1226,
+        "output_tokens": 53,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 682
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/14-web-conditional-route.json",
+      "wall_duration_ms": 750
+    },
+    {
+      "case_id": "15-web-effective-date-policy",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": true,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/15-web-effective-date-policy/warranty-2026.html"
+      ],
+      "expected_source_paths": [
+        "/15-web-effective-date-policy/warranty-2026.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1461,
+        "output_tokens": 45,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 585
+      },
+      "passed": true,
+      "errors": [],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/15-web-effective-date-policy.json",
+      "wall_duration_ms": 653
+    },
+    {
+      "case_id": "15-web-effective-date-policy",
+      "synthetic": true,
+      "status_match": true,
+      "answer_match": true,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [
+        "/15-web-effective-date-policy/index.html",
+        "/15-web-effective-date-policy/warranty-2026.html"
+      ],
+      "expected_source_paths": [
+        "/15-web-effective-date-policy/warranty-2026.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1116,
+        "output_tokens": 87,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 1106
+      },
+      "passed": false,
+      "errors": [
+        "source_set_mismatch: missing=[], extra=['/15-web-effective-date-policy/index.html']"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/15-web-effective-date-policy.json",
+      "wall_duration_ms": 1168
+    },
+    {
+      "case_id": "16-web-two-source-mapping",
+      "synthetic": true,
+      "status_match": false,
+      "answer_match": false,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [
+        "/16-web-two-source-mapping/categories.html",
+        "/16-web-two-source-mapping/fees.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1293,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 267
+      },
+      "passed": false,
+      "errors": [
+        "status_mismatch: expected answered, got 'abstained'",
+        "answer_alias_mismatch",
+        "source_set_mismatch: missing=['/16-web-two-source-mapping/categories.html', '/16-web-two-source-mapping/fees.html'], extra=[]"
+      ],
+      "mode": "baseline",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/baseline/16-web-two-source-mapping.json",
+      "wall_duration_ms": 331
+    },
+    {
+      "case_id": "16-web-two-source-mapping",
+      "synthetic": true,
+      "status_match": false,
+      "answer_match": false,
+      "source_match": false,
+      "valid_quotes": true,
+      "invalid_quote_indices": [],
+      "page_budget_met": true,
+      "actual_source_paths": [],
+      "expected_source_paths": [
+        "/16-web-two-source-mapping/categories.html",
+        "/16-web-two-source-mapping/fees.html"
+      ],
+      "metrics": {
+        "pages": 3,
+        "successful_pages": 3,
+        "model_calls": 1,
+        "input_tokens": 1293,
+        "output_tokens": 19,
+        "usage_recorded": true,
+        "model": "Qwen3-4B-Instruct-2507",
+        "reported_model": "Qwen3-4B-Instruct-2507",
+        "duration_ms": 272
+      },
+      "passed": false,
+      "errors": [
+        "status_mismatch: expected answered, got 'abstained'",
+        "answer_alias_mismatch",
+        "source_set_mismatch: missing=['/16-web-two-source-mapping/categories.html', '/16-web-two-source-mapping/fees.html'], extra=[]"
+      ],
+      "mode": "verified",
+      "output_path": "/workspace/source-trail-validation/results/synthetic/verified/16-web-two-source-mapping.json",
+      "wall_duration_ms": 338
+    }
+  ]
+}

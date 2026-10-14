@@ -1,0 +1,176 @@
+{
+  "question": "How did the FernAPI per-client request quota change from version 2 to version 3?",
+  "requested_version": "3",
+  "mode": "verified",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "version": "2"
+    },
+    {
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "version": "3"
+    },
+    {
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "version": "2"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "source_version": "3",
+      "section": "FernAPI v3 request quota — current stable",
+      "text": "The per-client request quota in version 3 is 80 requests per minute."
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "source_version": "3",
+      "section": "FernAPI v3 request quota — current stable",
+      "text": "FernAPI v3 request quota — current stable"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "source_version": "3",
+      "section": "FernAPI v3 request quota — current stable",
+      "text": "Documentation version: 3."
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "source_version": "3",
+      "section": "FernAPI v3 request quota — current stable",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "source_version": "2",
+      "section": "FernAPI v2 request quota — archived",
+      "text": "The per-client request quota in version 2 is 40 requests per minute."
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "source_version": "2",
+      "section": "FernAPI v2 request quota — archived",
+      "text": "FernAPI v2 request quota — archived"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "source_version": "2",
+      "section": "FernAPI request quotas",
+      "text": "Version 2 quota (archived)"
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "source_version": "2",
+      "section": "FernAPI request quotas",
+      "text": "Version 3 quota (current stable)"
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "source_version": "2",
+      "section": "FernAPI v2 request quota — archived",
+      "text": "Documentation version: 2."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "source_version": "2",
+      "section": "FernAPI request quotas",
+      "text": "FernAPI request quotas"
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "source_version": "2",
+      "section": "FernAPI v2 request quota — archived",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "source_version": "2",
+      "section": "FernAPI request quotas",
+      "text": "Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/index.html",
+      "title": "FernAPI request quotas",
+      "blocks": 4,
+      "elapsed_ms": 3,
+      "sha256": "2e7369f52caccf07f85ff84e22816936b9023cf9e7ed6187565c51c4bf8dada9",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v3.html",
+      "title": "FernAPI v3 request quota — current stable",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "2dd1f85bba0c5f77498299017d54d73e49743c18ead3d4bc815d7c7b2fc40212",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v2.html",
+      "title": "FernAPI v2 request quota — archived",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "4e839fe1028cf4aaed8e885951d3917981edf585de1b625553f4e6c5c405c78c",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1399,
+    "output_tokens": 109,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 1411
+  },
+  "status": "answered",
+  "answer": "The per-client request quota increased from 40 requests per minute in version 2 to 80 requests per minute in version 3.",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v2.html",
+      "quote": "The per-client request quota in version 2 is 40 requests per minute.",
+      "block_id": "P3B4",
+      "source_version": "2"
+    },
+    {
+      "url": "http://127.0.0.1:35929/07-doc-cross-version-comparison/v3.html",
+      "quote": "The per-client request quota in version 3 is 80 requests per minute.",
+      "block_id": "P2B4",
+      "source_version": "3"
+    }
+  ]
+}

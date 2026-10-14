@@ -1,1 +1,28 @@
-{"conclusion":"success","headSha":"31d3a3ada852ef5bdc55ecf1a7390f73bbdf7f61","jobs":[{"conclusion":"success","name":"Python 3.11 on windows-latest","url":"https://github.com/agammann/source-trail/actions/runs/38358097557/job/115165603252"},{"conclusion":"success","name":"Python 3.11 on ubuntu-latest","url":"https://github.com/agammann/source-trail/actions/runs/38358097557/job/115165603431"},{"conclusion":"success","name":"Python 3.12 on windows-latest","url":"https://github.com/agammann/source-trail/actions/runs/38358097557/job/115165603454"},{"conclusion":"success","name":"Python 3.12 on ubuntu-latest","url":"https://github.com/agammann/source-trail/actions/runs/38358097557/job/115165603514"}],"status":"completed","url":"https://github.com/agammann/source-trail/actions/runs/38358097557"}
+{
+  "conclusion": "success",
+  "headSha": "7e406424b14ce49a77352111c51f5ae7980df4f0",
+  "url": "https://github.com/agammann/source-trail/actions/runs/38506333020",
+  "status": "completed",
+  "jobs": [
+    {
+      "name": "Python 3.11 on windows-latest",
+      "conclusion": "success",
+      "url": "https://github.com/agammann/source-trail/actions/runs/38506333020/job/115664590059"
+    },
+    {
+      "name": "Python 3.11 on ubuntu-latest",
+      "conclusion": "success",
+      "url": "https://github.com/agammann/source-trail/actions/runs/38506333020/job/115664590179"
+    },
+    {
+      "name": "Python 3.12 on ubuntu-latest",
+      "conclusion": "success",
+      "url": "https://github.com/agammann/source-trail/actions/runs/38506333020/job/115664590203"
+    },
+    {
+      "name": "Python 3.12 on windows-latest",
+      "conclusion": "success",
+      "url": "https://github.com/agammann/source-trail/actions/runs/38506333020/job/115664590252"
+    }
+  ]
+}

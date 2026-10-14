@@ -1,0 +1,170 @@
+{
+  "question": "What is the per-workspace SableBuffer storage allowance in version 4?",
+  "requested_version": "4",
+  "mode": "baseline",
+  "sources": [
+    {
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/index.html",
+      "title": "SableBuffer storage-guide directory",
+      "version": "40"
+    },
+    {
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "version": "4"
+    },
+    {
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v40.html",
+      "title": "SableBuffer v40 storage allowance",
+      "version": "40"
+    }
+  ],
+  "evidence": [
+    {
+      "block_id": "P2B4",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "source_version": "4",
+      "section": "SableBuffer v4 storage allowance",
+      "text": "The per-workspace storage allowance in version 4 is 96 MiB."
+    },
+    {
+      "block_id": "P3B4",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v40.html",
+      "title": "SableBuffer v40 storage allowance",
+      "source_version": "40",
+      "section": "SableBuffer v40 storage allowance",
+      "text": "The per-workspace storage allowance in version 40 is 1200 MiB."
+    },
+    {
+      "block_id": "P1B4",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/index.html",
+      "title": "SableBuffer storage-guide directory",
+      "source_version": "40",
+      "section": "SableBuffer storage-guide directory",
+      "text": "Version 4 storage allowance"
+    },
+    {
+      "block_id": "P2B2",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "source_version": "4",
+      "section": "SableBuffer v4 storage allowance",
+      "text": "SableBuffer v4 storage allowance"
+    },
+    {
+      "block_id": "P3B2",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v40.html",
+      "title": "SableBuffer v40 storage allowance",
+      "source_version": "40",
+      "section": "SableBuffer v40 storage allowance",
+      "text": "SableBuffer v40 storage allowance"
+    },
+    {
+      "block_id": "P1B3",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/index.html",
+      "title": "SableBuffer storage-guide directory",
+      "source_version": "40",
+      "section": "SableBuffer storage-guide directory",
+      "text": "Version 40 storage allowance"
+    },
+    {
+      "block_id": "P2B3",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "source_version": "4",
+      "section": "SableBuffer v4 storage allowance",
+      "text": "Documentation version: 4."
+    },
+    {
+      "block_id": "P3B3",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v40.html",
+      "title": "SableBuffer v40 storage allowance",
+      "source_version": "40",
+      "section": "SableBuffer v40 storage allowance",
+      "text": "Documentation version: 40."
+    },
+    {
+      "block_id": "P1B2",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/index.html",
+      "title": "SableBuffer storage-guide directory",
+      "source_version": "40",
+      "section": "SableBuffer storage-guide directory",
+      "text": "SableBuffer storage-guide directory"
+    },
+    {
+      "block_id": "P2B1",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "source_version": "4",
+      "section": "SableBuffer v4 storage allowance",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P3B1",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v40.html",
+      "title": "SableBuffer v40 storage allowance",
+      "source_version": "40",
+      "section": "SableBuffer v40 storage allowance",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    },
+    {
+      "block_id": "P1B1",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/index.html",
+      "title": "SableBuffer storage-guide directory",
+      "source_version": "40",
+      "section": "SableBuffer storage-guide directory",
+      "text": "Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional."
+    }
+  ],
+  "trace": [
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/index.html",
+      "title": "SableBuffer storage-guide directory",
+      "blocks": 4,
+      "elapsed_ms": 3,
+      "sha256": "56d38212364a813369bd01154e5eaf52d77de2ad9f293d4a21c216ba15da9d03",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v4.html",
+      "title": "SableBuffer v4 storage allowance",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "649daf9137b8917c50e108893c5acc6e58d36f3d2ad6d84a20efe10bfd851544",
+      "truncated": false
+    },
+    {
+      "action": "read",
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v40.html",
+      "title": "SableBuffer v40 storage allowance",
+      "blocks": 4,
+      "elapsed_ms": 1,
+      "sha256": "488321ee944ff580159ce9c2ac4ac70b701e7db8e9b32d5d4e761da2c43de903",
+      "truncated": false
+    }
+  ],
+  "metrics": {
+    "pages": 3,
+    "successful_pages": 3,
+    "model_calls": 1,
+    "input_tokens": 1374,
+    "output_tokens": 65,
+    "usage_recorded": true,
+    "model": "Qwen3-4B-Instruct-2507",
+    "reported_model": "Qwen3-4B-Instruct-2507",
+    "duration_ms": 826
+  },
+  "status": "answered",
+  "answer": "96 MiB",
+  "citations": [
+    {
+      "url": "http://127.0.0.1:36611/h02-numeric-version-suffix/v4.html",
+      "quote": "The per-workspace storage allowance in version 4 is 96 MiB.",
+      "block_id": "P2B4",
+      "source_version": "4"
+    }
+  ]
+}
