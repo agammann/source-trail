@@ -1,3 +1,4 @@
+import time
 import unittest
 from unittest.mock import patch
 
@@ -57,6 +58,23 @@ class EvidenceTests(unittest.TestCase):
                 self.assertEqual(actual, marker)
                 self.assertFalse(same_version(actual, "4"))
         self.assertTrue(same_version("4.0-rc.1", "4.0-rc.1"))
+
+    def test_version_marker_accepts_existing_spelling_and_spacing(self):
+        for marker, expected in (("version4", "4"), ("version 4", "4"),
+                                 ("version:4", "4"), ("version : 4", "4"),
+                                 ("release 4", "4"), ("release:\t4.0", "4.0"),
+                                 ("v4.0-rc.1", "4.0-rc.1")):
+            with self.subTest(marker=marker):
+                self.assertEqual(version_of(page("https://example.com/docs", marker, [])), expected)
+
+    def test_unmatched_version_prefix_in_page_text_is_bounded(self):
+        # A public page may put a long run of whitespace after either prefix.
+        # The version matcher must not retry all splits between two whitespace runs.
+        hostile_title = "version" + " " * 16000 + "x"
+        hostile_block = "release" + "\t" * 16000 + "x"
+        started = time.monotonic()
+        self.assertIsNone(version_of(page("https://example.com/docs", hostile_title, [hostile_block])))
+        self.assertLess(time.monotonic() - started, 1.0)
 
     def test_query_relevant_late_passage_is_available_without_cutting_quote(self):
         fact = "The aurora cache expiration is 19 seconds."

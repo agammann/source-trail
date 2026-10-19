@@ -10,7 +10,7 @@ from .web import WebReader, WebReadError
 
 
 STOP = set("a an and are as at be by did do does for from how in is it of on or the to what when which with".split())
-VERSION_MARKER = re.compile(r"(?:\bversion\s*:?\s*|\brelease\s*:?\s*|(?:^|[/\s_-])v)(\d+(?:\.\d+)*(?:[a-z][\w.+-]*|[-+][\w.+-]+)?)(?=$|[/\s,:;!?()\[\]])", re.I)
+VERSION_MARKER = re.compile(r"(?:\bversion\s*(?::\s*)?|\brelease\s*(?::\s*)?|(?:^|[/\s_-])v)(\d+(?:\.\d+)*(?:[a-z][\w.+-]*|[-+][\w.+-]+)?)(?=$|[/\s,:;!?()\[\]])", re.I)
 
 
 def tokens(text):
