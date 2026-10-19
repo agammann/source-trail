@@ -10,7 +10,9 @@ from .web import WebReader, WebReadError
 
 
 STOP = set("a an and are as at be by did do does for from how in is it of on or the to what when which with".split())
-VERSION_MARKER = re.compile(r"(?:\bversion\s*:?\s*|\brelease\s*:?\s*|(?:^|[/\s_-])v)(\d+(?:\.\d+)*(?:[a-z][\w.+-]*|[-+][\w.+-]+)?)(?=$|[/\s,:;!?()\[\]])", re.I)
+VERSION_PREFIX = re.compile(r"\b(?:version|release)|(?:^|[/\s_-])v", re.I)
+VERSION_SUFFIX_LETTER = re.compile(r"[a-z]", re.I)
+VERSION_BOUNDARY = "/,:;!?()[]"
 
 
 def tokens(text):
@@ -18,7 +20,49 @@ def tokens(text):
 
 
 def versions_in(text):
-    return [match.group(1).casefold() for match in VERSION_MARKER.finditer(text)]
+    versions = []
+    offset = 0
+    while match := VERSION_PREFIX.search(text, offset):
+        index = match.end()
+        short_prefix = match.group()[-1].lower() == "v"
+        if not short_prefix:
+            while index < len(text) and text[index].isspace():
+                index += 1
+            if index < len(text) and text[index] == ":":
+                index += 1
+                while index < len(text) and text[index].isspace():
+                    index += 1
+        start = index
+        if index >= len(text) or not text[index].isdecimal():
+            # A delimiter before "version" first looks like the short "v"
+            # marker; retry at its letter so the full word remains visible.
+            if short_prefix and match.end() - match.start() > 1:
+                offset = match.end() - 1
+            elif not short_prefix and index > match.end() and text[index - 1].isspace():
+                offset = index - 1
+            else:
+                offset = index
+            continue
+        while index < len(text) and text[index].isdecimal():
+            index += 1
+        while index + 1 < len(text) and text[index] == "." and text[index + 1].isdecimal():
+            index += 1
+            while index < len(text) and text[index].isdecimal():
+                index += 1
+        if index < len(text) and VERSION_SUFFIX_LETTER.fullmatch(text[index]):
+            index += 1
+            while index < len(text) and (text[index].isalnum() or text[index] in "_.+-"):
+                index += 1
+        elif index + 1 < len(text) and text[index] in "-+" and (text[index + 1].isalnum() or text[index + 1] in "_.+-"):
+            index += 2
+            while index < len(text) and (text[index].isalnum() or text[index] in "_.+-"):
+                index += 1
+        if index == len(text) or text[index].isspace() or text[index] in VERSION_BOUNDARY:
+            versions.append(text[start:index].casefold())
+        # A failed long token can contain many internal "-v" prefixes. None can
+        # form a valid version before the same invalid trailing character.
+        offset = index
+    return versions
 
 
 def version_of(page):
