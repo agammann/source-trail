@@ -63,7 +63,8 @@ class EvidenceTests(unittest.TestCase):
         for marker, expected in (("version4", "4"), ("version 4", "4"),
                                  ("version:4", "4"), ("version : 4", "4"),
                                  ("release 4", "4"), ("release:\t4.0", "4.0"),
-                                 ("v4.0-rc.1", "4.0-rc.1")):
+                                 ("v4.0-rc.1", "4.0-rc.1"),
+                                 ("version: v2", "2"), ("version\tV4", "4")):
             with self.subTest(marker=marker):
                 self.assertEqual(version_of(page("https://example.com/docs", marker, [])), expected)
 
@@ -72,6 +73,13 @@ class EvidenceTests(unittest.TestCase):
         # The version matcher must not retry all splits between two whitespace runs.
         hostile_title = "version" + " " * 16000 + "x"
         hostile_block = "release" + "\t" * 16000 + "x"
+        started = time.monotonic()
+        self.assertIsNone(version_of(page("https://example.com/docs", hostile_title, [hostile_block])))
+        self.assertLess(time.monotonic() - started, 1.0)
+
+    def test_unmatched_version_suffixes_in_page_text_are_bounded(self):
+        hostile_title = "v9a" + "-v0a" * 5000 + "@"
+        hostile_block = "v9+" + "-v0+" * 5000 + "@"
         started = time.monotonic()
         self.assertIsNone(version_of(page("https://example.com/docs", hostile_title, [hostile_block])))
         self.assertLess(time.monotonic() - started, 1.0)
