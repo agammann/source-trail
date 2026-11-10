@@ -33,7 +33,7 @@ Open [the local demo](http://127.0.0.1:8501), enter one short question and publi
 
 ## Community Cloud configuration
 
-After these files are present on GitHub, deploy repository `agammann/source-trail`, branch `main`, entrypoint **`demo/app.py`**, with **Python 3.12**. No secrets or paid inference services are required. Streamlit uses the [requirements beside the entrypoint](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/app-dependencies): Streamlit 1.65.0 and zstandard 0.25.0. The demo imports the existing repository core directly.
+After these files are present on GitHub, deploy repository `agammann/source-trail`, branch `main`, entrypoint **`demo/app.py`**, with **Python 3.12**. No secrets or paid inference services are required. Streamlit uses the [requirements beside the entrypoint](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/app-dependencies): Streamlit 1.67.0 and zstandard 0.25.0. The demo imports the existing repository core directly.
 
 When inference is first needed, the bootstrap reuses a running local Ollama service or, on Linux x86-64, downloads the official **Ollama 0.40.3** archive into `~/.cache/source-trail-demo`, verifies its pinned SHA-256, retains its binary/library layout, and launches it on loopback. It then pulls `qwen3:0.6b` if absent and checks its registry digest. Installation requires no system service or privileged installer. The managed runtime disables Ollama cloud access and limits loaded models and parallel inference to one. Other operating systems need an existing Ollama service.
 
