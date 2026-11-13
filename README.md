@@ -167,7 +167,7 @@ The repository retains the historical [Ollama synthetic summary](evidence/synthe
 
 ## Continuous integration and wheel build
 
-The [CI workflow](.github/workflows/ci.yml) runs the standard-library unit and loopback integration suite on Ubuntu and Windows with Python 3.11 and 3.12. It builds a wheel, installs it into a separate virtual environment, and checks the installed metadata, CLI, inspector HTML, and health endpoint outside the source checkout. CI does not call a live model or run the model-backed benchmark.
+The [CI workflow](.github/workflows/ci.yml) runs the standard-library unit and loopback integration suite on Ubuntu and Windows with Python 3.11, 3.12 and 3.14. It builds a wheel, installs it into a separate virtual environment, and checks the installed metadata, CLI, inspector HTML, and health endpoint outside the source checkout. CI does not call a live model or run the model-backed benchmark.
 
 Build a wheel locally:
 
