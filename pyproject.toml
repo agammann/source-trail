@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "source-trail"
 version = "0.1.0"
-description = "A local web retrieval prototype with inspectable source evidence"
+description = "Local web evidence retrieval with inspectable quotes, versions, and navigation"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
