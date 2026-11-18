@@ -50,4 +50,4 @@ python -m unittest discover -s tests -v
 python -m unittest discover -s demo/tests -v
 ```
 
-CI runs both suites on Ubuntu and Windows with Python 3.11 and 3.12. The demo tests cover fixed public-source controls, concurrency, quote validation, selection parsing, prompt bounds, usage accounting, and bootstrap checksum/path checks. Fixture tests do not establish public hosting or live-model success.
+CI runs both suites on Ubuntu and Windows with Python 3.11, 3.12 and 3.14. The demo tests cover fixed public-source controls, concurrency, quote validation, selection parsing, prompt bounds, usage accounting, and bootstrap checksum and path checks. Hosted behavior and live inference are recorded separately.

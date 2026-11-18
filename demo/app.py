@@ -35,7 +35,6 @@ def source_link(url):
 
 st.title("Source Trail")
 st.subheader("Answers you can trace.")
-st.caption("A live prototype by agammann")
 st.info("This live extractive demo uses Qwen3 0.6B to select one relevant source passage from up to four candidates. "
         "It returns that passage verbatim, using a separate passage-selection prompt. "
         "The full AMD app uses Qwen3-4B-Instruct-2507 to produce short answers and was validated on an MI300X. "

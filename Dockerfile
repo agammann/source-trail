@@ -1,6 +1,5 @@
-# Portable Python coordinator prototype. This is not an official entry image.
-# Supply a model endpoint on the same machine or trusted local network.
-# Model weights, an inference runtime, and AMD GPU support are not included.
+# Python coordinator and inspector image.
+# Supply the model runtime and weights separately.
 FROM python:3.14-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \

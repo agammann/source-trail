@@ -25,7 +25,7 @@
         <form id="query-form" class="query-form">
           <div class="field"><label for="question">Question</label><textarea id="question" name="question" placeholder="What changed in this version?" maxlength="2000" required></textarea></div>
           <div class="field"><label for="urls">Starting URLs</label><textarea id="urls" name="urls" placeholder="https://docs.example.com/start" maxlength="6000" aria-describedby="url-note" required></textarea><p id="url-note" class="field-note">One URL per line.</p></div>
-          <div class="form-row"><div class="field"><label for="target-version">Target version</label><input id="target-version" name="target_version" placeholder="Optional" maxlength="80"></div><div class="field"><label for="mode">Mode</label><select id="mode" name="mode"><option value="verified">Verified</option><option value="baseline">Baseline</option></select></div></div>
+          <div class="form-row"><div class="field"><label for="target-version">Target version</label><input id="target-version" name="target_version" placeholder="Optional" maxlength="40"></div><div class="field"><label for="mode">Mode</label><select id="mode" name="mode"><option value="verified">Verified</option><option value="baseline">Baseline</option></select></div></div>
           <button id="run" type="submit" class="run-button"><span id="run-label">Run query</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></svg></button>
           <p id="form-error" class="error" role="alert" hidden></p>
           <div class="examples"><p>Try an example</p><div class="example-buttons"><button type="button" class="outline-button example" data-example="python">Python tasks</button><button type="button" class="outline-button example" data-example="fastapi">FastAPI settings</button></div></div>
@@ -38,12 +38,13 @@
         </section>
       </div>
     </main>
-    <footer class="footer">A local prototype by agammann</footer>
+    <footer class="footer">A local evidence inspector by agammann</footer>
   </div>
   <script>
     'use strict';
     const $ = (id) => document.getElementById(id);
     const state = {result: null, running: false};
+    let queryFocus = null;
     const examples = {
       python: {question: 'What happens to the other tasks in an asyncio.TaskGroup when one task fails?', urls: ['https://docs.python.org/3/library/asyncio-task.html'], target_version: ''},
       fastapi: {question: 'How do I read environment variables with Pydantic Settings in FastAPI?', urls: ['https://fastapi.tiangolo.com/advanced/settings/'], target_version: ''}
@@ -52,7 +53,39 @@
     function safeURL(value) { try { const url = new URL(String(value)); return ['http:', 'https:'].includes(url.protocol) ? url.href : null; } catch (_) { return null; } }
     function link(value, className, label) { const url = safeURL(value); const node = element(url ? 'a' : 'span', className, label || value || 'Source URL unavailable'); if (url) {node.href = url; node.target = '_blank'; node.rel = 'noopener noreferrer';} return node; }
     function showError(message) {$('form-error').textContent = message; $('form-error').hidden = false; $('announcement').textContent = 'Query failed. ' + message;}
-    function setRunning(running) {state.running = running; $('run').disabled = running; $('run-label').textContent = running ? 'Running query…' : 'Run query'; document.querySelectorAll('.example').forEach(button => button.disabled = running); $('loading').hidden = !running; $('query-form').setAttribute('aria-busy', String(running));}
+    function clearResult(message = '') {
+      state.result = null;
+      $('result').replaceChildren();
+      $('result').hidden = true;
+      $('download').disabled = true;
+      $('empty').hidden = false;
+      $('announcement').textContent = message;
+    }
+    function inputsChanged() {
+      if (state.running) return;
+      if (state.result !== null) {
+        clearResult('Inputs changed. Run a query for these inputs.');
+      } else if (!$('form-error').hidden) {
+        $('announcement').textContent = '';
+      }
+      $('form-error').hidden = true;
+    }
+    function setRunning(running) {
+      if (running) {
+        queryFocus = $('query-form').contains(document.activeElement) ? document.activeElement : null;
+      }
+      state.running = running;
+      $('run').disabled = running;
+      $('run-label').textContent = running ? 'Running query…' : 'Run query';
+      $('query-form').querySelectorAll('input, textarea, select').forEach(field => field.disabled = running);
+      document.querySelectorAll('.example').forEach(button => button.disabled = running);
+      $('loading').hidden = !running;
+      $('query-form').setAttribute('aria-busy', String(running));
+      if (!running) {
+        if (queryFocus?.isConnected && document.activeElement === document.body) queryFocus.focus();
+        queryFocus = null;
+      }
+    }
     function details(title) {const node = element('details', 'detail-section'); node.append(element('summary', '', title)); return node;}
     function renderMetrics(metrics, container) {if (!metrics || typeof metrics !== 'object') return; const row = element('div', 'metrics'); const fields = [['pages','Pages'],['model_calls','Model calls'],['input_tokens','Input tokens'],['output_tokens','Output tokens'],['duration_ms','Duration']]; fields.forEach(([key,label]) => {const value=metrics[key]; if (typeof value !== 'number' || !Number.isFinite(value)) return; const item=element('div'); item.append(element('strong','', key === 'duration_ms' ? (value/1000).toFixed(1)+' s' : value.toLocaleString()),document.createTextNode(label)); row.append(item);}); if (row.children.length) container.append(row);}
     function renderResult(data) {
@@ -70,11 +103,22 @@
       trace.forEach(entry=>{const row=element('li');if(typeof entry==='string')row.append(element('span','trace-event',entry));else if(entry&&typeof entry==='object'){const event=entry.event || entry.action || entry.type || 'Navigation event';row.append(element('span','trace-event',event));if(entry.url)row.append(link(entry.url,'source-link'));const remaining=Object.fromEntries(Object.entries(entry).filter(([key])=>!['event','action','type','url'].includes(key)));if(Object.keys(remaining).length)row.append(element('pre','trace-detail',JSON.stringify(remaining,null,2)));}traceList.append(row);});traceSection.append(traceList);container.append(traceSection);
       $('empty').hidden=true;container.hidden=false;$('download').disabled=false;$('announcement').textContent='Query complete. '+status.replaceAll('_',' ')+'. '+citations.length+' supporting quotes returned.';
     }
-    document.querySelectorAll('.example').forEach(button=>button.addEventListener('click',()=>{if(state.running)return;const example=examples[button.dataset.example];$('question').value=example.question;$('urls').value=example.urls.join('\n');$('target-version').value=example.target_version;$('form-error').hidden=true;$('question').focus();}));
+    $('query-form').addEventListener('input', inputsChanged);
+    $('query-form').addEventListener('change', inputsChanged);
+    document.querySelectorAll('.example').forEach(button => button.addEventListener('click', () => {
+      if (state.running) return;
+      inputsChanged();
+      const example = examples[button.dataset.example];
+      $('question').value = example.question;
+      $('urls').value = example.urls.join('\n');
+      $('target-version').value = example.target_version;
+      $('form-error').hidden = true;
+      $('question').focus();
+    }));
     $('query-form').addEventListener('submit',async(event)=>{
-      event.preventDefault();if(state.running)return;$('form-error').hidden=true;
+      event.preventDefault();if(state.running)return;clearResult();$('form-error').hidden=true;
       const question=$('question').value.trim();const urls=$('urls').value.split(/\r?\n/).map(value=>value.trim()).filter(Boolean);if(!question||!urls.length){showError('Enter a question and at least one starting URL.');return;}if(urls.some(url=>!safeURL(url))){showError('Use a complete http:// or https:// URL on each line.');$('urls').focus();return;}
-      const payload={question,urls,target_version:$('target-version').value.trim()||null,mode:$('mode').value,max_pages:6};state.result=null;$('download').disabled=true;$('empty').hidden=true;$('result').hidden=true;setRunning(true);$('announcement').textContent='Query started.';
+      const payload={question,urls,target_version:$('target-version').value.trim()||null,mode:$('mode').value,max_pages:6};$('empty').hidden=true;setRunning(true);$('announcement').textContent='Query started.';
       try{const response=await fetch('/api/query',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});let data;try{data=await response.json();}catch(_){throw new Error('The local service returned an unreadable response.');}if(!response.ok){const message=data.error||data.message||('Request failed ('+response.status+').');throw new Error(typeof message==='string'?message:JSON.stringify(message));}if(!data||typeof data!=='object'||Array.isArray(data))throw new Error('The local service returned an unexpected result.');state.result=data;renderResult(data);}catch(error){showError(error.message||'The query could not be completed.');$('empty').hidden=false;}finally{setRunning(false);}
     });
     $('download').addEventListener('click',()=>{if(!state.result)return;const blob=new Blob([JSON.stringify(state.result,null,2)+'\n'],{type:'application/json'});const url=URL.createObjectURL(blob);const anchor=document.createElement('a');anchor.href=url;anchor.download='source-trail-result.json';document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);});

@@ -44,7 +44,7 @@ def make_handler(allow_local=False):
             if not self.trusted_request():
                 return self.json(403, {"error": "Local origin required."})
             if self.path == "/api/health":
-                return self.json(200, {"status": "ok", "name": "Source Trail", "stage": "pre-brief prototype"})
+                return self.json(200, {"status": "ok", "name": "Source Trail", "stage": "local-inspector"})
             if self.path in {"/", "/index.html"}:
                 return self.send_data(200, (ROOT / "index.html").read_bytes(), "text/html; charset=utf-8")
             self.json(404, {"error": "Not found."})

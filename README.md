@@ -1,6 +1,6 @@
 # Source Trail
 
-Source Trail retrieves web evidence for a question and makes the answer, supporting quotes, source versions, and navigation path inspectable. It is a local prototype by **agammann**, [submitted to the AMD AI League under Ammann Labs](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/ammann-labs/source-trail).
+Source Trail is a local web evidence reader. It answers a question from retrieved pages and shows the supporting quotes, source versions, and navigation path. **agammann** [submitted it to the AMD AI League under Ammann Labs](https://lablab.ai/ai-hackathons/amd-lablab-ai-academy-challenge/ammann-labs/source-trail).
 
 The project explores a specific question: can a retrieval workflow handle stale pages, conflicting sources, and missing answers more reliably than a simpler workflow under the same page budget? Its synthetic fixtures provide a way to inspect those cases. They do not establish originality, broad web performance, or a competitive score.
 
@@ -64,7 +64,7 @@ Use `-Port 8766` to choose another local port. On Linux or macOS, start it direc
 python3 -m sourcetrail serve --host 127.0.0.1 --port 8765
 ```
 
-Open [the local inspector](http://127.0.0.1:8765). Enter a question and one URL per line, optionally add a target version, and select **Run query**. The example buttons fill the form with public documentation questions; they do not run a query or supply an answer. After a result arrives, inspect quotes, expand source versions and the navigation path, or download its JSON.
+Open [the local inspector](http://127.0.0.1:8765). Enter a question and one URL per line, optionally add a target version, and select **Run query**. Use the example buttons to fill the form with a public documentation question. After running the query, inspect quotes, source versions and the navigation path, or download its JSON. Editing the inputs clears the previous result.
 
 Keep the service bound to loopback. The browser does not select or change the model endpoint.
 
@@ -163,7 +163,7 @@ python -m benchmark.holdout.run --run-model --report-dir work\stress --modes bas
 
 The actual checks completed for this delivery, including failures and unavailable checks, are recorded in [STATUS.md](STATUS.md) and [DELIVERY.json](DELIVERY.json). Do not infer model or browser validation from a unit-test result.
 
-The repository retains the historical [Ollama synthetic summary](evidence/synthetic/summary.json), [current local unit-test log](evidence/unit-tests.txt), [AMD development evidence](evidence/amd/verification.json), and [package verification record](evidence/package-verification.json). Rerunning the commands above produces fresh evidence for your environment. The original local delivery also had a separate `source-trail-evidence` directory beside the source folder; repository links use the committed `evidence/` snapshot.
+The repository retains the historical [Ollama synthetic summary](evidence/synthetic/summary.json), [recorded unit-test log](evidence/unit-tests.txt), [AMD development evidence](evidence/amd/verification.json), and [package verification record](evidence/package-verification.json). Rerunning the commands above produces fresh evidence for your environment. The original local delivery also had a separate `source-trail-evidence` directory beside the source folder. Repository links use the committed `evidence/` snapshot.
 
 ## Continuous integration and wheel build
 
@@ -176,22 +176,29 @@ python -m pip install build
 python -m build --wheel
 ```
 
-Build tooling is needed only for packaging; the installed coordinator still has no third-party Python runtime dependencies. A successful local check and a passing GitHub workflow are separate results.
-
-## Packaging prototype
-
-`Dockerfile.prototype` packages only the portable Python coordinator and inspector. It supplies neither model weights nor an inference runtime, and it is not the official match submission image.
+In the Python environment where you want to use Source Trail, install the wheel and check the entry point:
 
 ```powershell
-docker build -f Dockerfile.prototype -t source-trail:prototype .
-docker run --rm source-trail:prototype --help
+python -m pip install dist/source_trail-0.1.0-py3-none-any.whl
+python -m sourcetrail --help
 ```
 
-For model-backed queries inside a container, supply a writable location for output and run the chosen local model runtime in the appropriate network context. The vLLM connector requires a loopback endpoint in that context. The prototype image has not been built or run in the current environment because the local Docker daemon is unavailable. The completed general AMD notebook run does not validate this image against the official environment.
+Build tooling is needed only for packaging. The installed coordinator has no third-party Python runtime dependencies. Model-backed queries use the separate local inference runtime.
+
+## Coordinator container
+
+`Dockerfile` packages the Python coordinator and inspector. Supply the inference runtime and model weights separately. Official Match 4 validation requires the organizer's separate runtime contract.
+
+```powershell
+docker build -t source-trail:local .
+docker run --rm --network none source-trail:local --help
+```
+
+For model-backed queries inside a container, supply a writable location for output and make the model runtime reachable from that container. The vLLM connector requires a loopback endpoint in the container's network context. The CLI startup check above exercises the coordinator image. Official Match 4 container validation remains outstanding.
 
 ## Current limits
 
-The prototype focuses on readable HTML and plain-text pages. A browser that executes JavaScript, authenticated sessions, PDF extraction, and broader media parsing are outside this first implementation. HTML reading does not reproduce a browser's layout or every CSS visibility rule. A six-page query is deliberately bounded and can miss necessary evidence. Source conflicts and model mistakes still require inspection.
+Source Trail reads HTML and plain-text pages. JavaScript-rendered pages, authenticated sessions, PDFs, and other media require separate tooling. HTML extraction approximates readable text and does not evaluate browser layout or every CSS visibility rule. The bounded page budget can miss necessary evidence. Inspect the returned quotes for source conflicts and model mistakes.
 
 Official Match 4 evaluation still requires the detailed brief, its input/output and runtime contract, validation in the required environment, and the released evaluator. General AMD GPU development validation is complete, and the LabLab project entry is published. Official evaluator results and entry-container compatibility remain unverified.
 
