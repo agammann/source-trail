@@ -1,6 +1,6 @@
 # Python coordinator and inspector image.
 # Supply the model runtime and weights separately.
-FROM python:3.14-slim
+FROM python:3.15-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
